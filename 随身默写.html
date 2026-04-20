@@ -461,7 +461,20 @@
     const STORAGE_PROGRESS = "dictation.progress.v1";
     const STORAGE_LAST_INDEX = "dictation.last.index.v1";
     const STORAGE_BUILTIN_VERSION = "dictation.builtin.version";
-    const BUILTIN_DECK_VERSION = "units-1-10-20260419";
+    const BUILTIN_DECK_VERSION = "units-1-22-20260420-v2";
+
+    const UNIT_TITLES = {
+      13: "\u5efa\u7b51\u573a\u6240",
+      14: "\u4ea4\u901a\u65c5\u884c",
+      15: "\u56fd\u5bb6\u653f\u5e9c",
+      16: "\u793e\u4f1a\u7ecf\u6d4e",
+      17: "\u6cd5\u5f8b\u6cd5\u89c4",
+      18: "\u6c99\u573a\u4e89\u950b",
+      19: "\u793e\u4f1a\u89d2\u8272",
+      20: "\u884c\u4e3a\u52a8\u4f5c",
+      21: "\u8eab\u5fc3\u5065\u5eb7",
+      22: "\u65f6\u95f4\u65e5\u671f",
+    };
 
     const defaultDeck = `atmosphere	大气层，大气圈；气氛	a_________	Unit 1 自然地理
 hydrosphere	水圈；大气中的水汽	h__________	Unit 1 自然地理
@@ -2267,1597 +2280,1720 @@ butter	黄油v.涂黄油	b_____	Unit 12 饮食健康
 salad	色拉	s____	Unit 12 饮食健康
 pizza	比萨饼	p____	Unit 12 饮食健康
 pasta	意大利面食	p____	Unit 12 饮食健康
-visa	签证	v___	Unit 14
-traffic	交通，车流	t______	Unit 14
-airline	航空公司	a______	Unit 14
-airplane	飞机	a_______	Unit 14
-helicopter	直升机v.用直升机载送；乘直升机旅行	h_________	Unit 14
-jet	喷气式飞机；喷射口	j__	Unit 14
-flight	飞行；航班	f_____	Unit 14
-pilot	飞行员	p____	Unit 14
-passenger	乘客	p________	Unit 14
-baggage	[尤美】行李	b______	Unit 14
-luggage	行李	l______	Unit 14
-suitcase	手提箱	s_______	Unit 14
-carry-on	[美】（可随身携带上飞机的）小包adj.随身携带上	c______	Unit 14
-rack	搁物架，挂物架	r___	Unit 14
-freight	货运；货物v.运送（货物）	f______	Unit 14
-fare	车费，路费	f___	Unit 14
-atlas	地图册，地图集	a____	Unit 14
-route	路线	r____	Unit 14
-itinerary	行程，路线	i________	Unit 14
-passage	通过；通道，走廊	p______	Unit 14
-intersection	十字路口，交叉路口	i___________	Unit 14
-cross	十字形；十字架v.穿过	c____	Unit 14
-way	路；方式	w__	Unit 14
-path	小路	p___	Unit 14
-lane	小巷；车道	l___	Unit 14
-avenue	大街；途径	a_____	Unit 14
-highway	[尤美】公路	h______	Unit 14
-curb	路缘；起控制作用的事物	c___	Unit 14
-signpost	路标	s_______	Unit 14
-pave	铺（路或地面）	p___	Unit 14
-vehicle	车辆，交通工具；工具，手段	v______	Unit 14
-auto	汽车	a___	Unit 14
-express	特快列车；快递服务v.表示adj.特快的	e______	Unit 14
-tram	有轨电车	t___	Unit 14
-coach	私人教师v.训练	c____	Unit 14
-ambulance	救护车	a________	Unit 14
-truck	卡车；篷货运火车	t____	Unit 14
-lorry	卡车	l____	Unit 14
-van	厢式货车；客货车	v__	Unit 14
-wagon	四轮运货马车（或牛车）；[英］（火车的）货车车厢	w____	Unit 14
-carriage	四轮马车；（客运火车的）车厢	c_______	Unit 14
-tractor	拖拉机；牵引车	t______	Unit 14
-cart	运货马车；（超市等提供的）手推车，购物车	c___	Unit 14
-pedicab	（人力）三轮车	p______	Unit 14
-cycle	骑（自行车）n.周期；自行车	c____	Unit 14
-garage	汽车修理厂；车库	g_____	Unit 14
-motor	发动机adj.机动的	m____	Unit 14
-horsepower	马力	h_________	Unit 14
-wheel	方向盘；车轮	w____	Unit 14
-brake	车闸；刹车v.刹车	b____	Unit 14
-tyre	轮胎	t___	Unit 14
-honk	汽车喇叭声；鹅叫声v.按（汽车喇叭）	h___	Unit 14
-crew	（轮船、飞机等上的）全体工作人员；（有专门技术的）	c___	Unit 14
-captain	船长；队长	c______	Unit 14
-steward	男乘务员；管家	s______	Unit 14
-emergency	紧急事件adj.应急的	e________	Unit 14
-wreck	使失事；破坏n.失事的船只（或汽车、飞机等）；残	w____	Unit 14
-crash	撞击；崩溃；破产	c____	Unit 14
-crush	压碎，压坏n.拥挤的人群；迷恋；迷恋对象	c____	Unit 14
-dash	猛冲；猛摔	d___	Unit 14
-vanish	突然消失；绝迹	v_____	Unit 14
-disappear	失踪；消失	d________	Unit 14
-hazard	危险v.使冒风险	h_____	Unit 14
-harbour	港口	h______	Unit 14
-dock	码头，船坞	d___	Unit 14
-anchor	锚	a_____	Unit 14
-submerge	（使）浸没；掩盖	s_______	Unit 14
-sailor	海员，水手	s_____	Unit 14
-seaman	海员，水手	s_____	Unit 14
-carrier	航空母舰；运输工具	c______	Unit 14
-steamer	汽船，轮船	s______	Unit 14
-liner	邮轮，客轮	l____	Unit 14
-vessel	大船，舰；容器，器血	v_____	Unit 14
-ferry	渡船v.渡运	f____	Unit 14
-sail	航行；驾驶（帆船）	s___	Unit 14
-raft	木筏，木排	r___	Unit 14
-canoe	独木舟	c____	Unit 14
-oar	桨v.用桨划（船）	o__	Unit 14
-deck	甲板v.装饰	d___	Unit 14
-turbine	涡轮机	t______	Unit 14
-propeller	螺旋桨，推进器	p________	Unit 14
-stern	船尾	s____	Unit 14
-aboard	在（船、飞机等）上	a_____	Unit 14
-embark	上船（或飞机等)；开始做	e_____	Unit 14
-channel	航道；电视频道；海峡	c______	Unit 14
-canal	运河；（人体内输送食物、空气等的）管	c____	Unit 14
-ditch	沟，渠v.抛弃	d____	Unit 14
-railroad	[美】铁路，铁路公司	r_______	Unit 14
-railway	[英】铁路，铁路系统	r______	Unit 14
-locomotive	火车头，机车	l_________	Unit 14
-subway	地下通道；地铁	s_____	Unit 14
-underground	地下的；秘密的n.[英］地铁	u__________	Unit 14
-tunnel	隧道，地道	t_____	Unit 14
-rail	栏杆；铁路路轨	r___	Unit 14
-depart	离开，启程	d_____	Unit 14
-arrive	到达；取得成功	a_____	Unit 14
-destination	目的地，终点	d__________	Unit 14
-delay	耽搁；延期v.使耽搁；使延期	d____	Unit 14
-postpone	推迟，使延期	p_______	Unit 14
-defer	推迟，拖延	d____	Unit 14
-lull	暂停，暂时平静期v.使昏昏欲睡	l___	Unit 14
-expire	期满；气绝，死亡	e_____	Unit 14
-due	到期的，预期的	d__	Unit 14
-postage	邮费，邮资	p______	Unit 14
-stamp	邮票；印章v.在.….上贴邮票；盖（章）	s____	Unit 14
-envelope	信封	e_______	Unit 14
-mail	邮件，邮包；邮政v.邮寄	m___	Unit 14
-packet	[英］包装盒；小件包裹	p_____	Unit 14
-package	包裹；盒，包v.包装	p______	Unit 14
-bind	捆，绑	b___	Unit 14
-parcel	打包，包n.（土地的）一块；【尤英］包裹	p_____	Unit 14
-load	装载，装满n.负荷；大量	l___	Unit 14
-burden	（使）担负n.重担，负担	b_____	Unit 14
-transfer	（使）迁移，（使）转移；（使）调动	t_______	Unit 14
-transmit	传送；传播，传染；传输	t_______	Unit 14
-transit	通过；运送n.运输；通行；过境，中转	t______	Unit 14
-deliver	传送，递送	d______	Unit 14
-convey	运送，输送；表达，传递	c_____	Unit 14
-speed	速度；迅速	s____	Unit 14
-velocity	速度	v_______	Unit 14
-swift	迅速的；敏捷的	s____	Unit 14
-republic	共和国，共和政体	r_______	Unit 14
-Marxism	马克思主义	m______	Unit 14
-socialism	社会主义	s________	Unit 14
-communism	共产主义	c________	Unit 14
-regime	统治制度，政权，政体	r_____	Unit 14
-government	政府；政体；统治	g_________	Unit 14
-authority	权力；权威人士；行政管理机构；当局	a________	Unit 14
-political	政治的；政党的	p________	Unit 14
-hierarchy	等级制度；统治集团	h________	Unit 14
-democracy	民主，民主制度；民主国家	d________	Unit 14
-bureaucracy	官僚制度；官僚作风	b__________	Unit 14
-egalitarian	平等主义的n.平等主义者	e__________	Unit 14
-materialism	唯物主义；唯物论	m__________	Unit 14
-revolution	革命；巨大变化	r_________	Unit 14
-reform	改革，改良v.改革，改良；（使）改过自新	r_____	Unit 15
-conservative	保守的n.保守党党员	c___________	Unit 15
-meltdown	（核反应堆的）堆芯熔毁；崩溃	m_______	Unit 15
-municipal	市政的，地方政府的	m________	Unit 15
-neutral	中立的；中立国的	n______	Unit 15
-bilateral	双边的	b________	Unit 15
-arena	竞技场，运动场；舞台，活动领域	a____	Unit 15
-flag	旗，旗帜	f___	Unit 15
-banner	横幅，标语	b_____	Unit 15
-president	总统；校长；董事长	p________	Unit 15
-premier	总理，首相adji.首要的，第一的	p______	Unit 15
-minister	部长，大臣；公使	m_______	Unit 15
-secretary	秘书；书记员；大臣	s________	Unit 15
-parliament	议会，国会；（英国）议会	p_________	Unit 15
-senate	大学理事会；（美国等国家的）参议院	s_____	Unit 15
-conference	（常持续数日的大型正式）会议；正式商谈	c_________	Unit 15
-discussed	ancedhumanrightsworkaroundtheworld.世界	d________	Unit 15
-meeting	会议；会面	m______	Unit 15
-headquarters	总部，总公司；司令部	h___________	Unit 15
-delegation	代表团；委派	d_________	Unit 15
-behalf	代表某人	b_____	Unit 15
-police	警察；[the~警方	p_____	Unit 15
-statesman	政治家	s________	Unit 15
-mayor	市长	m____	Unit 15
-service	服务；公共服务事业；公共事业机构	s______	Unit 15
-office	办公室；要职，官职；[0~」部，局，厅	o_____	Unit 15
-bureau	局，处，科；办事处	b_____	Unit 15
-department	（政府、企业等机构的）部门；（大学的）系，所	d_________	Unit 15
-harness	控制，利用	h______	Unit 15
-administration	管理，行政	a_____________	Unit 15
-dominate	支配，控制；占优势	d_______	Unit 15
-power	能力；权力；政权；能源	p____	Unit 15
-influence	影响，作用v.影响	i________	Unit 15
-affect	影响；（感情上）打动，使悲伤	a_____	Unit 15
-importance	重要，重要性	i_________	Unit 15
-significance	重要性，意义	s___________	Unit 15
-organisation	组织，团体，机构	o___________	Unit 15
-association	协会，团体；关联	a__________	Unit 15
-union	联合；联盟；工会	u____	Unit 15
-community	社区；群体；（生物的）群落	c________	Unit 15
-consortium	财团，联营企业	c_________	Unit 15
-league	联赛；联盟，同盟	l_____	Unit 15
-institution	社会福利机构；（大学、银行等大型）机构	i__________	Unit 15
-unite	（使）联合，（使）团结	u____	Unit 15
-unique	独一无二的，唯一的；独特的	u_____	Unit 15
-nation	国家；民族；国民	n_____	Unit 15
-global	全球的，全世界的	g_____	Unit 15
-worldwide	世界范围的，遍及全球的	w________	Unit 15
-federal	联邦的，联合的	f______	Unit 15
-foreign	外国的；外来的；外交的	f______	Unit 15
-abroad	到国外，在国外；广为流传	a_____	Unit 15
-civil	公民的，国内的；民用的；斯文的	c____	Unit 15
-emigrate	移居国外	e_______	Unit 15
-immigrate	（从外地）移居，移入	i________	Unit 15
-reign	君主统治时期v.统治	r____	Unit 15
-puppet	玩偶；傀儡	p_____	Unit 15
-throne	王位；（君王的）宝座	t_____	Unit 15
-crown	王冠v.为...加冕	c____	Unit 15
-wreath	花环，花冠；（祭奠用的）花圈	w_____	Unit 15
-colony	殖民地	c_____	Unit 15
-liberty	自由	l______	Unit 15
-independence	独立；自立	i___________	Unit 15
-slum	贫民窟	s___	Unit 15
-refuge	避难，庇护；避难所	r_____	Unit 15
-asylum	庇护；精神病院	a_____	Unit 15
-population	人口，人口数量	p_________	Unit 15
-demographic	人口（学）的，人口统计（学）的	d__________	Unit 15
-citizen	公民；市民	c______	Unit 15
-resident	居民adj.居住的	r_______	Unit 15
-ethnic	民族的，种族的	e_____	Unit 15
-racial	种族的，人种的	r_____	Unit 15
-clan	宗族，家族；帮派	c___	Unit 15
-franchise	出售...的特许经营权n.特许权；选举权	f________	Unit 15
-entitle	给权利（或资格）；给.题名	e______	Unit 15
-preference	偏爱；优先权	p_________	Unit 15
-vote	选举权；投票v.表决，投票	v___	Unit 15
-elect	选举；选择	e____	Unit 15
-respondent	（民意测验等的）调查对象	r_________	Unit 15
-poll	民意调查；选举投票；投票数	p___	Unit 15
-ambition	雄心，抱负	a_______	Unit 15
-nominate	提名；任命	n_______	Unit 15
-checklist	清单；选民花名册	c________	Unit 15
-succession	连续；继承权，继位	s_________	Unit 15
-safety	安全；安全场所	s_____	Unit 15
-welfare	健康，幸福	w______	Unit 15
-well-being	康乐，安宁	w________	Unit 15
-harmony	协调，和谐；融洽；和声	h______	Unit 15
-steady	不摇晃的，平稳的；稳步的；稳定的	s_____	Unit 15
-flourish	繁荣，兴旺；茁壮成长	f_______	Unit 15
-succeed	成功	s______	Unit 15
-prospect	希望，可能性；风景	p_______	Unit 15
-perspective	景观；观点	p__________	Unit 15
-viewpoint	观点，看法；视角	v________	Unit 15
-standpoint	立场，立足点	s_________	Unit 15
-outlook	（对生活的）观点；展望，前景	o______	Unit 15
-guideline	指导方针	g________	Unit 15
-ethic	行为准则；道德规范，伦理标准	e____	Unit 15
-suggest	建议；暗示	s______	Unit 15
-advise	劝告；建议；通知	a_____	Unit 15
-proposal	提议，建议	p_______	Unit 15
-hint	/n.暗示，提示	h___	Unit 15
-declare	宣布，宣告；宣称，声称	d______	Unit 15
-affirm	断言，坚持声称；证实	a_____	Unit 15
-claim	声称；主张；索赔v.声称；要求（拥有）	c____	Unit 15
-proclaim	声明；清楚地表明	p_______	Unit 15
-state	陈述，说明n.国家；州；状况	s____	Unit 15
-announce	宣布；通知	a_______	Unit 15
-clarify	澄清，阐明	c______	Unit 15
-assist	帮助，协助	a_____	Unit 15
-aid	救援物资；辅助物；救助	a__	Unit 15
-encourage	鼓励，激励；怂恿	e________	Unit 15
-implement	Theewpolicyonhousingwillbeimplemented	i________	Unit 15
-monitor	监视；监听n.监控器；监视器；班长	m______	Unit 15
-admit	供认，承认	a____	Unit 15
-African	非洲的n.非洲人	a______	Unit 15
-European	欧洲的n.欧洲人	e_______	Unit 15
-Latin	拉丁语的；拉丁人的n.拉丁语；拉丁人	l____	Unit 15
-Jewish	犹太教的；犹太人的	j_____	Unit 15
-Arabian	阿拉伯的	a______	Unit 15
-Portuguese	葡萄牙的n.葡萄牙语；葡萄牙人	p_________	Unit 15
-Roman	罗马的；古罗马帝国的n.古罗马人；（现代）罗马	r____	Unit 15
-Russian	俄罗斯的n.俄罗斯人；俄语	r______	Unit 15
-Spanish	西班牙的n.西班牙语；西班牙人	s______	Unit 15
-Swiss	瑞士的n.瑞士人	s____	Unit 15
-Greek	希腊的n.希腊人；古希腊人；希腊语；古希腊语	g____	Unit 15
-Italian	意大利的n.意大利人；意大利语	i______	Unit 15
-soviet	[S~］苏联的n.苏维埃	s_____	Unit 15
-Indian	印度的n.印度人	i_____	Unit 15
-Australia	澳大利亚	a________	Unit 15
-NewZealand	新西兰	n_________	Unit 15
-Canada	加拿大	c_____	Unit 15
-Britain	不列颠	b______	Unit 15
-France	法国	f_____	Unit 15
-Germany	德国	g______	Unit 15
-economy	经济；节约	e______	Unit 16
-trade	贸易v.交换	t____	Unit 16
-market	市场；市场需求	m_____	Unit 16
-industry	工业；产业；勤劳	i_______	Unit 16
-merchant	商人adj.商业的	m_______	Unit 16
-financial	财政的；金融的	f________	Unit 16
-fund	资助n.基金；资金	f___	Unit 16
-donate	捐赠，捐献	d_____	Unit 16
-endow	捐赠；赋予	e____	Unit 16
-commercial	商业的n.商业广告	c_________	Unit 16
-advertise	做广告	a________	Unit 16
-slogan	标语，口号	s_____	Unit 16
-purchase	/v.购买	p_______	Unit 16
-lease	租约v.出租；租用	l____	Unit 16
-retail	零售v.零售；以....价格零售	r_____	Unit 16
-chain	连锁店；一连串（人或事物）	c____	Unit 16
-grocery	食品杂货店	g______	Unit 16
-promotion	促销活动；晋升	p________	Unit 16
-voucher	代金券	v______	Unit 16
-coupon	优惠券	c_____	Unit 16
-currency	货币；通用，流行	c_______	Unit 16
-exchange	交换；兑换	e_______	Unit 16
-swap	/n.交换	s___	Unit 16
-receipt	收据；收到	r______	Unit 16
-invoice	发票v.开发票给	i______	Unit 16
-tax	税v.对....征税	t__	Unit 16
-levy	税款v.征收，征（税）	l___	Unit 16
-tariff	关税：（公共服务的）收费	t_____	Unit 16
-duty	职责；义务；关税	d___	Unit 16
-impose	强加；征收（税款）	i_____	Unit 16
-consume	消耗；吃，喝	c______	Unit 16
-spend	花费n.开支	s____	Unit 16
-cost	需付费n.费用；代价；成本	c___	Unit 16
-expense	费用，花费	e______	Unit 16
-revenue	（公司、组织的）收入；（政府的）税收，财政收入	r______	Unit 16
-gross	总的，毛的	g____	Unit 16
-recession	经济衰退	r________	Unit 16
-depression	沮丧，消沉；萧条期，不景气	d_________	Unit 16
-crisis	危机	c_____	Unit 16
-security	安全工作；安全；证券	s_______	Unit 16
-bond	债券	b___	Unit 16
-debt	债务	d___	Unit 16
-deficit	赤字，逆差	d______	Unit 16
-inflation	通货膨胀	i________	Unit 16
-deflation	通货紧缩	d________	Unit 16
-dwindle	缩小，减少	d______	Unit 16
-downsize	使精简；裁员	d_______	Unit 16
-decline	/n.下降	d______	Unit 16
-diminish	（使）减少；贬低	d_______	Unit 16
-reduce	减少，减小	r_____	Unit 16
-increment	增加量；定期的加薪	i________	Unit 16
-escalate	（使）逐步升级，（使）不断恶化	e_______	Unit 16
-expand	扩充，扩大；扩展	e_____	Unit 16
-influx	流入，涌进	i_____	Unit 16
-affluent	富裕的，富足的	a_______	Unit 16
-enrich	使富有；充实	e_____	Unit 16
-sufficient	足够的	s_________	Unit 16
-adequate	足够的；合格的	a_______	Unit 16
-spare	多余的，空闲的v.剩余	s____	Unit 16
-saving	节约，节省	s_____	Unit 16
-redundant	多余的；被裁减的	r________	Unit 16
-lack	缺乏，不足v.缺少，没有	l___	Unit 16
-company	公司；陪伴；剧团	c______	Unit 16
-firm	公司adj.坚定的；坚固的	f___	Unit 16
-enterprise	企业；事业	e_________	Unit 16
-agent	代理人，代理商	a____	Unit 16
-entity	实体，独立存在物	e_____	Unit 16
-invest	投资；投入	i_____	Unit 16
-input	输入信息；投入物	i____	Unit 16
-product	产品；产物	p______	Unit 16
-acquisition	获得；（对公司的）并购	a__________	Unit 16
-cargo	货物	c____	Unit 16
-insure	确保；给….上保险	i_____	Unit 16
-guarantee	担保；确保n.保证；保修单；担保金，担保物	g________	Unit 16
-reliable	可靠的，可信赖的	r_______	Unit 16
-negotiation	谈判，协商	n__________	Unit 16
-attend	参加，出席	a_____	Unit 16
-absent	不在场的，缺席的；心不在焉的	a_____	Unit 16
-sale	卖，销售；销售额	s___	Unit 16
-wholesale	批发	w________	Unit 16
-auction	/n.拍卖	a______	Unit 16
-bid	/n.出价；投标	b__	Unit 16
-deal	买卖；处理，应付n.协议，交易；大量	d___	Unit 16
-transaction	（一笔）交易，业务	t__________	Unit 16
-turnover	（人员）流动率；营业额	t_______	Unit 16
-dump	丢弃，倾倒；倾销	d___	Unit 16
-quota	限额，配额；定额	q____	Unit 16
-share	股份，股票；（在若干人之间分得的）一份v.分享	s____	Unit 16
-benefit	益处v.有利于；获益	b______	Unit 16
-interest	兴趣；利益；利息v.使感兴趣	i_______	Unit 16
-dividend	股息，红利	d_______	Unit 16
-stock	股本；股票；库存	s____	Unit 16
-account	账户；解释	a______	Unit 16
-deposit	存款；押金	d______	Unit 16
-instalment	一期付款	i_________	Unit 16
-cheque	支票	c_____	Unit 16
-cash	现金v.兑现（支票）	c___	Unit 16
-coin	硬币v.铸币；创造（新词语）	c___	Unit 16
-shilling	先令	s_______	Unit 16
-copper	铜；铜币；警察	c_____	Unit 16
-treasure	金银财宝；宝物，珍品	t_______	Unit 16
-wealth	财富；丰富	w_____	Unit 16
-estate	地产；遗产	e_____	Unit 16
-possess	占用，拥有；影响，控制	p______	Unit 16
-legacy	遗赠，遗产	l_____	Unit 16
-descend	下降，下来	d______	Unit 16
-worthy	有价值的；值得..的	w_____	Unit 16
-valuable	很值钱的，贵重的；很重要的	v_______	Unit 16
-cheap	廉价的；质劣价低的	c____	Unit 16
-incentive	刺激，激励	i________	Unit 16
-accelerate	（使）加速	a_________	Unit 16
-prompt	促使adj.迅速的	p_____	Unit 16
-salary	工资，（尤指按月领的）薪水	s_____	Unit 16
-income	收入	i_____	Unit 16
-wage	（通常指按周领的）工钱	w___	Unit 16
-payment	支付；支付的款项；付款额	p______	Unit 16
-reimburse	赔偿，补偿	r________	Unit 16
-payroll	工资名单	p______	Unit 16
-remuneration	报酬	r___________	Unit 16
-subsidy	津贴，补贴	s______	Unit 16
-earn	赚得；赢得；获得	e___	Unit 16
-undertaking	任务，事业；许诺，保证	u__________	Unit 16
-career	职业，事业；职业生涯	c_____	Unit 16
-profession	职业	p_________	Unit 16
-occupation	占领，占据；职业	o_________	Unit 16
-job	职业，工作；（一份）工作，活儿	j__	Unit 16
-vocation	（认为特别适合自己的）职业；使命感	v_______	Unit 16
-labour	劳动，体力劳动	l_____	Unit 16
-workforce	劳动力；全体员工	w________	Unit 16
-workaholic	工作狂	w_________	Unit 16
-personnel	人员，职员；人事部门	p________	Unit 16
-clerk	店员；办事员；接待员	c____	Unit 16
-interview	面试；采访v.对.…..进行面试；采访	i________	Unit 16
-resume	（求职用的）履历，简历；摘要	r_____	Unit 16
-recommend	推荐，介绍；劝告，建议	r________	Unit 16
-employ	雇用；采用	e_____	Unit 16
-hire	雇用；租用n.租赁（业）	h___	Unit 16
-fire	解雇n.火	f___	Unit 16
-lay-off	（因岗位不足的）解雇，裁员；歇工期	l_____	Unit 16
-dismiss	解雇；解散；（法官）驳回	d______	Unit 16
-resign	辞去，辞职	r_____	Unit 16
-sack	大口袋，麻布袋v.开除	s___	Unit 16
-retire	（使）退休	r_____	Unit 16
-result	后果，结果v.导致	r_____	Unit 16
-failure	失败；失败的人；失败的事	f______	Unit 16
-abortion	人工流产；（计划等）中途失败	a_______	Unit 16
-loss	遗失；损失；亏损	l___	Unit 16
-opportunity	机会，时机	o__________	Unit 16
-chance	机会；可能性	c_____	Unit 16
-choose	选择	c_____	Unit 16
-change	改变	c_____	Unit 16
-potwhich	changeable可能变化的，易变的	p_______	Unit 16
-solve	解答；解决	s____	Unit 16
-develop	发展；开发	d______	Unit 16
-sustainable	可持续的	s__________	Unit 16
-improve	改善，改进	i______	Unit 16
-manage	管理；设法做到	m_____	Unit 16
-regulate	管理；调整	r_______	Unit 16
-sanction	批准；制裁..批准；对..实施制裁	s_______	Unit 16
-coordinate	[例】Oureffortseedtobefurthercoordinatedfor	c_________	Unit 16
-cooperate	合作，协作	c________	Unit 16
-collaborate	合作	c__________	Unit 16
-law	法律；规律；定理	l__	Unit 16
-legal	法律的；合法的	l____	Unit 16
-rule	规则v.统治	r___	Unit 16
-regulation	规则，规定；管理	r_________	Unit 16
-item	一项项目，条目	i___	Unit 16
-treaty	条约；协议	t_____	Unit 16
-agreement	协定；同意	a________	Unit 16
-charter	宪章v.租，包（船、车、飞机等）	c______	Unit 16
-protocol	议定书，协议；礼仪	p_______	Unit 16
-norm	标准；行为准则，规范	n___	Unit 16
-benchmark	基准，水准点	b________	Unit 16
-criteria	[criterion的复数形式】标准，准则	c_______	Unit 16
-standard	标准	s_______	Unit 16
-permit	允许，准许	p_____	Unit 17
-allow	允许，准许	a____	Unit 17
-admission	承认；入场费；准许进入	a________	Unit 17
-perform	履行，执行	p______	Unit 17
-enforce	强制执行，强行实施：迫使	e______	Unit 17
-default	不支付，不履行n.违约；默认值	d______	Unit 17
-reject	拒绝接受；摒弃	r_____	Unit 17
-constraint	约束，限制；克制	c_________	Unit 17
-official	正式的，官方的	o_______	Unit 17
-mandatory	法定的，强制的	m________	Unit 17
-potent	很有效的，强有力的	p_____	Unit 17
-bound	一定会，很可能会，有义务	b____	Unit 17
-obligation	义务，责任	o_________	Unit 17
-court	法院；庭院	c____	Unit 17
-supreme	最高的；最大的	s______	Unit 17
-enact	通过（法律)；表演	e____	Unit 17
-legislate	立法，制定（或通过）法律	l________	Unit 17
-equity	公平	e_____	Unit 17
-fair	公平的，公正的	f___	Unit 17
-just	公正的；正义的adv.刚刚；仅仅	j___	Unit 17
-prejudice	偏见，成见	p________	Unit 17
-discrimination	歧视	d_____________	Unit 17
-accuse	控告，指责	a_____	Unit 17
-sue	控告，提起诉讼；提出请求	s__	Unit 17
-prosecute	检举，起诉	p________	Unit 17
-condemn	谴责，指责	c______	Unit 17
-complain	抱怨；投诉	c_______	Unit 17
-boycott	/v.抵制，拒绝购买	b______	Unit 17
-session	会议；会期	s______	Unit 17
-mediate	斡旋，调解	m______	Unit 17
-plea	辩解理由，借口；请求	p___	Unit 17
-appeal	/n.呼吁；申诉	a_____	Unit 17
-contradict	反驳；与.矛盾	c_________	Unit 17
-persuade	说服；使相信	p_______	Unit 17
-controversy	争议；辩论	c__________	Unit 17
-whisper	低声说；私下谈论	w______	Unit 17
-mutter	轻声低语；小声抱怨	m_____	Unit 17
-murmur	低声说n.咕嘧，低语	m_____	Unit 17
-silent	沉默的；寂静无声的	s_____	Unit 17
-mute	编默的；哑的；无声的n.哑巴	m___	Unit 17
-investigate	调查	i__________	Unit 17
-witness	目击者，见证人v.目击	w______	Unit 17
-justify	为...辩护，证明..…正当	j______	Unit 17
-reasonable	合理的；理智的	r_________	Unit 17
-suitable	合适的，适宜的	s_______	Unit 17
-judge	法官；裁判员	j____	Unit 17
-jury	陪审团；（比赛的）评判委员会	j___	Unit 17
-trial	试验；审判	t____	Unit 17
-sentence	判决v.宣判	s_______	Unit 17
-arrest	逮捕；吸引（注意）n.逮捕	a_____	Unit 17
-jail	监狱v.监禁	j___	Unit 17
-prison	监狱；监禁	p_____	Unit 17
-confine	边界，范围v.限制；监禁	c______	Unit 17
-oversee	监督，监管	o______	Unit 17
-supervise	监督，管理，指导	s________	Unit 17
-restrict	限制，限定；约束	r_______	Unit 17
-restrain	抑制；制止	r_______	Unit 17
-commit	犯(罪)，做(坏事)	c_____	Unit 17
-sin	罪孽v.犯戒律	s__	Unit 17
-crime	罪行；犯罪活动	c____	Unit 17
-vice	恶行；缺点	v___	Unit 17
-bribe	贿赂v.向.....行贿	b____	Unit 17
-rob	抢劫；夺走	r__	Unit 17
-pirate	海盗；盗版者v.盗印，窃用	p_____	Unit 17
-steal	偷，窃取；剽窃	s____	Unit 17
-thief	窃贼，偷窃犯	t____	Unit 17
-murder	/v.谋杀	m_____	Unit 17
-suicide	自杀	s______	Unit 17
-deceive	欺骗；蒙蔽，误导	d______	Unit 17
-cheat	欺骗；作弊n.作者	c____	Unit 17
-liar	说谎的人	l___	Unit 17
-trap	陷阱；诡计v.诱骗	t___	Unit 17
-trick	诡计v.哄骗	t____	Unit 17
-pretend	假装；假扮	p______	Unit 17
-fool	蠢人，傻子v.欺骗	f___	Unit 17
-stigma	耻辱，污名	s_____	Unit 17
-confess	供认；忏悔	c______	Unit 17
-conform	遵守；顺从；相符合	c______	Unit 17
-reconcile	使和解；调和	r________	Unit 17
-obey	服从，顺从	o___	Unit 17
-succumb	屈服，屈从	s______	Unit 17
-penalty	惩罚，处罚	p______	Unit 17
-fine	罚款adj.美好的	f___	Unit 17
-mortgage	抵押（房屋、土地）借款n.房屋抵押贷款	m_______	Unit 17
-ownership	所有权，物主身份	o________	Unit 17
-copyright	版权	c________	Unit 17
-privilege	特权	p________	Unit 17
-accredit	把.…归于；委任	a_______	Unit 17
-clue	线索；提示	c___	Unit 17
-access	通路，入径；查阅（或使用、接近）的机会（或权利）	a_____	Unit 17
-anonymous	匿名的	a________	Unit 17
-false	不正确的；虚假的；伪造的	f____	Unit 17
-genuine	真诚的；真正的	g______	Unit 17
-procedure	手续；程序	p________	Unit 17
-routine	例行公事；常规adj.惯例的	r______	Unit 17
-consequence	后果	c__________	Unit 17
-demand	要求；需要n.要求；需求；需求量	d_____	Unit 17
-request	/v.要求，请求	r______	Unit 17
-require	需要；命令，规定	r______	Unit 17
-petition	请求n.请愿书；上诉	p_______	Unit 17
-command	命令；指挥，统率n.命令；指挥，控制；运用能力	c______	Unit 17
-instruct	指导，讲授；通知；命令	i_______	Unit 17
-violence	暴力	v_______	Unit 17
-raid	/v.突袭；突然搜查	r___	Unit 17
-enormity	巨大；滔天大罪	e_______	Unit 17
-campaign	战役；（社会、政治）运动v.参加（或领导）运动	c_______	Unit 17
-battle	战斗，战役v.与....战斗	b_____	Unit 17
-struggle	/n.挣扎；奋力；奋斗	s_______	Unit 17
-explosion	爆发；进发；爆炸；激增	e________	Unit 17
-bombard	轰击，轰炸；连珠炮般质问（或批评）	b______	Unit 17
-bomb	炸弹v.轰炸	b___	Unit 17
-blast	爆炸v.爆炸，炸毁	b____	Unit 17
-burst	（使）爆裂；（使）胀开n.进发；爆裂	b____	Unit 17
-spark	火花，火星	s____	Unit 17
-twinkle	/v.闪烁，闪耀	t______	Unit 17
-gunpowdergAnpauda	火药	g________________	Unit 18
-tank	坦克；罐，槽，缸	t___	Unit 18
-cannon	大炮，加农炮；（飞机上的）自动机关炮	c_____	Unit 18
-missile	导弹；投掷物	m______	Unit 18
-weapon	武器，兵器；手段	w_____	Unit 18
-pistol	手枪	p_____	Unit 18
-rifle	步枪	r____	Unit 18
-bullet	子弹，枪弹	b_____	Unit 18
-target	靶子；目标，对象	t_____	Unit 18
-deflect	（使）偏斜，（使）偏转；转移	d______	Unit 18
-mission	使命；重要任务	m______	Unit 18
-flame	火焰；强烈的感情	f____	Unit 18
-flare	（闪耀的）火光；闪光信号灯v.（火光）闪耀	f____	Unit 18
-glitter	闪烁；闪现n.发光小物	g______	Unit 18
-glow	发出微弱稳定的光n.微弱稳定的光	g___	Unit 18
-blade	刃，锋；（螺旋桨的）叶片	b____	Unit 18
-sword	刀，剑	s____	Unit 18
-ax	斧子	a_	Unit 18
-hammer	锤，榔头v.用锤击	h_____	Unit 18
-bow	弓；蝴蝶结	b__	Unit 18
-arrow	箭；箭头	a____	Unit 18
-spear	矛；标枪v.用尖物刺穿	s____	Unit 18
-helmet	头盔，防护帽	h_____	Unit 18
-shield	盾；防护物v.保护	s_____	Unit 18
-equip	配备，装备	e____	Unit 18
-prepare	使预备好；为..做准备	p______	Unit 18
-provide	供给，提供	p______	Unit 18
-deploy	部署	d_____	Unit 18
-hit	击，打；碰撞；打击n.击，打；击中	h__	Unit 18
-beat	打；打败；（心脏等）跳动n.节拍；击鼓声；（心脏	b___	Unit 18
-strike	打，击；突击；罢工n.罢工；打击	s_____	Unit 18
-punch	打孔机；重拳击打v.给...打孔；拳打	p____	Unit 18
-chop	切碎（食物)；劈（木头）	c___	Unit 18
-stab	/n.（用刀等）刺，戳	s___	Unit 18
-dilemma	（进退两难的）困境	d______	Unit 18
-plight	困境；誓约	p_____	Unit 18
-pitfall	陷阱；危险，困难	p______	Unit 18
-conspiracy	阴谋，密谋，合谋	c_________	Unit 18
-destitute	赤贫的，一无所有的；缺乏的	d________	Unit 18
-famine	饥荒	f_____	Unit 18
-starve	（使）挨饿，饿死	s_____	Unit 18
-deprive	剥夺	d______	Unit 18
-seize	抓住；夺取	s____	Unit 18
-pursue	追赶；追查；追求	p_____	Unit 18
-threat	威胁，恐吓	t_____	Unit 18
-offend	冒犯；犯罪；违反	o_____	Unit 18
-aggressive	侵略的；好斗的；积极进取的	a_________	Unit 18
-invade	入侵，侵略；侵扰	i_____	Unit 18
-trespass	非法侵入n.罪过；非法侵入	t_______	Unit 18
-intrude	闯入，侵入；侵扰	i______	Unit 18
-violate	违反，违背；侵犯；搅扰	v______	Unit 18
-attack	/n.攻击，进攻	a_____	Unit 18
-assault	猛攻；（身体）侵犯v.袭击	a______	Unit 18
-challenge	挑战v.向....挑战	c________	Unit 18
-siege	包围，围攻	s____	Unit 18
-surround	包围；环绕	s_______	Unit 18
-enclose	围住，包围；把.封入信封，随信附上	e______	Unit 18
-pause	/v.暂停，停顿	p____	Unit 18
-halt	（使）停止，（使）停住n.停止，停住	h___	Unit 18
-cease	终止，停止	c____	Unit 18
-oppose	反对，抵制	o_____	Unit 18
-oppress	压迫，压制；使压抑	o______	Unit 18
-counter	抵消；反击，反驳adv.相反地n.柜台；工作台	c______	Unit 18
-deter	阻止，威住	d____	Unit 18
-forbid	禁止；阻止	f_____	Unit 18
-prohibit	禁止，不允许	p_______	Unit 18
-prevent	预防，防止；阻止，阻碍	p______	Unit 18
-revolt	/v.叛乱；反抗	r_____	Unit 18
-betray	背叛，出卖；（无意中）泄露，流露出	b_____	Unit 18
-treason	叛国罪，通敌罪	t______	Unit 18
-rebel	rebal/反叛者；叛逆者/r'bel/造反；反抗，反对	r____	Unit 18
-traitor	叛徒，卖国贼	t______	Unit 18
-patriot	爱国者	p______	Unit 18
-blame	责备，指责n.（对坏事应负的）责任	b____	Unit 18
-reproach	/v.责备，指责	r_______	Unit 18
-evidence	证据；根据	e_______	Unit 18
-proof	证明，证据	p____	Unit 18
-terror	恐惧，恐慌	t_____	Unit 18
-terrible	可怕的，糟糕的；极严重的	t_______	Unit 18
-terrific	极好的；很大的，很强的	t_______	Unit 18
-horrible	可怕的，恐怖的	h_______	Unit 18
-alarm	惊恐，忧虑；警报；警报器	a____	Unit 18
-dread	极为害怕，非常担心n.恐惧，忧虑	d____	Unit 18
-frighten	使害怕，使惊恐	f_______	Unit 18
-tension	紧张；拉紧状态	t______	Unit 18
-turbulent	动荡的，混乱的；汹涌的	t________	Unit 18
-turmoil	混乱，骚乱	t______	Unit 18
-scenario	可能发生的情况；剧情梗概，脚本	s_______	Unit 18
-occasion	场合；时机，机会	o_______	Unit 18
-limit	限度；界限v.限制，限定	l____	Unit 18
-boundary	分界线，边界；界限	b_______	Unit 18
-rein	缰绳；控制权v.用缰绳勒马；管束	r___	Unit 18
-compete	竞争；参加（比赛）	c______	Unit 18
-contest	iftheelectionisone-sided,itisreallyo	c______	Unit 18
-contend	竞争；争辩，主张	c______	Unit 18
-rival	竞争者，对手v.与....匹敌	r____	Unit 18
-competitor	竞争者，对手	c_________	Unit 18
-enemy	敌人，仇敌；敌兵，敌军	e____	Unit 18
-strategy	策略；战略	s_______	Unit 18
-tactic	策略，战术	t_____	Unit 18
-manoeuvre	策略，巧计；军事演习	m________	Unit 18
-blueprint	蓝图；行动计划	b________	Unit 18
-warn	警告；告诫	w___	Unit 18
-compel	强迫，迫使	c_____	Unit 18
-oblige	迫使，强迫；帮忙	o_____	Unit 18
-refute	反驳，驳斥；否认	r_____	Unit 18
-might	力量，威力	m____	Unit 18
-force	力量；武力v.强迫，迫使；用力使..移动	f____	Unit 18
-reinforce	增援；增强，加强；加固	r________	Unit 18
-impair	削弱；妨碍	i_____	Unit 18
-mitigate	减轻，缓和	m_______	Unit 18
-comfort	安慰；舒适v.安慰，抚慰	c______	Unit 18
-event	事件，大事；公开活动	e____	Unit 18
-matter	事情；物质v.要紧	m_____	Unit 18
-happen	发生，出现；碰巧	h_____	Unit 18
-occur	发生，出现	o____	Unit 18
-savage	野蛮的，凶猛的v.凶狠地攻击n.野蛮人	s_____	Unit 18
-reckless	鲁莽的，不计后果的	r_______	Unit 18
-fierce	凶猛的；猛烈的；（天气或温度）恶劣的	f_____	Unit 18
-foul	恶臭的；恶劣的；邪恶的v.弄脏；对..犯规	f___	Unit 18
-evil	邪恶；祸害adj.邪恶的	e___	Unit 18
-devil	魔鬼；恶棍	d____	Unit 18
-punishment	惩罚，处罚	p_________	Unit 18
-execute	实行，执行；处死	e______	Unit 18
-hang	悬挂；悬浮（在空中）；（被）绞死	h___	Unit 18
-sacrifice	牺牲；献祭v.牺牲；以....作蔡品	s________	Unit 18
-casualty	伤亡人员	c_______	Unit 18
-bury	埋葬；埋藏	b___	Unit 18
-funeral	葬礼	f______	Unit 18
-grave	坟墓；死亡adj.庄重的，严肃的	g____	Unit 18
-tomb	坟墓，场	t___	Unit 18
-hell	地狱；苦境	h___	Unit 18
-maritime	海的，海上的，海事的	m_______	Unit 18
-naval	海军的	n____	Unit 18
-fleet	舰队，船队；机群，车队	f____	Unit 18
-troop	一群，一队；军队v.结队前行	t____	Unit 18
-landing	着陆；登陆	l______	Unit 18
-hover	盘旋，悬浮；徘徊；处于不确定状态	h____	Unit 18
-proceed	接下来做；继续进行；行进	p______	Unit 18
-military	军事的，军用的	m_______	Unit 18
-nuclear	原子核的；核能的；核武器的	n______	Unit 18
-poison	毒物，毒药v.毒害	p_____	Unit 18
-devastate	毁坏，摧毁	d________	Unit 18
-risk	危险，风险v.冒着....的危险	r___	Unit 18
-adventure	冒险，冒险经历v.去（某地）探险	a________	Unit 18
-peril	重大危险；险情，危险	p____	Unit 18
-catastrophe	重大灾难，大祸	c__________	Unit 18
-collapse	/v.倒塌；崩溃	c_______	Unit 18
-torture	拷问；痛苦，折磨v.拷问；使痛苦	t______	Unit 18
-humiliate	羞辱，使蒙羞	h________	Unit 18
-damage	/v.损害；伤害	d_____	Unit 18
-harmful	i.有害的	h______	Unit 18
-mislead	误导，欺骗，使误入歧途	m______	Unit 18
-disturb	打扰；使焦虑；弄乱	d______	Unit 18
-interfere	干涉；妨碍	i________	Unit 18
-interrupt	打断；中断	i________	Unit 18
-retreat	/v.撤退；退避	r______	Unit 18
-shrink	退缩；收缩，缩水；（使）减少	s_____	Unit 18
-withdraw	收回；（使）撤退；提（款）	w_______	Unit 18
-withstand	承受，顶住，经受住	w________	Unit 18
-compromise	妥协	c_________	Unit 18
-surrender	/v.投降；（被迫）放弃	s________	Unit 18
-escape	/v.逃跑；逃脱；逃避	e_____	Unit 18
-pIcAepoAe	避免；躲开	p________	Unit 18
-quit	放弃，停止；辞去；离开	q___	Unit 18
-abandon	放弃；抛弃，丢弃	a______	Unit 18
-forgo	放弃	f____	Unit 18
-discard	丢弃，抛弃	d______	Unit 18
-rid	摆脱，丢弃	r__	Unit 18
-defend	防御，保护；为.辩护	d_____	Unit 18
-safeguard	保护，保卫n.保护措施	s________	Unit 18
-defeat	战胜，击败n.失败	d_____	Unit 18
-resist	抵制，反对；抵御；忍住	r_____	Unit 18
-capture	战利品v.捕获；夺得	c______	Unit 18
-victory	胜利，成功	v______	Unit 18
-triumph	伟大胜利，非凡的成功v.获得胜利	t______	Unit 18
-conquer	征服；克服，战胜	c______	Unit 18
-monument	纪念碑；历史遗迹；典范	m_______	Unit 18
-tablet	碑，匾；药片	t_____	Unit 18
-statue	雕像，塑像	s_____	Unit 18
-medal	勋章，奖章	m____	Unit 18
-honour	尊敬，敬意；荣誉v.尊敬；给予表扬	h_____	Unit 18
-glorious	光荣的，荣耀的	g_______	Unit 18
-contribute	捐献；（为….）作贡献；（为书、报刊等）撰稿	c_________	Unit 18
-devote	献身；投入	d_____	Unit 18
-owe	欠；应把.…归功于；欠（情），感激	o__	Unit 18
-patrol	/v.巡逻，巡查	p_____	Unit 18
-guard	卫兵，警卫员v.看守；守卫，保卫	g____	Unit 18
-camouflage	/n.伪装	c_________	Unit 18
-obstacle	障碍；障碍物	o_______	Unit 18
-burrow	地洞，地道v.掘地洞	b_____	Unit 18
-spy	间谍，特务v.搜集情报，从事间谍活动	s__	Unit 18
-scout	侦察员，侦察机v.侦察，搜寻	s____	Unit 18
-general	将军adj.总的；一般性的	g______	Unit 18
-soldier	战士，士兵	s______	Unit 18
-veteran	老兵；老手	v______	Unit 18
-pioneer	先驱，开创者	p______	Unit 19
-prophet	（基督教、犹太教、伊斯兰教的）先知；预言家	p______	Unit 19
-herald	使者，传令官；先驱，预兆v.预告；宣布	h_____	Unit 19
-heir	后嗣；继承人	h___	Unit 19
-successor	接替者，继任者；后继的事物	s________	Unit 19
-generation	一代（约20至30年）；一代人	g_________	Unit 19
-surname	姓v.给.....起别名	s______	Unit 19
-gender	性别	g_____	Unit 19
-sex	性别；性行为	s__	Unit 19
-female	女子；雌性生物adj.女的；雌性的	f_____	Unit 19
-couple	夫妻，情侣；两个，几个	c_____	Unit 19
-spouse	配偶（指夫或妻）	s_____	Unit 19
-husband	丈夫	h______	Unit 19
-gay	同性恋者（尤指男性）adj.同性恋的；快乐的；艳丽的	g__	Unit 19
-grandfather	（外）祖父	g__________	Unit 19
-father-in-law	岳父；公公	f__________	Unit 19
-sibling	兄；弟；姐；妹	s______	Unit 19
-cousin	堂（或表）兄（或弟、姐、妹）	c_____	Unit 19
-nephew	侄子；外甥	n_____	Unit 19
-niece	侄女；外甥女	n____	Unit 19
-twin	成双的n.双胞胎之一	t___	Unit 19
-embryo	胚胎adj.胚胎的；初期的	e_____	Unit 19
-infant	婴儿adj.供婴儿用的；婴儿的	i_____	Unit 19
-orphan	孤儿v.使成为孤儿	o_____	Unit 19
-juvenile	少年的n.少年	j_______	Unit 19
-youngster	年轻人；少年	y________	Unit 19
-youth	青年时期；青春；（统称）青年	y____	Unit 19
-gang	一帮，一伙（常聚在一起闹事、打斗的年轻人）	g___	Unit 19
-teenager	（13至19岁之间的）青少年	t_______	Unit 19
-adolescence	青春期	a__________	Unit 19
-kin	（统称）家属，亲戚adj.有血缘关系的；类似的	k__	Unit 19
-folk	人们；家属，亲属	f___	Unit 19
-relative	亲戚adj.相对的；有关的	r_______	Unit 19
-intimate	亲密的；个人隐私的n.密友，至交	i_______	Unit 19
-dear	亲爱的int.啊呀	d___	Unit 19
-darling	亲爱的；宠儿	d______	Unit 19
-lover	爱好者；（婚外的）情人	l____	Unit 19
-beloved	爱人adj.深受喜爱的	b______	Unit 19
-madam	夫人，女士；【英］自以为是的小姑娘	m____	Unit 19
-hostess	女主人	h______	Unit 19
-landlady	女房东；女地主	l_______	Unit 19
-mistress	女主人；情妇	m_______	Unit 19
-housewife	家庭主妇	h________	Unit 19
-widow	寡妇，遗	w____	Unit 19
-maid	女佣，女仆；少女	m___	Unit 19
-maiden	少女，姑娘	m_____	Unit 19
-household	家庭，一户；家务	h________	Unit 19
-chore	家庭杂务；乏味无聊的工作	c____	Unit 19
-host	主人，东道主	h___	Unit 19
-landlord	地主；房东；（酒吧）店主	l_______	Unit 19
-tenant	房客；租户	t_____	Unit 19
-guest	客人，宾客；旅客	g____	Unit 19
-customer	顾客，主顾，客户	c_______	Unit 19
-client	顾客，客户；委托人	c_____	Unit 19
-encounter	/n.遭遇；偶遇，邂逅	e________	Unit 19
-chase	/n.追逐；追求	c____	Unit 19
-miss	想念；未注意到	m___	Unit 19
-appointment	约会；指派	a__________	Unit 19
-accompany	陪伴；伴随	a________	Unit 19
-dependent	依靠的，依赖的	d________	Unit 19
-propose	提议；向..求婚	p______	Unit 19
-engagement	婚约；约定	e_________	Unit 19
-marry	娶，嫁，结婚	m____	Unit 19
-wedding	婚礼	w______	Unit 19
-honeymoon	蜜月	h________	Unit 19
-kiss	吻，接吻n.吻	k___	Unit 19
-divorce	离婚；脱离v.（与..….）离婚；使脱离	d______	Unit 19
-single	单一的；单身的	s_____	Unit 19
-sole	仅有的，唯一的	s___	Unit 19
-respective	各自的，分别的	r_________	Unit 19
-each	各个，各自det.各，每	e___	Unit 19
-individual	个人；个体adj.个别的，单独的	i_________	Unit 19
-commuter	上下班往返者，通勤者	c_______	Unit 19
-neighbourhood	街坊；居住区；周边地区	n____________	Unit 19
-member	成员；会员	m_____	Unit 19
-boss	老板，上司v.对..指手画脚	b___	Unit 19
-manager	经理，管理人	m______	Unit 19
-supervisor	管理者，监督者	s_________	Unit 19
-subordinate	部属，下级adj.次要的；下级的	s__________	Unit 19
-partner	伙伴，盟友；合伙人；搭档	p______	Unit 19
-mate	伙伴；【构成复合词]同伴	m___	Unit 19
-colleague	同事，同僚	c________	Unit 19
-comrade	同志；（尤指共患难的）同伴	c______	Unit 19
-acquaintance	相识的人，泛泛之交；认识；了解	a___________	Unit 19
-friendship	友谊；友情，友好	f_________	Unit 19
-affection	喜爱，喜欢；爱情	a________	Unit 19
-stranger	陌生人；新来者	s_______	Unit 19
-apprentice	学徒，徒弟v.使当....的学徒	a_________	Unit 19
-deputy	代理人，副手	d_____	Unit 19
-hero	男主角，男主人公；英雄；勇士	h___	Unit 19
-heroine	女主角，女主人公；女英雄	h______	Unit 19
-actress	女演员	a______	Unit 19
-chancellor	（德国或奥地利）总理；（英国）财政大臣	c_________	Unit 19
-commander	司令官，指挥官	c________	Unit 19
-director	主管；理事；导演	d_______	Unit 19
-proponent	拥护者，支持者	p________	Unit 19
-committee	委员会	c________	Unit 19
-council	委员会；市政委员会	c______	Unit 19
-specialist	专家；专科医生	s_________	Unit 19
-consultant	顾问；会诊医师	c_________	Unit 19
-veterinary	兽医的	v_________	Unit 19
-counsellor	律师	c_________	Unit 19
-solicitor	（英国的）诉状律师，事务律师；（美国的）法务官	s________	Unit 19
-attorney	（美国的）律师	a_______	Unit 19
-umpire	裁判员	u_____	Unit 19
-cashier	出纳员，收银员	c______	Unit 19
-fireman	消防队员；司炉工	f______	Unit 19
-nurse	护士；保姆v.护理	n____	Unit 19
-gardener	园丁，花匠	g_______	Unit 19
-barber	理发师	b_____	Unit 19
-haircut	理发	h______	Unit 19
-fisherman	渔民，渔夫，垂钓者	f________	Unit 19
-butcher	屠夫；杀人狂	b______	Unit 19
-groom	马夫；新郎v.（给动物）刷洗；理毛，梳毛	g____	Unit 19
-hostage	人质	h______	Unit 19
-toil	苦工，苦活；网，圈套v.辛勤劳作，苦干	t___	Unit 19
-beggar	乞写	b_____	Unit 19
-slave	奴隶	s____	Unit 19
-coward	儒夫，胆小鬼	c_____	Unit 19
-act	行动n.行为	a__	Unit 19
-behave	表现；（机器等）运转	b_____	Unit 19
-deed	行为；功绩；契约	d___	Unit 19
-accustom	使习惯（于）	a_______	Unit 19
-react	作出反应，反应	r____	Unit 19
-respond	回答；响应，作出反应	r______	Unit 19
-reflect	反映；反射	r______	Unit 19
-bear	生（孩子)；容忍；承担（责任）	b___	Unit 19
-adopt	收养；采取，采用	a____	Unit 19
-nourish	滋养，给…...提供营养	n______	Unit 19
-mow	割，修剪n.干草堆	m__	Unit 19
-exhale	呼气，呼出	e_____	Unit 19
-intake	吸入；摄取量；新招收者	i_____	Unit 20
-revive	（使）苏醒；（使）复兴，（使）复活	r_____	Unit 20
-survive	幸存；生存	s______	Unit 20
-glare	怒目而视；发出强光n.刺眼的光；怒视	g____	Unit 20
-glimpse	警见n.一警	g______	Unit 20
-glance	警，迅速看一眼n.一警	g_____	Unit 20
-peep	窥视，偷看n.偷偷一警	p___	Unit 20
-gaze	凝视，注视	g___	Unit 20
-peer	凝视，盯着看n.同等地位的人，同辈	p___	Unit 20
-stare	凝视，盯着看	s____	Unit 20
-contemplate	凝视；沉思；考虑	c__________	Unit 20
-vow	誓约v.发誓	v__	Unit 20
-oath	誓言；宣誓	o___	Unit 20
-pledge	保证n.保证，誓言	p_____	Unit 20
-whistle	口哨；哨子；汽笛声v.吹口哨；吹哨子	w______	Unit 20
-reply	/n.回答，答复	r____	Unit 20
-notify	通知，告知	n_____	Unit 20
-assert	断言，坚称；坚持（自己）的主张	a_____	Unit 20
-explain	说明，解释	e______	Unit 20
-quarrel	/n.吵架，争论	q______	Unit 20
-dispute	/n.争论，辩论	d______	Unit 20
-argument	辩论，争论；论点，论据	a_______	Unit 20
-mention	/n.提及，说起	m______	Unit 20
-hurry	赶紧；催促n.匆忙	h____	Unit 20
-hasten	赶紧；促进	h_____	Unit 20
-urge	催促，敦促n.冲动	u___	Unit 20
-scold	责骂，斥责	s____	Unit 20
-curse	诅咒；咒骂n.咒语；咒骂话	c____	Unit 20
-swear	诅咒，咒骂；发誓，保证	s____	Unit 20
-provoke	激怒，挑拨；引起	p______	Unit 20
-preach	宣扬	p_____	Unit 20
-boast	/n.自夸，吹嘘	b____	Unit 20
-tease	取笑，嘲弄	t____	Unit 20
-mock	嘲笑，嘲弄adj.模拟的；假装的	m___	Unit 20
-touch	触摸；触动n.触觉；接触	t____	Unit 20
-hug	/n.拥抱	h__	Unit 20
-tap	轻拍，轻叩；开发	t__	Unit 20
-clap	拍手；轻拍n.鼓掌	c___	Unit 20
-applaud	鼓掌；称赞，赞许	a______	Unit 20
-kneel	跪，跪下	k____	Unit 20
-catch	捉住；赶上；领会	c____	Unit 20
-snatch	一把抓住，迅速夺取	s_____	Unit 20
-grab	抓住，撰取；（匆忙地）取	g___	Unit 20
-grasp	抓牢，握紧；完全理解，全面领会	g____	Unit 20
-overtake	追上，超过；（情感等）压倒	o_______	Unit 20
-follow	跟随；是....的必然结果；遵循	f_____	Unit 20
-grip	紧握，抓牢n.紧握，抓牢；理解，了解	g___	Unit 20
-mess	混乱，脏乱v.弄乱	m___	Unit 20
-twist	拧，扭；使缠绕n.拧，扭动	t____	Unit 20
-scatter	撒；（使）散开	s______	Unit 20
-fold	折叠，对折	f___	Unit 20
-fasten	扣牢，系牢，缚紧	f_____	Unit 20
-loosen	解开，松开；放宽（限制等）	l_____	Unit 20
-smash	打碎；（使）猛烈撞击；（打球时）扣球	s____	Unit 20
-scratch	擦破，刮坏；搔n.乱涂；划痕，擦伤	s______	Unit 20
-wipe	措，擦	w___	Unit 20
-scrape	刮掉；擦坏；勉强获得n.刮；擦伤	s_____	Unit 20
-polish	擦光，擦亮；使完美，改进	p_____	Unit 20
-peel	剥落；掉漆；脱皮	p___	Unit 20
-split	（使）开裂；（使）分裂；（使）分开	s____	Unit 20
-sway	（使）摇摆，（使）摆动，（使）摇晃	s___	Unit 20
-shake	摇动，（使）颤动n.摇动，颤动	s____	Unit 20
-vibrate	（使）振动，（使）摇摆	v______	Unit 20
-whirl	（使）回旋n.回旋	w____	Unit 20
-rotate	（使）旋转，（使）转动	r_____	Unit 20
-reel	眩晕，混乱	r___	Unit 20
-shuffle	洗（牌）；拖着脚走；搅乱..的次序n.洗牌	s______	Unit 20
-collide	碰撞；抵触	c______	Unit 20
-contact	/v.接触，联系	c______	Unit 20
-connect	（使）连接；（使）接通（电源等）	c______	Unit 20
-combine	（使）联合，（使）结合	c______	Unit 20
-bond	与.黏合（或连接）n.黏合；（感情的）纽带	b___	Unit 20
-integrate	（使）成为一体，（使）合并	i________	Unit 20
-wrap	裹，包；用..缠绕	w___	Unit 20
-penetrate	刺入，穿透；渗透；洞察	p________	Unit 20
-pierce	刺穿，刺破，穿透；使心如刀割	p_____	Unit 20
-insert	[例】Heinsertedthekeyintothelockbutcouldot	i_____	Unit 20
-tilt	（使）倾斜，（使）歪斜	t___	Unit 20
-tow	拖，拉，牵引n.牵引	t__	Unit 20
-trail	（使）拖在后面；跟踪n.踪迹	t____	Unit 20
-arrange	安排，整理，使有条理	a______	Unit 20
-manipulate	（熟练地）操作；操纵	m_________	Unit 20
-steer	为（船）操舵，驾驶（船、车等）；操纵	s____	Unit 20
-bet	下注，打赌；敢说n.打赌；赌注	b__	Unit 20
-stake	赌注；桩v.以...打赌	s____	Unit 20
-gamble	/n.赌博；冒险	g_____	Unit 20
-promise	诺言v.承诺	p______	Unit 20
-attract	吸引；引起	a______	Unit 20
-obsess	（使）痴迷，（使）心神不宁	o_____	Unit 20
-mesmerise	吸引l，迷住	m________	Unit 20
-nightmare	噩梦，梦魔	n________	Unit 20
-amaze	使惊奇，使惊愣	a____	Unit 20
-marvel	感到惊讶，大为赞叹n.奇迹	m_____	Unit 20
-astonish	使惊讶	a_______	Unit 20
-involve	（使）参加；牵涉	i______	Unit 20
-annoy	使恼怒；打扰	a____	Unit 20
-upset	使心烦意乱，使生气；搅乱；打翻	u____	Unit 20
-bewilder	使迷惑，使不知所措	b_______	Unit 20
-irony	反话；有讽刺意味的情形	i____	Unit 20
-indignity	侮辱，轻蔑	i________	Unit 20
-contempt	轻视，藐视	c_______	Unit 20
-neglect	/n.忽视，忽略	n______	Unit 20
-disregard	不顾，漠视n.忽视，漠视	d________	Unit 20
-ignorance	无知，愚昧	i________	Unit 20
-bias	使有偏见，使偏心n.偏见，偏心	b___	Unit 20
-deviate	偏离，背离	d______	Unit 20
-expel	驱逐；开除；排出	e____	Unit 20
-flee	逃避，逃离	f___	Unit 20
-bully	恐吓，欺凌n.恃强凌弱者	b____	Unit 20
-panic	惊恐，惊慌v.（使）惊恐，（使）惊慌	p____	Unit 20
-terrify	使恐惧，使非常害怕	t______	Unit 20
-revenge	报仇，复仇v.向....报仇	r______	Unit 20
-kidnap	绑架，劫持	k_____	Unit 20
-hijack	劫持（飞机或其他交通工具）	h_____	Unit 20
-smuggle	走私，偷运	s______	Unit 20
-strangle	扼杀，压制；勒死，扼死	s_______	Unit 20
-massacre	/v.残杀，屠杀	m_______	Unit 20
-decimation	大批杀死，大量毁灭；大大削弱	d_________	Unit 20
-intervene	插话；干扰；干涉	i________	Unit 20
-impede	妨碍，阻止	i_____	Unit 20
-allure	吸引，引诱	a_____	Unit 20
-bait	使上当发火n.诱饵；诱惑物	b___	Unit 20
-induce	引诱，劝说	i_____	Unit 20
-tempt	引诱，诱惑；怂意	t____	Unit 20
-designate	指明；选派，指派	d________	Unit 20
-assign	布置；分配；指定；确定	a_____	Unit 20
-distribute	分发，分配	d_________	Unit 20
-despatch	派遣，调派；迅速处理	d_______	Unit 20
-detach	（使）分开，（使）分离；派遣	d_____	Unit 20
-bsip	掩饰；假扮，伪装n.假扮；伪装物	b___	Unit 20
-conceal	隐藏，掩盖	c______	Unit 20
-refuse	拒绝；回绝	r_____	Unit 20
-exclude	把....排除在外；拒绝	e______	Unit 20
-reverse	颠倒，彻底改变；撤销n.相反的情况；反面	r______	Unit 20
-assure	向..保证；保证；保险	a_____	Unit 20
-undertake	承担；许诺，保证	u________	Unit 20
-stipulate	规定，明确要求；保证	s________	Unit 20
-convince	使确信，使信服；说服	c_______	Unit 20
-reassure	使安心，使放心	r_______	Unit 20
-wish	想要（某事发生）n.希望	w___	Unit 20
-aspire	有志于，渴望	a_____	Unit 20
-desire	愿望，欲望v.渴望，期望	d_____	Unit 20
-yearn	渴望，向往	y____	Unit 20
-invoke	唤起（感情等）；向.-祈求帮助；恳求	i_____	Unit 20
-itch	发痒；渴望n.痒；渴望	i___	Unit 20
-attempt	尝试，试图n.尝试，企图	a______	Unit 20
-strive	努力，奋斗	s_____	Unit 20
-effort	努力；努力的成果	e_____	Unit 20
-range	（在一定幅度内）变动	r____	Unit 20
-sort	种类，类别v.把.....分类	s___	Unit 20
-loom	（庞然大物或形状模糊之物）隐现；逼近n.织布机	l___	Unit 20
-launch	发射；发布，推出；发起（运动等）	l_____	Unit 20
-commence	开始，着手	c_______	Unit 20
-exploit	开发，开采，开拓	e______	Unit 20
-explore	勘查，考察；探讨	e______	Unit 20
-exert	运用，行使；施加	e____	Unit 20
-tackle	处理，应对，解决n.用具，器材	t_____	Unit 20
-cope	应付，处理	c___	Unit 20
-dispose	布置，安排	d______	Unit 20
-omit	遗漏；省略；删去	o___	Unit 20
-delete	删除，删掉	d_____	Unit 20
-cancel	取消；废除	c_____	Unit 20
-clear	清晰的；明显的v.清除	c____	Unit 20
-erase	清除；抹去	e____	Unit 20
-rescue	/n.营救，救援	r_____	Unit 20
-resort	求助于，采取，诉诸n.（度假）胜地	r_____	Unit 20
-recover	重新拿回；恢复健康；（从不愉快的经历中）复原	r______	Unit 20
-restore	恢复；归还；修复	r______	Unit 20
-rectify	纠正，矫正，改正	r______	Unit 20
-redeem	赎回；挽回，补偿；兑现	r_____	Unit 20
-offset	/n.补偿；抵消	o_____	Unit 20
-replenish	重新装满，补充	r________	Unit 20
-obtain	获得，得到	o_____	Unit 20
-gain	获得；增加n.增加；改进	g___	Unit 20
-supply	供给，供应，提供n.供应量；补给品	s_____	Unit 20
-offer	给予（物）；提议v.提供；出（价）	o____	Unit 20
-render	给予，提供；翻译	r_____	Unit 20
-enlarge	扩大，扩展；放大（照片或文件）	e______	Unit 20
-augment	扩大，增加，加强，提高	a______	Unit 20
-magnify	放大；夸大	m______	Unit 20
-amplify	增强；扩大（声音）；充实（陈述等）	a______	Unit 20
-exaggerate	夸张，夸大	e_________	Unit 20
-prolong	延长	p______	Unit 20
-uphold	支持，维护；维持	u_____	Unit 20
-backup	后援，支持；（文件等的）备份adj.备用的	b_____	Unit 20
-propel	推动，驱使；推进	p_____	Unit 20
-update	更新；使现代化	u_____	Unit 20
-raise	举起；引起；抚养；提高；筹募	r____	Unit 20
-leak	泄漏n.漏洞，裂缝	l___	Unit 20
-spill	（使）溢出	s____	Unit 20
-seep	渗出，渗漏	s___	Unit 20
-ooze	渗出；洋溢着	o___	Unit 20
-evacuate	疏散，撤离	e_______	Unit 20
-trench	掘沟于；砍除n.沟，渠，壕沟	t_____	Unit 20
-saturate	使饱和，使充满；浸透	s_______	Unit 20
-excuse	[例】Thereisoexcusefortrespassingonprivate	e_____	Unit 20
-forgive	原谅，宽恕，饶恕	f______	Unit 20
-contain	包含，容纳；抑制（感情）	c______	Unit 20
-regard	尊重；问候v.看待	r_____	Unit 20
-flatter	奉承，讨好，向.….谄媚	f______	Unit 20
-worship	（对上帝或神的）崇拜，礼拜；爱慕v.做礼拜	w______	Unit 20
-cause	原因，理由；事业v.引起，导致	c____	Unit 20
-sake	理由，目的	s___	Unit 20
-purpose	目的	p______	Unit 20
-objective	宗旨；目标adj.客观的	o________	Unit 20
-arouse	唤起，激起，引起	a_____	Unit 20
-trigger	引发，触发n.（枪等的）扳机	t______	Unit 20
-seek	寻找；寻求	s___	Unit 20
-retrieve	取回；挽回	r_______	Unit 20
-testify	作证；证明	t______	Unit 20
-verify	证实；核实，查清	v_____	Unit 20
-specify	具体指定，详细说明	s______	Unit 20
-enlighten	启发，开导，启迪	e________	Unit 20
-impart	传授；透露	i_____	Unit 20
-deserve	应得；应受	d______	Unit 20
-drop	（使）落下；（使）降低；和.……断绝联系n.滴	d___	Unit 20
-sink	（使）下沉；下降	s___	Unit 20
-plummet	垂直掉下；（价格、水平等）骤然下跌	p______	Unit 20
-muffle	使（声音）减弱	m_____	Unit 20
-overshadow	遮蔽；使黯然失色	o_________	Unit 20
-invite	邀请	i_____	Unit 20
-greet	.向...问好，迎接；对.作出反应	g____	Unit 20
-salute	（向.….）行礼；致敬n.行礼；致敬	s_____	Unit 20
-celebrate	庆祝（节日、事件等）	c________	Unit 20
-congratulate	祝贺，向..道贺	c___________	Unit 20
-bless	祝福，为.祈求上帝保佑	b____	Unit 20
-participate	参加，参与	p__________	Unit 20
-assort	把..分类；相配，协调	a_____	Unit 20
-correspond	符合，相一致；通信	c_________	Unit 20
-accord	（与..）一致；给予n..协议	a_____	Unit 20
-recall	回忆，回想起	r_____	Unit 20
-recollect	记起，想起	r________	Unit 20
-remind	提醒，使想起	r_____	Unit 20
-retell	重新讲述，复述	r_____	Unit 20
-repeat	重复adj.再次光顾的	r_____	Unit 20
-retrospect	回顾	r_________	Unit 20
-impress	给...深刻印象；使铭记	i______	Unit 20
-surmount	克服；置于..顶端	s_______	Unit 20
-mortify	使难堪，使羞愧	m______	Unit 20
-pervade	弥漫，渗透，遍及	p______	Unit 20
-replace	代替，取代	r______	Unit 20
-substitute	替换n.代用品；代替者；替补（运动员）	s_________	Unit 20
-distinguish	区别，辨别；使出众，使著名	d__________	Unit 20
-differentiate	区分，区别；差别对待	d____________	Unit 20
-lean	（使）倚靠；倾斜adj.瘦的；贫乏的	l___	Unit 20
-sideways	向（或从、往）一侧	s_______	Unit 20
-feel	感觉到，感知；触碰	f___	Unit 20
-mood	心情，情绪；气氛	m___	Unit 20
-emotion	情绪，情感，感情	e______	Unit 20
-temper	坏脾气；情绪，心情v.使缓和	t_____	Unit 20
-manner	举止；礼貌；方式；风俗	m_____	Unit 20
-attitude	态度，看法	a_______	Unit 20
-character	性格；特征；人物，角色	c________	Unit 20
-personality	个性，人格	p__________	Unit 20
-trait	特性，特点	t____	Unit 20
-virtue	美德，德行；优点	v_____	Unit 20
-feature	特征；面容的一部分v.以...为特色	f______	Unit 20
-stature	身高，身材；（精神、道德等的）高度	s______	Unit 20
-flesh	肉；人类	f____	Unit 20
-mankind	人类；男人	m______	Unit 20
-human	人类的；有人性的n.人类	h____	Unit 21
-bone	骨；骨骼	b___	Unit 21
-backbone	脊柱；骨干，中坚；骨气	b_______	Unit 21
-skeleton	骨骼，骨架；框架，梗概	s_______	Unit 21
-skull	头脑；头骨	s____	Unit 21
-brain	脑；智慧，智力	b____	Unit 21
-mind	头脑；思考能力；思维；意见；记忆力	m___	Unit 21
-physical	身体的；物质的；物理的	p_______	Unit 21
-mental	精神的，思想上的；智力的	m_____	Unit 21
-cheek	面颊，颊	c____	Unit 21
-forehead	额	f_______	Unit 21
-brow	额；眉，眉毛	b___	Unit 21
-eyelash	眼睫毛	e______	Unit 21
-lip	嘴唇；（洞口、伤口等的）边缘	l__	Unit 21
-mouth	口，嘴；河口	m____	Unit 21
-tongue	舌头；语言	t_____	Unit 21
-throat	喉咙；窄路；嗓子，噪音	t_____	Unit 21
-gorge	咽喉；暴食；山峡，峡谷v.狼吞虎咽	g____	Unit 21
-chin	（指人的）须，下巴	c___	Unit 21
-jaw	颌；下巴；狭窄入口；崂叨	j__	Unit 21
-neck	脖子；衣领；海峡	n___	Unit 21
-beard	胡须	b____	Unit 21
-shoulder	肩，肩膀	s_______	Unit 21
-limb	肢；树枝	l___	Unit 21
-elbow	肘部；弯头；扶手v.用肘挤	e____	Unit 21
-wrist	腕，腕关节	w____	Unit 21
-thumb	拇指	t____	Unit 21
-palm	棕榈树；手掌v.把..藏在手中	p___	Unit 21
-finger	（尤指大拇指之外的）手指	f_____	Unit 21
-fist	拳头，拳	f___	Unit 21
-chest	胸，胸部	c____	Unit 21
-abdomen	腹，腹部	a______	Unit 21
-rib	肋骨；排骨	r__	Unit 21
-waist	腰；腰部	w____	Unit 21
-organ	器官；风琴；机构	o____	Unit 21
-liver	肝脏	l____	Unit 21
-stomach	胃口；胃，腹部	s______	Unit 21
-womb	子宫；发源地	w___	Unit 21
-kidney	肾，肾脏	k_____	Unit 21
-lung	肺	l___	Unit 21
-gland	腺	g____	Unit 21
-chamber	（人体内、动植物体内或机器中的）室，腔；议院	c______	Unit 21
-intestine	肠	i________	Unit 21
-thigh	大腿，股	t____	Unit 21
-joint	接合处；关节adj.共同的，联合的	j____	Unit 21
-knee	膝盖，膝	k___	Unit 21
-lap	（人坐着时的）大腿部；下摆；环节；一圈	l__	Unit 21
-ankle	踝关节，踝	a____	Unit 21
-heel	足跟	h___	Unit 21
-toe	脚趾，足尖	t__	Unit 21
-muscle	肌肉	m_____	Unit 21
-pore	毛孔；小孔，气孔v.凝视；沉思	p___	Unit 21
-pulse	脉搏；脉冲	p____	Unit 21
-artery	动脉；干线	a_____	Unit 21
-nerve	神经；紧张，焦虑	n____	Unit 21
-hormone	荷尔蒙，激素	h______	Unit 21
-immune	免疫的；不受影响的；免除的	i_____	Unit 21
-stimulus	刺激（物）；促进因素	s_______	Unit 21
-biorhythm	生物节律	b________	Unit 21
-lifestyle	生活方式	l________	Unit 21
-habit	习惯	h____	Unit 21
-sense	感官；感觉	s____	Unit 21
-sight	视力；看见；景物	s____	Unit 21
-eyesight	视力	e_______	Unit 21
-view	视野；见解；风景；察看	v___	Unit 21
-visual	视力的，视觉的	v_____	Unit 21
-visible	看得见的，可见的	v______	Unit 21
-vague	含糊的；不清楚的，模糊的	v____	Unit 21
-blind	盲目的；瞎的；未察觉的	b____	Unit 21
-dumb	哑的；不肯开口的	d___	Unit 21
-aural	耳的；听觉的；气味的；先兆的	a____	Unit 21
-dental	牙的，牙科的	d_____	Unit 21
-awake	醒着的；警觉的	a____	Unit 21
-yawn	打呵欠；裂开n.呵欠	y___	Unit 21
-nap	小睡；绒毛	n__	Unit 21
-doze	小睡，打盹儿	d___	Unit 21
-quiet	安静的；寂静的；平静的	q____	Unit 21
-asleep	睡着的；不活跃的；麻木的	a_____	Unit 21
-cripple	跛子；残疾人v.使跛	c______	Unit 21
-lame	瘤的，跛的；（解释或借口）无说服力的	l___	Unit 21
-pregnancy	怀孕，妊娠	p________	Unit 21
-born	天生的；与生俱来的v.出生	b___	Unit 21
-condom	避孕套	c_____	Unit 21
-clone	以无性繁殖技术复制，克隆n.克隆动物（或植物）	c____	Unit 21
-symptom	征兆；症状	s______	Unit 21
-disease	疾病	d______	Unit 21
-illness	病，疾病	i______	Unit 21
-moan	/v.呻吟；哀悼	m___	Unit 21
-infection	传染；传染病；影响	i________	Unit 21
-detriment	损害；损害物	d________	Unit 21
-broken	弄坏的；破碎的	b_____	Unit 21
-disable	使丧失能力，使伤残	d______	Unit 21
-invalid	病弱者，伤残者adji.病弱的，伤残的	i______	Unit 21
-patient	病人adj.有耐心的，能忍耐的	p______	Unit 21
-dysfunction	（身体）功能障碍	d__________	Unit 21
-diabetes	糖尿病	d_______	Unit 21
-obesity	（过度）肥胖；肥胖症	o______	Unit 21
-overweight	超重的，过胖的n.超重v.使超重；过于重视	o_________	Unit 21
-hypertension	高血压	h___________	Unit 21
-paralyse	使麻痹；使瘫痪；使无助	p_______	Unit 21
-dizzy	头晕目眩的，眩晕的v.使眩晕	d____	Unit 21
-insane	患精神病的；疯狂的	i_____	Unit 21
-insomnia	失眠，失眠症	i_______	Unit 21
-allergy	敏感症；过敏性	a______	Unit 21
-heart	心脏病发作	h____	Unit 21
-cancer	癌	c_____	Unit 21
-arthritis	关节炎	a________	Unit 21
-pimple	粉刺，丘疹	p_____	Unit 21
-stroke	中风；击打；一笔（画）	s_____	Unit 21
-plague	瘟疫	p_____	Unit 21
-flu	流行性感冒	f__	Unit 21
-fever	狂热；发烧，发热v.（使）发烧；（使）狂热	f____	Unit 21
-headache	头痛	h_______	Unit 21
-swell	肿胀，膨胀；（使）增加	s____	Unit 21
-choke	（使）室息；阻塞；说不出话	c____	Unit 21
-injure	伤害，使遵受损伤；损害	i_____	Unit 21
-injury	伤害；损害	i_____	Unit 21
-hurt	损害；伤害；（使）疼痛	h___	Unit 21
-bleed	流血；榨取；给……放血；放掉（水或气体）	b____	Unit 21
-bruise	淤伤；伤痕v.擦伤	b_____	Unit 21
-scar	疤痕，伤疤	s___	Unit 21
-wound	创伤，伤害；伤口	w____	Unit 21
-trauma	外伤，身体上的伤；精神创伤；痛苦经历	t_____	Unit 21
-lump	块；肿块v.使成块状	l___	Unit 21
-pain	痛苦；疼痛v.使痛苦	p___	Unit 21
-death	死，死亡；毁灭	d____	Unit 21
-mortal	必死的；致命的n.凡人，人类	m_____	Unit 21
-demise	死亡；君权的转移或授予，禅让v.遗赠；转让	d_____	Unit 21
-doom	厄运；毁灭v.使注定失败（或死亡等）	d___	Unit 21
-fatal	致命的；毁灭性的；决定性的	f____	Unit 21
-lethal	致命的	l_____	Unit 21
-corpus	尸体；文集；本金	c_____	Unit 21
-overwork	过度操劳；过度工作v.（使）过度工作	o_______	Unit 21
-tire	（使）感到疲劳；厌烦	t___	Unit 21
-exhaust	使精疲力竭；用完，耗尽	e______	Unit 21
-fatigue	疲劳v.（使）疲劳	f______	Unit 21
-faint	模糊的；微弱的；虚弱的v.晕倒	f____	Unit 21
-feeble	虚弱的，无力的；微弱的	f_____	Unit 21
-weary	疲倦的；厌烦的	w____	Unit 21
-weaken	减弱，削弱；变软弱	w_____	Unit 21
-systemthey	weak弱的；虚弱的weakly软弱地	s_________	Unit 21
-uncomfortable	不舒服的；不自在的	u____________	Unit 21
-unconscious	失去知觉的；无意识的	u__________	Unit 21
-chronic	慢性的；长期的	c______	Unit 21
-acute	（疾病）急性的；敏锐的，深刻的	a____	Unit 21
-sore	疼痛的；恼火的；严重的	s___	Unit 21
-sorrow	悲伤，悲痛	s_____	Unit 21
-suffering	苦难，折磨	s________	Unit 21
-lament	悲伤，哀悼v.哀悼；对.……感到悔恨	l_____	Unit 21
-hospital	医院	h_______	Unit 21
-therapy	治疗	t______	Unit 21
-healthcare	医疗保健	h_________	Unit 21
-sanitary	卫生的；清洁的	s_______	Unit 21
-medical	医学的，医疗的	m______	Unit 21
-curative	治疗的n.药品	c_______	Unit 21
-hygiene	卫生（学）；保健（学）	h______	Unit 21
-fitness	健康；适合	f______	Unit 21
-clinic	诊所；门诊部	c_____	Unit 21
-physician	内科医生	p________	Unit 21
-surgeon	外科医生	s______	Unit 21
-operation	手术；操作；运转，经营	o________	Unit 21
-cure	治好，治愈n.疗法；治疗	c___	Unit 21
-heal	治愈；愈合	h___	Unit 21
-treatment	治疗，疗法；待遇	t________	Unit 21
-check	检查，核对n.[美］账单	c____	Unit 21
-prescription	处方，药方；秘诀	p___________	Unit 21
-transplant	移植	t_________	Unit 21
-X-ray	X射线；用X射线进行的临床检查v.用X射线检查	x___	Unit 21
-injection	注射；注射物；单射（函数）	i________	Unit 21
-precaution	预防，警惕；预防措施	p_________	Unit 21
-vaccinate	给….….接种疫苗，预防接种	v________	Unit 21
-quarantine	对..进行隔离检疫n.检疫；隔离检疫期	q_________	Unit 21
-segregate	隔离	s________	Unit 21
-isolate	使隔离，使孤立，使脱离	i______	Unit 21
-pharmacy	药店；药剂学	p_______	Unit 21
-medicine	药；医学	m_______	Unit 21
-remedy	药物，治疗法；解决方法	r_____	Unit 21
-pill	药丸，丸剂	p___	Unit 21
-antibiotic	抗生素	a_________	Unit 21
-acupuncture	针灸，中医针灸疗法	a__________	Unit 21
-penicillin	青霉素	p_________	Unit 21
-morphine	吗啡	m_______	Unit 21
-dose	（药物的）一剂v.给….….服药	d___	Unit 21
-recovery	恢复，痊愈	r_______	Unit 21
-refresh	使恢复精神	r______	Unit 21
-relief	宽慰，轻松；减轻，缓解	r_____	Unit 21
-relieve	救济；减轻，解除（痛苦、不快等）	r______	Unit 21
-alleviate	减轻（痛苦等），缓解	a________	Unit 21
-resume	重新开始，（中断后）继续	r_____	Unit 21
-ease	减轻，放松，缓和n.容易；悠闲	e___	Unit 21
-relax	放松	r____	Unit 21
-normal	正常的；正规的，规范的	n_____	Unit 21
-common	共同的；普通的，平常的	c_____	Unit 21
-usual	通常的，惯常的	u____	Unit 21
-optimistic	乐观的，乐观主义的	o_________	Unit 21
-pessimistic	悲观的，悲观主义的	p__________	Unit 21
-positive	肯定的；积极的；绝对的	p_______	Unit 21
-negative	怀疑的；消极的	n_______	Unit 21
-passive	被动的，消极的	p______	Unit 21
-enthusiastic	热心的，热情的	e___________	Unit 21
-indifferent	漠不关心的；无关紧要的；平庸的；中立的	i__________	Unit 21
-apathetic	无动于衷的，漠不关心的	a________	Unit 21
-negligible	可以忽略的，微不足道的	n_________	Unit 21
-happiness	幸福，快乐；适当	h________	Unit 21
-delight	（使）高兴；爱好n.乐趣	d______	Unit 21
-merry	愉快的，欢乐的；微醉的	m____	Unit 21
-funfAn	乐趣；玩笑adji.有趣的	f_____	Unit 21
-joke	笑话；玩笑v.说笑话；开玩笑	j___	Unit 21
-laughter	笑，笑声	l_______	Unit 21
-joy	欢乐，喜悦；乐趣	j__	Unit 21
-please	使高兴，取悦adv.请	p_____	Unit 21
-rejoice	（使）高兴，（使）欢喜	r______	Unit 21
-thrill	激动v.（使）激动；感到紧张	t_____	Unit 21
-cheer	使振作；（向….）欢呼	c____	Unit 21
-pleasure	愉快，高兴；荣幸（用于回答对方的感谢）	p_______	Unit 21
-agreeable	使人愉快的；（欣然）同意的	a________	Unit 21
-exhilarate	使高兴，使兴奋	e_________	Unit 21
-satisfactory	令人满意的	s___________	Unit 21
-desirable	可取的，值得拥有的，合意的	d________	Unit 21
-exciting	令人兴奋的，使人激动的	e_______	Unit 21
-keen	强烈的；敏锐的；渴望的；[尤英】有强烈兴趣的	k___	Unit 21
-zeal	热心，热情，热忱	z___	Unit 21
-lovely	可爱的；令人愉快的	l_____	Unit 21
-fond	喜爱的；溺爱的	f___	Unit 21
-favour	偏爱；赞同；恩惠，帮助	f_____	Unit 21
-surprising	令人惊讶的，出人意料的	s_________	Unit 21
-startle	使大吃一惊n.吃惊	s______	Unit 21
-amazing	令人惊叹的，惊人的	a______	Unit 21
-astound	使大吃一惊，使惊骇	a______	Unit 21
-hectic	兴奋活跃的，忙乱的，繁忙的	h_____	Unit 21
-generous	慷概的；宽厚的	g_______	Unit 21
-gentle	温和的；柔和的；文雅的；出身名门的	g_____	Unit 21
-humble	谦虚的；卑微的	h_____	Unit 21
-modest	谦虚的，谦逊的	m_____	Unit 21
-humorous	富于幽默感的，该谐的	h_______	Unit 21
-polite	有礼貌的；客气的	p_____	Unit 21
-frank	坦白的，直率的	f____	Unit 21
-mysterious	神秘的；不可思议的	m_________	Unit 21
-curious	好奇的，好求知的	c______	Unit 21
-daring	勇敢的，大胆的	d_____	Unit 21
-manly	有男子气概的；果断的	m____	Unit 21
-direct	直接的；直率的	d_____	Unit 21
-earnest	认真的，诚恳的	e______	Unit 21
-honesty	诚实，正直	h______	Unit 21
-proud	骄傲的，自豪的；令人自豪的	p____	Unit 21
-rational	理性的；合理的	r_______	Unit 21
-seriously	严肃地；认真地；严重地	s________	Unit 21
-stern	严厉的；坚定的	s____	Unit 21
-friendly	友好的，友善的	f_______	Unit 21
-hospitable	好客的；热情友好的	h_________	Unit 21
-romantic	浪漫的；充满传奇色彩的	r_______	Unit 21
-freedom	自由，独立自主	f______	Unit 21
-careful	仔细的，细致的；小心的，谨慎的	c______	Unit 21
-concern	关心；忧虑v.涉及；使担忧；关心	c______	Unit 21
-confidence	自信；信任	c_________	Unit 21
-considerate	考虑周到的，体谅的	c__________	Unit 21
-sympathetic	同情的；和谐的	s__________	Unit 21
-ready	准备好的；愿意的	r____	Unit 21
-apologise	道歉，赔罪	a________	Unit 21
-apology	道歉；辩解	a______	Unit 21
-mercy	仁慈，宽容，怜悯	m____	Unit 21
-admire	赞美，钦佩，仰慕	a_____	Unit 21
-remarkable	值得注意的；非凡的，卓越的	r_________	Unit 21
-grateful	感激的；表示感激的	g_______	Unit 21
-gratitude	感激，感谢，感恩	g________	Unit 21
-eager	渴望的，热切的	e____	Unit 21
-sound	健全的；（睡眠）酣畅的；合理的n.声音v.发出	s____	Unit 21
-picturesque	如画的；独特的	p__________	Unit 21
-promising	大有希望的，有前途的	p________	Unit 21
-prominent	突出的，显著的；重要的，杰出的	p________	Unit 21
-awesome	卓越的，引起敬畏的	a______	Unit 21
-arduous	辛勤的；费力的；陡峭的	a______	Unit 21
-tough	艰难的；坚强的，坚韧不拔的；强硬的	t____	Unit 21
-robust	强壮的，强健的	r_____	Unit 21
-sturdy	强健的；坚定的	s_____	Unit 21
-steadfast	坚定的	s________	Unit 21
-tender	脆弱的；温柔的；软弱的；疼痛的v.（正式）提出	t_____	Unit 21
-temperate	（气候）温和的；温带的；有节制的；心平气和的	t________	Unit 21
-delicate	精致的；微妙的；脆弱的	d_______	Unit 21
-mundane	平凡的，世俗的；世界的	m______	Unit 21
-naive	天真的；幼稚的	n____	Unit 21
-childish	孩子般的；幼稚的	c_______	Unit 21
-sincere	真诚的，诚挚的	s______	Unit 21
-liable	有责任的；有...倾向的，可能的	l_____	Unit 21
-trustworthy	值得信赖的，可靠的	t__________	Unit 21
-enterprising	有事业心的，有进取心的；有魄力的	e___________	Unit 21
-sane	心智健全的；理智的	s___	Unit 21
-strenuous	发奋的；繁重的，艰苦的	s________	Unit 21
-rigorous	严格的，严厉的；一丝不苟的	r_______	Unit 21
-strict	严格的；严厉的	s_____	Unit 21
-severe	严厉的；十分严重的；艰巨的	s_____	Unit 21
-mutual	相互的，彼此的；共同的	m_____	Unit 21
-resemble	与..相像，类似	r_______	Unit 21
-similar	相似的，类似的	s______	Unit 21
-familiar	熟悉的	f_______	Unit 21
-naked	裸体的，赤条条的	n____	Unit 21
-bare	赤裸的；无遮蔽的	b___	Unit 21
-private	私人的，个人的；私下的	p______	Unit 21
-intuition	直觉	i________	Unit 21
-spontaneous	i.自发的，自然的，本能的；自然产生的	s__________	Unit 21
-implicit	暗示的，含蓄的；不怀疑的，无保留的	i_______	Unit 21
-illusion	错觉；幻想	i_______	Unit 21
-imaginary	想象的，虚构的	i________	Unit 21
-fancy	想象（力）；爱好v.认为，想象	f____	Unit 21
-fate	命运，宿命	f___	Unit 21
-fortune	命运；运气；财产	f______	Unit 21
-agony	极度的痛苦；挣扎	a____	Unit 21
-grief	极度悲伤	g____	Unit 21
-grieve	（使）悲痛	g_____	Unit 21
-miserable	极不愉快的，痛苦的	m________	Unit 21
-distress	悲痛；穷困，不幸v.使伤心，使忧虑	d_______	Unit 21
-sadness	悲痛，悲哀	s______	Unit 21
-gloomy	幽暗的；令人泪丧的	g_____	Unit 21
-disappoint	使失望；使受挫折	d_________	Unit 21
-discourage	使灰心，使气馁；劝阻	d_________	Unit 21
-wretched	不幸的，可怜的，悲惨的；恶劣的	w_______	Unit 21
-frustrating	令人灰心的，使人沮丧的	f__________	Unit 21
-mourn	（因失去.而）哀痛，哀悼	m____	Unit 21
-anger	怒，怒气v.使发怒	a____	Unit 21
-furious	狂怒的，暴怒的	f______	Unit 21
-frown	皱眉，不悦v.皱眉，表示不悦	f____	Unit 21
-rage	盛怒，狂怒	r___	Unit 21
-irritate	激怒，使急躁；刺激	i_______	Unit 21
-hate	恨，憎恨；不喜欢	h___	Unit 21
-hatred	憎恶，憎恨，仇恨	h_____	Unit 21
-nuisance	讨厌或麻烦的人（或事物）	n_______	Unit 21
-vex	使烦恼，使恼火	v__	Unit 21
-harass	烦扰	h_____	Unit 21
-bore	烦扰；钻孔n.讨厌的人；令人生厌的事	b___	Unit 21
-bother	花费时间精力（做某事）；（使）苦恼n.麻烦，困难	b_____	Unit 21
-troublesome	令人烦恼的；麻烦的	t__________	Unit 21
-awful	令人不愉快的，极讨厌的	a____	Unit 21
-unpleasant	令人不愉快的，讨厌的	u_________	Unit 21
-adverse	敌对的，不友好的；不利的	a______	Unit 21
-hostile	怀有敌意的，不友善的；敌对的	h______	Unit 21
-indignant	愤概的，义愤的	i________	Unit 21
-radical	激进的；根本的	r______	Unit 21
-mad	发疯的；恼火的	m__	Unit 21
-wicked	邪恶的，缺德的	w_____	Unit 21
-vicious	邪恶的，不道德的	v______	Unit 21
-vulgar	粗俗的，庸俗的	v_____	Unit 21
-mean	卑鄙的；吝啬的v.意思是	m___	Unit 21
-ego	自我，自尊；自负	e__	Unit 21
-selfish	自私的，利己主义的	s______	Unit 21
-nasty	下流的；肮脏的；险恶的	n____	Unit 21
-rash	草率的，鲁莽的	r___	Unit 21
-volatile	易变的，反复无常的；易挥发的	v_______	Unit 21
-weird	怪诞的，古怪的	w____	Unit 21
-excessive	过分的，过多的	e________	Unit 21
-anxiety	焦虑，担心；渴望	a______	Unit 21
-restless	不安定的，焦躁不安的，不耐烦的	r_______	Unit 21
-uneasy	心神不安的，忧虑的	u_____	Unit 21
-timid	胆小的，羞怯的	t____	Unit 21
-fuss	大惊小怪，无谓的纷扰	f___	Unit 21
-unkind	不仁慈的，不和善的，刻薄的	u_____	Unit 21
-envy	/n.羡慕；嫉妒	e___	Unit 21
-jealous	嫉妒的，妒忌的	j______	Unit 21
-doubt	怀疑，疑问v.怀疑，不信	d____	Unit 21
-suspicion	怀疑，嫌疑	s________	Unit 21
-sceptical	怀疑的	s________	Unit 21
-unsatisfactory	不能令人满意的，不符合要求的，不足的	u_____________	Unit 21
-unstable	不稳定的；易变的；不牢固的	u_______	Unit 21
-unsuitable	不合适的，不适宜的	u_________	Unit 21
-unwilling	不愿意的，不情愿的；勉强的	u________	Unit 21
-reluctant	不情愿的；勉强的	r________	Unit 21
-hesitate	犹豫不决，曙；顾虑	h_______	Unit 21
-confuse	使困惑，把（某人）弄糊涂；混淆	c______	Unit 21
-guilty'gilti	有罪的；内疚的	g__________	Unit 21
-embarrass	使尴尬，使窘迫，使局促不安	e________	Unit 21
-regret	遗憾；抱歉；悲叹v.后悔；痛惜，惋惜	r_____	Unit 21
-repent	忏悔；后悔	r_____	Unit 21
-ashamed	惭愧的，感到难为情的；耻于....的	a______	Unit 21
-sigh	/v.叹息，叹气	s___	Unit 21
-weep	哭泣，流泪；哀悼n.哭泣	w___	Unit 21
-tolerance	忍受，容忍，宽容	t________	Unit 21
-ignorant	无知的，没有学识的，愚昧的	i_______	Unit 21
-endure	忍耐，忍受；持久	e_____	Unit 21
-sly	狡猾的，狡诈的	s__	Unit 21
-cunning	狡猾的；巧妙的	c______	Unit 21
-arbitrary	武断的，专断的；任意的	a________	Unit 21
-ridiculous	荒谬的，可笑的	r_________	Unit 21
-stupid	愚蠢的；麻木的；乏味的n.傻瓜，笨蛋	s_____	Unit 21
-awkward	笨拙的；尴尬的；棘手的；不合适的	a______	Unit 21
-clumsy	笨拙的	c_____	Unit 21
-careless	粗心的；无忧无虑的；淡漠的	c_______	Unit 21
-oblivious	不知道的，未注意的	o________	Unit 21
-naughty	淘气的，顽皮的	n______	Unit 21
-greedy	贪吃的；贪婪的	g_____	Unit 21
-obtrusive	过分炫耀的，过分突出的，扎眼的	o________	Unit 21
-slothful	偷懒的，懒散的	s_______	Unit 21
-sluggish	行动迟缓的	s_______	Unit 21
-impulse	冲动，心血来潮	i______	Unit 21
-rigid	固执的；严格的；刚硬的	r____	Unit 21
-stubborn	顽固的，固执的	s_______	Unit 21
-stereotype	老一套，模式化观念，刻板印象	s_________	Unit 21
-daily	每日的n.日报	d____	Unit 21
-monthly	每月的adv.每月一次n.月刊	m______	Unit 21
-quarterly	季度的adv.按季度地n.季刊	q________	Unit 21
-annual	每年的；一年的n.年报	a_____	Unit 21
-yearly	每年的；一年的adv.每年地	y_____	Unit 21
-anniversary	周年纪念日	a__________	Unit 21
-era	时代，年代，纪元	e__	Unit 21
-present	现在的n.目前；礼物，赠送物	p______	Unit 21
-contemporary	当代的；同时代的	c___________	Unit 21
-medieval	中世纪的；守旧的	m_______	Unit 21
-century	世纪；百年	c______	Unit 21
-millennium	千年，千年期；千禧年	m_________	Unit 21
-million	um.百万；大量	m______	Unit 21
-billion	um.十亿；大量	b______	Unit 21
-dozen	一打，十二个；十来个	d____	Unit 21
-dawn	黎明；开端v.破晓	d___	Unit 22
-midday	正午，中午	m_____	Unit 22
-midnight	午夜，子夜，半夜	m_______	Unit 22
-overnight	在晚上；突然，一夜之间	o________	Unit 22
-night	夜，夜间；晚上；夜场	n____	Unit 22
-modern	现代的；近代的	m_____	Unit 22
-recent	新近的，最近的	r_____	Unit 22
-up-to-date	直到目前的；现代的	u_______	Unit 22
-secondly	第二，其次	s_______	Unit 22
-finally	最后；终于；决定性地	f______	Unit 22
-finish	完成；结束n.结尾，最后部分	f_____	Unit 22
-immediately	立即；直接地	i__________	Unit 22
-instant	瞬间adj.立即的	i______	Unit 22
-moment	片刻；时刻	m_____	Unit 22
-prior	在先的，在前的	p____	Unit 22
-former	以前的；前者的pron.前者	f_____	Unit 22
-preceding	在前的，在先的	p________	Unit 22
-precedent	先例；常规	p________	Unit 22
-foremost	最前的；最重要的	f_______	Unit 22
-opening	开始的n.开始，开端	o______	Unit 22
-initially	最初	i________	Unit 22
-intermediate	中间的	i___________	Unit 22
-midst	中部，中间	m____	Unit 22
-meantime	眼下，暂时	m_______	Unit 22
-meanwhile	同时，其间	m________	Unit 22
-simultaneous	同时发生（或进行）的	s___________	Unit 22
-ongoing	进行中的；继续存在的	o______	Unit 22
-everlasting	永恒的	e__________	Unit 22
-permanent	永久的	p________	Unit 22
-punctual	准时的，守时的	p_______	Unit 22
-duration	持续时间；期间	d_______	Unit 22
-consecutive	连续不断的	c__________	Unit 22
-periodically	周期性地，定期地	p___________	Unit 22
-imminent	（尤指不愉快的事）即将发生的，逼近的	i_______	Unit 22
-incidentally	偶然地；顺便提一句	i___________	Unit 22`;
+architecture	建筑风格；建筑学	a___________	Unit 13 建筑场所
+build	建造；开发	b____	Unit 13 建筑场所
+concrete	混凝土adj.具体的；混凝土制的	c_______	Unit 13 建筑场所
+construct	建造	c________	Unit 13 建筑场所
+erection	建筑，建造	e_______	Unit 13 建筑场所
+establish	建立，设立	e________	Unit 13 建筑场所
+found	创建，创办	f____	Unit 13 建筑场所
+landmark	地标；里程碑	l_______	Unit 13 建筑场所
+obstruct	阻塞；妨碍	o_______	Unit 13 建筑场所
+site	地点	s___	Unit 13 建筑场所
+stability	稳定（性）	s________	Unit 13 建筑场所
+steel	钢铁	s____	Unit 13 建筑场所
+structure	建筑物；结构	s________	Unit 13 建筑场所
+venue	发生地点，举行场所	v____	Unit 13 建筑场所
+apartment	公寓套房	a________	Unit 13 建筑场所
+cabin	小木屋；（船上的）小舱	c____	Unit 13 建筑场所
+dwelling	住所	d_______	Unit 13 建筑场所
+flat	[尤英】单元房，公寓	f___	Unit 13 建筑场所
+hostel	廉价招待所	h_____	Unit 13 建筑场所
+hut	小屋，棚屋	h__	Unit 13 建筑场所
+inhabit	居住于	i______	Unit 13 建筑场所
+locate	放置，建立；找到	l_____	Unit 13 建筑场所
+lodge	租住n.小屋；度假屋	l____	Unit 13 建筑场所
+mansion	宅第，公馆	m______	Unit 13 建筑场所
+migrate	迁徙；移居	m______	Unit 13 建筑场所
+reside	居住	r_____	Unit 13 建筑场所
+settle	解决；在..定居，使定居	s_____	Unit 13 建筑场所
+skyscraper	摩天大楼	s_________	Unit 13 建筑场所
+villa	乡间别墅；[英］度假别墅	v____	Unit 13 建筑场所
+aisle	走廊，过道	a____	Unit 13 建筑场所
+block	街区；障碍；一块	b____	Unit 13 建筑场所
+cellar	地窖，地下室	c_____	Unit 13 建筑场所
+corridor	走廊，通道	c_______	Unit 13 建筑场所
+cottage	村舍，小屋	c______	Unit 13 建筑场所
+cradle	摇篮；发源地	c_____	Unit 13 建筑场所
+elevator	电梯	e_______	Unit 13 建筑场所
+grid	栅栏；网格；输电网	g___	Unit 13 建筑场所
+layer	层	l____	Unit 13 建筑场所
+nursery	托儿所adj.托儿所的	n______	Unit 13 建筑场所
+porch	门廊	p____	Unit 13 建筑场所
+shed	简易房，棚v.流，洒；摆脱	s___	Unit 13 建筑场所
+shelter	庇护处；掩蔽v.庇护；遮蔽	s______	Unit 13 建筑场所
+stair	楼梯	s____	Unit 13 建筑场所
+staircase	（建筑内的）楼梯	s________	Unit 13 建筑场所
+storey	There'saine-storeyapartmentbuildingext	s_____	Unit 13 建筑场所
+arch	拱门v.（使）弯成弓形	a___	Unit 13 建筑场所
+beam	（能量、放射线或粒子的）束，柱	b___	Unit 13 建筑场所
+ceiling	天花板，顶棚	c______	Unit 13 建筑场所
+chimney	烟肉	c______	Unit 13 建筑场所
+column	柱；（书、报纸等印刷页的）栏；（报刊的）专栏	c_____	Unit 13 建筑场所
+eaves	屋檐	e____	Unit 13 建筑场所
+escalator	自动扶梯，滚梯	e________	Unit 13 建筑场所
+handrail	扶手，栏杆	h_______	Unit 13 建筑场所
+pillar	柱子；中坚，栋梁	p_____	Unit 13 建筑场所
+reception	接待处	r________	Unit 13 建筑场所
+vault	拱顶；金库，保险库	v____	Unit 13 建筑场所
+balcony	阳台；（剧院的）楼座	b______	Unit 13 建筑场所
+basin	盆；盆地	b____	Unit 13 建筑场所
+bath	洗澡；【英]浴缸	b___	Unit 13 建筑场所
+bench	长凳；法官职位	b____	Unit 13 建筑场所
+cabinet	储藏柜；内阁	c______	Unit 13 建筑场所
+fireplace	壁炉	f________	Unit 13 建筑场所
+kitchen	厨房，灶间	k______	Unit 13 建筑场所
+lavatory	盟洗室，厕所	l_______	Unit 13 建筑场所
+living	客厅，起居室	l_____	Unit 13 建筑场所
+lobby	大厅，前厅；游说v.游说	l____	Unit 13 建筑场所
+radiator	暖气设备	r_______	Unit 13 建筑场所
+reserve	储备（量）；自然保护区v.预订	r______	Unit 13 建筑场所
+terrace	大阳台，露天平台	t______	Unit 13 建筑场所
+toilet	抽水马桶；【英］厕所	t_____	Unit 13 建筑场所
+airtight	密封的，不透气的	a_______	Unit 13 建筑场所
+booth	售货摊；电话亭；小隔间	b____	Unit 13 建筑场所
+casino	赌场	c_____	Unit 13 建筑场所
+complex	综合建筑群	c______	Unit 13 建筑场所
+downtown	市中心adj.市中心的	d_______	Unit 13 建筑场所
+mall	[尤美】购物中心	m___	Unit 13 建筑场所
+peripheral	外围的n.外围设备	p_________	Unit 13 建筑场所
+room	房间；空间	r___	Unit 13 建筑场所
+spacious	宽的	s_______	Unit 13 建筑场所
+store	商店；贮存物v.贮存	s____	Unit 13 建筑场所
+studio	演播室；工作室；单间公寓	s_____	Unit 13 建筑场所
+supermarket	超市	s__________	Unit 13 建筑场所
+urban	城市的	u____	Unit 13 建筑场所
+vicinity	附近，邻近地区	v_______	Unit 13 建筑场所
+apparatus	器械，装置	a________	Unit 13 建筑场所
+brickwork	砖结构	b________	Unit 13 建筑场所
+carpenter	木匠	c________	Unit 13 建筑场所
+castle	城堡	c_____	Unit 13 建筑场所
+expanse	广阔，辽阔	e______	Unit 13 建筑场所
+hook	钩，钩状物；勾拳	h___	Unit 13 建筑场所
+infrastructure	基础设施	i_____________	Unit 13 建筑场所
+lever	杠杆；操纵杆	l____	Unit 13 建筑场所
+mason	石匠，泥瓦匠	m____	Unit 13 建筑场所
+plaza	广场；购物中心	p____	Unit 13 建筑场所
+pole	竿，杆	p___	Unit 13 建筑场所
+scaffold	脚手架；绞刑架	s_______	Unit 13 建筑场所
+suspension	暂缓；暂令停职（或停赛等）	s_________	Unit 13 建筑场所
+tile	瓦；瓷砖	t___	Unit 13 建筑场所
+crane	起重机；鹤	c____	Unit 13 建筑场所
+dam	水坝v.控制，抑制	d__	Unit 13 建筑场所
+drill	钻机；反复练习v.钻（孔）；训练	d____	Unit 13 建筑场所
+fixfiks	修理；使固定	f______	Unit 13 建筑场所
+maintain	维持；维修；坚称	m_______	Unit 13 建筑场所
+malfunction	发生故障	m__________	Unit 13 建筑场所
+mend	修理；（使）康复	m___	Unit 13 建筑场所
+modify	稍作修改	m_____	Unit 13 建筑场所
+plumb	（表示垂直度等的）铅锤v.用铅垂线校正	p____	Unit 13 建筑场所
+saw	锯	s__	Unit 13 建筑场所
+screw	螺丝钉；螺旋桨	s____	Unit 13 建筑场所
+span	跨距，跨度；持续时间	s___	Unit 13 建筑场所
+trim	修剪；装饰adj.整齐的，整洁的	t___	Unit 13 建筑场所
+viaduct	高架桥	v______	Unit 13 建筑场所
+weld	焊接；使紧密结合	w___	Unit 13 建筑场所
+assemble	组装；装配	a_______	Unit 13 建筑场所
+design	设计；计划n.设计	d_____	Unit 13 建筑场所
+enter	进入	e____	Unit 13 建筑场所
+entrance	入口；进入权	e_______	Unit 13 建筑场所
+entry	进入；进入权	e____	Unit 13 建筑场所
+exit	出口；退场；离去v.离去	e___	Unit 13 建筑场所
+exterior	外部，外观adj.外部的	e_______	Unit 13 建筑场所
+furnish	为.配备家具陈设	f______	Unit 13 建筑场所
+install	安装	i______	Unit 13 建筑场所
+layout	设计，布置	l_____	Unit 13 建筑场所
+outward	向外的adv.向外	o______	Unit 13 建筑场所
+placement	放置，布置	p________	Unit 13 建筑场所
+inner	内部的；内心的	i____	Unit 13 建筑场所
+interior	内部adj.内部的	i_______	Unit 13 建筑场所
+internal	内部的；自身的；国内的	i_______	Unit 13 建筑场所
+inward	向内的；内心的adv.向内	i_____	Unit 13 建筑场所
+navigate	航行；横渡	n_______	Unit 14 交通旅行
+voyage	航海，航天；航行	v_____	Unit 14 交通旅行
+aviation	航空；航空学；航空工业	a_______	Unit 14 交通旅行
+journey	旅行；历程	j______	Unit 14 交通旅行
+travel	/v.旅行	t_____	Unit 14 交通旅行
+safari	（尤指在东非的）观兽旅行	s_____	Unit 14 交通旅行
+parade	游行；炫耀n.庆祝游行；列队行进；炫耀	p_____	Unit 14 交通旅行
+haunt	（鬼魂等）常出没于n.常去的地方	h____	Unit 14 交通旅行
+attraction	吸引；具有吸引力的事物	a_________	Unit 14 交通旅行
+memorial	纪念碑adj.纪念的，悼念的	m_______	Unit 14 交通旅行
+pyramid	金字塔；棱锥体	p______	Unit 14 交通旅行
+port	港口；左舷	p___	Unit 14 交通旅行
+visa	签证	v___	Unit 14 交通旅行
+traffic	交通，车流	t______	Unit 14 交通旅行
+airline	航空公司	a______	Unit 14 交通旅行
+airplane	飞机	a_______	Unit 14 交通旅行
+helicopter	直升机v.用直升机载送；乘直升机旅行	h_________	Unit 14 交通旅行
+jet	喷气式飞机；喷射口	j__	Unit 14 交通旅行
+flight	飞行；航班	f_____	Unit 14 交通旅行
+pilot	飞行员	p____	Unit 14 交通旅行
+passenger	乘客	p________	Unit 14 交通旅行
+baggage	[尤美】行李	b______	Unit 14 交通旅行
+luggage	行李	l______	Unit 14 交通旅行
+suitcase	手提箱	s_______	Unit 14 交通旅行
+carry-on	[美】（可随身携带上飞机的）小包adj.随身携带上	c______	Unit 14 交通旅行
+rack	搁物架，挂物架	r___	Unit 14 交通旅行
+freight	货运；货物v.运送（货物）	f______	Unit 14 交通旅行
+fare	车费，路费	f___	Unit 14 交通旅行
+atlas	地图册，地图集	a____	Unit 14 交通旅行
+route	路线	r____	Unit 14 交通旅行
+itinerary	行程，路线	i________	Unit 14 交通旅行
+passage	通过；通道，走廊	p______	Unit 14 交通旅行
+intersection	十字路口，交叉路口	i___________	Unit 14 交通旅行
+cross	十字形；十字架v.穿过	c____	Unit 14 交通旅行
+way	路；方式	w__	Unit 14 交通旅行
+path	小路	p___	Unit 14 交通旅行
+lane	小巷；车道	l___	Unit 14 交通旅行
+avenue	大街；途径	a_____	Unit 14 交通旅行
+highway	[尤美】公路	h______	Unit 14 交通旅行
+curb	路缘；起控制作用的事物	c___	Unit 14 交通旅行
+signpost	路标	s_______	Unit 14 交通旅行
+pave	铺（路或地面）	p___	Unit 14 交通旅行
+vehicle	车辆，交通工具；工具，手段	v______	Unit 14 交通旅行
+auto	汽车	a___	Unit 14 交通旅行
+express	特快列车；快递服务v.表示adj.特快的	e______	Unit 14 交通旅行
+tram	【尤英】有轨电车	t___	Unit 14 交通旅行
+coach	私人教师v.训练	c____	Unit 14 交通旅行
+ambulance	救护车	a________	Unit 14 交通旅行
+truck	卡车；篷货运火车	t____	Unit 14 交通旅行
+lorry	卡车	l____	Unit 14 交通旅行
+van	厢式货车；客货车	v__	Unit 14 交通旅行
+wagon	四轮运货马车（或牛车）；[英］（火车的）货车车厢	w____	Unit 14 交通旅行
+carriage	四轮马车；【英】（客运火车的）车厢	c_______	Unit 14 交通旅行
+tractor	拖拉机；牵引车	t______	Unit 14 交通旅行
+cart	运货马车；【美】（超市等提供的）手推车，购物车	c___	Unit 14 交通旅行
+pedicab	（人力）三轮车	p______	Unit 14 交通旅行
+cycle	骑（自行车）n.周期；自行车	c____	Unit 14 交通旅行
+garage	汽车修理厂；车库	g_____	Unit 14 交通旅行
+motor	发动机adj.机动的	m____	Unit 14 交通旅行
+horsepower	马力	h_________	Unit 14 交通旅行
+wheel	方向盘；车轮	w____	Unit 14 交通旅行
+brake	车闸；刹车v.刹车	b____	Unit 14 交通旅行
+honk	汽车喇叭声；鹅叫声v.按（汽车喇叭）	h___	Unit 14 交通旅行
+crew	（轮船、飞机等上的）全体工作人员；（有专门技术的）	c___	Unit 14 交通旅行
+captain	船长；队长	c______	Unit 14 交通旅行
+steward	男乘务员；管家	s______	Unit 14 交通旅行
+emergency	紧急事件adj.应急的	e________	Unit 14 交通旅行
+wreck	使失事；破坏n.失事的船只（或汽车、飞机等）；残	w____	Unit 14 交通旅行
+crash	撞击；崩溃；破产	c____	Unit 14 交通旅行
+crush	压碎，压坏n.拥挤的人群；迷恋；迷恋对象	c____	Unit 14 交通旅行
+dash	猛冲；猛摔	d___	Unit 14 交通旅行
+vanish	突然消失；绝迹	v_____	Unit 14 交通旅行
+disappear	失踪；消失	d________	Unit 14 交通旅行
+hazard	危险v.使冒风险	h_____	Unit 14 交通旅行
+dock	码头，船坞	d___	Unit 14 交通旅行
+anchor	锚	a_____	Unit 14 交通旅行
+submerge	（使）浸没；掩盖	s_______	Unit 14 交通旅行
+sailor	海员，水手	s_____	Unit 14 交通旅行
+seaman	海员，水手	s_____	Unit 14 交通旅行
+carrier	航空母舰；运输工具	c______	Unit 14 交通旅行
+steamer	汽船，轮船	s______	Unit 14 交通旅行
+liner	邮轮，客轮	l____	Unit 14 交通旅行
+vessel	大船，舰；容器，器血	v_____	Unit 14 交通旅行
+ferry	渡船v.渡运	f____	Unit 14 交通旅行
+sail	航行；驾驶（帆船）	s___	Unit 14 交通旅行
+raft	木筏，木排	r___	Unit 14 交通旅行
+canoe	独木舟	c____	Unit 14 交通旅行
+oar	桨v.用桨划（船）	o__	Unit 14 交通旅行
+deck	甲板v.装饰	d___	Unit 14 交通旅行
+turbine	涡轮机	t______	Unit 14 交通旅行
+propeller	螺旋桨，推进器	p________	Unit 14 交通旅行
+stern	船尾	s____	Unit 14 交通旅行
+aboard	在（船、飞机等）上	a_____	Unit 14 交通旅行
+embark	上船（或飞机等)；开始做	e_____	Unit 14 交通旅行
+channel	航道；电视频道；海峡	c______	Unit 14 交通旅行
+canal	运河；（人体内输送食物、空气等的）管	c____	Unit 14 交通旅行
+ditch	沟，渠v.抛弃	d____	Unit 14 交通旅行
+railroad	[美】铁路，铁路公司	r_______	Unit 14 交通旅行
+railway	[英】铁路，铁路系统	r______	Unit 14 交通旅行
+locomotive	火车头，机车	l_________	Unit 14 交通旅行
+subway	地下通道；地铁	s_____	Unit 14 交通旅行
+underground	地下的；秘密的n.[英］地铁	u__________	Unit 14 交通旅行
+tunnel	隧道，地道	t_____	Unit 14 交通旅行
+rail	栏杆；铁路路轨	r___	Unit 14 交通旅行
+depart	离开，启程	d_____	Unit 14 交通旅行
+arrive	到达；取得成功	a_____	Unit 14 交通旅行
+destination	目的地，终点	d__________	Unit 14 交通旅行
+delay	耽搁；延期v.使耽搁；使延期	d____	Unit 14 交通旅行
+postpone	推迟，使延期	p_______	Unit 14 交通旅行
+defer	推迟，拖延	d____	Unit 14 交通旅行
+lull	暂停，暂时平静期v.使昏昏欲睡	l___	Unit 14 交通旅行
+expire	期满；气绝，死亡	e_____	Unit 14 交通旅行
+due	到期的，预期的	d__	Unit 14 交通旅行
+postage	邮费，邮资	p______	Unit 14 交通旅行
+stamp	邮票；印章v.在.….上贴邮票；盖（章）	s____	Unit 14 交通旅行
+envelope	信封	e_______	Unit 14 交通旅行
+mail	邮件，邮包；邮政v.邮寄	m___	Unit 14 交通旅行
+packet	[英］包装盒；【尤英】小件包裹	p_____	Unit 14 交通旅行
+package	包裹；【美】盒，包v.包装	p______	Unit 14 交通旅行
+bind	捆，绑	b___	Unit 14 交通旅行
+parcel	打包，包n.（土地的）一块；【尤英］包裹	p_____	Unit 14 交通旅行
+load	装载，装满n.负荷；大量	l___	Unit 14 交通旅行
+burden	（使）担负n.重担，负担	b_____	Unit 14 交通旅行
+transfer	（使）迁移，（使）转移；（使）调动	t_______	Unit 14 交通旅行
+transmit	传送；传播，传染；传输	t_______	Unit 14 交通旅行
+transit	通过；运送n.运输；通行；过境，中转	t______	Unit 14 交通旅行
+deliver	传送，递送	d______	Unit 14 交通旅行
+convey	运送，输送；表达，传递	c_____	Unit 14 交通旅行
+speed	速度；迅速	s____	Unit 14 交通旅行
+velocity	速度	v_______	Unit 14 交通旅行
+swift	迅速的；敏捷的	s____	Unit 14 交通旅行
+republic	共和国，共和政体	r_______	Unit 15 国家政府
+Marxism	马克思主义	m______	Unit 15 国家政府
+socialism	社会主义	s________	Unit 15 国家政府
+communism	共产主义	c________	Unit 15 国家政府
+regime	统治制度，政权，政体	r_____	Unit 15 国家政府
+government	政府；政体；统治	g_________	Unit 15 国家政府
+authority	权力；权威人士；行政管理机构；当局	a________	Unit 15 国家政府
+political	政治的；政党的	p________	Unit 15 国家政府
+hierarchy	等级制度；统治集团	h________	Unit 15 国家政府
+democracy	民主，民主制度；民主国家	d________	Unit 15 国家政府
+bureaucracy	官僚制度；官僚作风	b__________	Unit 15 国家政府
+egalitarian	平等主义的n.平等主义者	e__________	Unit 15 国家政府
+materialism	唯物主义；唯物论	m__________	Unit 15 国家政府
+revolution	革命；巨大变化	r_________	Unit 15 国家政府
+reform	改革，改良v.改革，改良；（使）改过自新	r_____	Unit 15 国家政府
+conservative	保守的n.保守党党员	c___________	Unit 15 国家政府
+meltdown	（核反应堆的）堆芯熔毁；崩溃	m_______	Unit 15 国家政府
+municipal	市政的，地方政府的	m________	Unit 15 国家政府
+neutral	中立的；中立国的	n______	Unit 15 国家政府
+bilateral	双边的	b________	Unit 15 国家政府
+arena	竞技场，运动场；舞台，活动领域	a____	Unit 15 国家政府
+flag	旗，旗帜	f___	Unit 15 国家政府
+banner	横幅，标语	b_____	Unit 15 国家政府
+president	总统；校长；董事长	p________	Unit 15 国家政府
+premier	总理，首相adji.首要的，第一的	p______	Unit 15 国家政府
+minister	部长，大臣；公使	m_______	Unit 15 国家政府
+secretary	秘书；书记员；大臣	s________	Unit 15 国家政府
+parliament	议会，国会；（英国）议会	p_________	Unit 15 国家政府
+senate	大学理事会；（美国等国家的）参议院	s_____	Unit 15 国家政府
+conference	（常持续数日的大型正式）会议；正式商谈	c_________	Unit 15 国家政府
+discussed	ancedhumanrightsworkaroundtheworld.世界	d________	Unit 15 国家政府
+meeting	会议；会面	m______	Unit 15 国家政府
+headquarters	总部，总公司；司令部	h___________	Unit 15 国家政府
+delegation	代表团；委派	d_________	Unit 15 国家政府
+behalf	代表某人	b_____	Unit 15 国家政府
+police	警察；[the~警方	p_____	Unit 15 国家政府
+statesman	政治家	s________	Unit 15 国家政府
+mayor	市长	m____	Unit 15 国家政府
+service	服务；公共服务事业；公共事业机构	s______	Unit 15 国家政府
+office	办公室；要职，官职；[0~」部，局，厅	o_____	Unit 15 国家政府
+bureau	局，处，科；办事处	b_____	Unit 15 国家政府
+department	（政府、企业等机构的）部门；（大学的）系，所	d_________	Unit 15 国家政府
+harness	控制，利用	h______	Unit 15 国家政府
+administration	管理，行政	a_____________	Unit 15 国家政府
+dominate	支配，控制；占优势	d_______	Unit 15 国家政府
+power	能力；权力；政权；能源	p____	Unit 15 国家政府
+influence	影响，作用v.影响	i________	Unit 15 国家政府
+affect	影响；（感情上）打动，使悲伤	a_____	Unit 15 国家政府
+importance	重要，重要性	i_________	Unit 15 国家政府
+significance	重要性，意义	s___________	Unit 15 国家政府
+association	协会，团体；关联	a__________	Unit 15 国家政府
+union	联合；联盟；工会	u____	Unit 15 国家政府
+community	社区；群体；（生物的）群落	c________	Unit 15 国家政府
+consortium	财团，联营企业	c_________	Unit 15 国家政府
+league	联赛；联盟，同盟	l_____	Unit 15 国家政府
+institution	社会福利机构；（大学、银行等大型）机构	i__________	Unit 15 国家政府
+unite	（使）联合，（使）团结	u____	Unit 15 国家政府
+unique	独一无二的，唯一的；独特的	u_____	Unit 15 国家政府
+nation	国家；民族；国民	n_____	Unit 15 国家政府
+global	全球的，全世界的	g_____	Unit 15 国家政府
+worldwide	世界范围的，遍及全球的	w________	Unit 15 国家政府
+federal	联邦的，联合的	f______	Unit 15 国家政府
+foreign	外国的；外来的；外交的	f______	Unit 15 国家政府
+abroad	到国外，在国外；广为流传	a_____	Unit 15 国家政府
+civil	公民的，国内的；民用的；斯文的	c____	Unit 15 国家政府
+emigrate	移居国外	e_______	Unit 15 国家政府
+immigrate	（从外地）移居，移入	i________	Unit 15 国家政府
+reign	君主统治时期v.统治	r____	Unit 15 国家政府
+puppet	玩偶；傀儡	p_____	Unit 15 国家政府
+throne	王位；（君王的）宝座	t_____	Unit 15 国家政府
+crown	王冠v.为...加冕	c____	Unit 15 国家政府
+wreath	花环，花冠；（祭奠用的）花圈	w_____	Unit 15 国家政府
+colony	殖民地	c_____	Unit 15 国家政府
+liberty	自由	l______	Unit 15 国家政府
+independence	独立；自立	i___________	Unit 15 国家政府
+slum	贫民窟	s___	Unit 15 国家政府
+refuge	避难，庇护；避难所	r_____	Unit 15 国家政府
+asylum	庇护；精神病院	a_____	Unit 15 国家政府
+population	人口，人口数量	p_________	Unit 15 国家政府
+demographic	人口（学）的，人口统计（学）的	d__________	Unit 15 国家政府
+citizen	公民；市民	c______	Unit 15 国家政府
+resident	居民adj.居住的	r_______	Unit 15 国家政府
+ethnic	民族的，种族的	e_____	Unit 15 国家政府
+racial	种族的，人种的	r_____	Unit 15 国家政府
+clan	宗族，家族；帮派	c___	Unit 15 国家政府
+franchise	出售...的特许经营权n.特许权；选举权	f________	Unit 15 国家政府
+entitle	给权利（或资格）；给.题名	e______	Unit 15 国家政府
+preference	偏爱；优先权	p_________	Unit 15 国家政府
+vote	选举权；投票v.表决，投票	v___	Unit 15 国家政府
+elect	选举；选择	e____	Unit 15 国家政府
+respondent	（民意测验等的）调查对象	r_________	Unit 15 国家政府
+poll	民意调查；选举投票；投票数	p___	Unit 15 国家政府
+ambition	雄心，抱负	a_______	Unit 15 国家政府
+nominate	提名；任命	n_______	Unit 15 国家政府
+checklist	清单；选民花名册	c________	Unit 15 国家政府
+succession	连续；继承权，继位	s_________	Unit 15 国家政府
+safety	安全；安全场所	s_____	Unit 15 国家政府
+welfare	健康，幸福	w______	Unit 15 国家政府
+well-being	康乐，安宁	w________	Unit 15 国家政府
+harmony	协调，和谐；融洽；和声	h______	Unit 15 国家政府
+steady	不摇晃的，平稳的；稳步的；稳定的	s_____	Unit 15 国家政府
+flourish	繁荣，兴旺；茁壮成长	f_______	Unit 15 国家政府
+succeed	成功	s______	Unit 15 国家政府
+prospect	希望，可能性；风景	p_______	Unit 15 国家政府
+perspective	景观；观点	p__________	Unit 15 国家政府
+viewpoint	观点，看法；视角	v________	Unit 15 国家政府
+standpoint	立场，立足点	s_________	Unit 15 国家政府
+outlook	（对生活的）观点；展望，前景	o______	Unit 15 国家政府
+guideline	指导方针	g________	Unit 15 国家政府
+ethic	行为准则；道德规范，伦理标准	e____	Unit 15 国家政府
+suggest	建议；暗示	s______	Unit 15 国家政府
+advise	劝告；建议；通知	a_____	Unit 15 国家政府
+proposal	提议，建议	p_______	Unit 15 国家政府
+hint	/n.暗示，提示	h___	Unit 15 国家政府
+declare	宣布，宣告；宣称，声称	d______	Unit 15 国家政府
+affirm	断言，坚持声称；证实	a_____	Unit 15 国家政府
+claim	声称；主张；索赔v.声称；要求（拥有）	c____	Unit 15 国家政府
+proclaim	声明；清楚地表明	p_______	Unit 15 国家政府
+state	陈述，说明n.国家；州；状况	s____	Unit 15 国家政府
+announce	宣布；通知	a_______	Unit 15 国家政府
+clarify	澄清，阐明	c______	Unit 15 国家政府
+assist	帮助，协助	a_____	Unit 15 国家政府
+aid	救援物资；辅助物；救助	a__	Unit 15 国家政府
+encourage	鼓励，激励；怂恿	e________	Unit 15 国家政府
+implement	Theewpolicyonhousingwillbeimplemented	i________	Unit 15 国家政府
+monitor	监视；监听n.监控器；监视器；班长	m______	Unit 15 国家政府
+admit	供认，承认	a____	Unit 15 国家政府
+African	非洲的n.非洲人	a______	Unit 15 国家政府
+European	欧洲的n.欧洲人	e_______	Unit 15 国家政府
+Latin	拉丁语的；拉丁人的n.拉丁语；拉丁人	l____	Unit 15 国家政府
+Jewish	犹太教的；犹太人的	j_____	Unit 15 国家政府
+Arabian	阿拉伯的	a______	Unit 15 国家政府
+Portuguese	葡萄牙的n.葡萄牙语；葡萄牙人	p_________	Unit 15 国家政府
+Roman	罗马的；古罗马帝国的n.古罗马人；（现代）罗马	r____	Unit 15 国家政府
+Russian	俄罗斯的n.俄罗斯人；俄语	r______	Unit 15 国家政府
+Spanish	西班牙的n.西班牙语；西班牙人	s______	Unit 15 国家政府
+Swiss	瑞士的n.瑞士人	s____	Unit 15 国家政府
+Greek	希腊的n.希腊人；古希腊人；希腊语；古希腊语	g____	Unit 15 国家政府
+Italian	意大利的n.意大利人；意大利语	i______	Unit 15 国家政府
+soviet	[S~］苏联的n.苏维埃	s_____	Unit 15 国家政府
+Indian	印度的n.印度人	i_____	Unit 15 国家政府
+Australia	澳大利亚	a________	Unit 15 国家政府
+NewZealand	新西兰	n_________	Unit 15 国家政府
+Canada	加拿大	c_____	Unit 15 国家政府
+Britain	不列颠	b______	Unit 15 国家政府
+France	法国	f_____	Unit 15 国家政府
+Germany	德国	g______	Unit 15 国家政府
+economy	经济；节约	e______	Unit 16 社会经济
+trade	贸易v.交换	t____	Unit 16 社会经济
+market	市场；市场需求	m_____	Unit 16 社会经济
+industry	工业；产业；勤劳	i_______	Unit 16 社会经济
+merchant	商人adj.商业的	m_______	Unit 16 社会经济
+financial	财政的；金融的	f________	Unit 16 社会经济
+fund	资助n.基金；资金	f___	Unit 16 社会经济
+donate	捐赠，捐献	d_____	Unit 16 社会经济
+endow	捐赠；赋予	e____	Unit 16 社会经济
+commercial	商业的n.商业广告	c_________	Unit 16 社会经济
+advertise	做广告	a________	Unit 16 社会经济
+slogan	标语，口号	s_____	Unit 16 社会经济
+purchase	/v.购买	p_______	Unit 16 社会经济
+lease	租约v.出租；租用	l____	Unit 16 社会经济
+retail	零售v.零售；以....价格零售	r_____	Unit 16 社会经济
+chain	连锁店；一连串（人或事物）	c____	Unit 16 社会经济
+grocery	食品杂货店	g______	Unit 16 社会经济
+promotion	促销活动；晋升	p________	Unit 16 社会经济
+voucher	代金券	v______	Unit 16 社会经济
+coupon	优惠券	c_____	Unit 16 社会经济
+currency	货币；通用，流行	c_______	Unit 16 社会经济
+exchange	交换；兑换	e_______	Unit 16 社会经济
+receipt	收据；收到	r______	Unit 16 社会经济
+invoice	发票v.开发票给	i______	Unit 16 社会经济
+tax	税v.对....征税	t__	Unit 16 社会经济
+levy	税款v.征收，征（税）	l___	Unit 16 社会经济
+tariff	关税：（公共服务的）收费	t_____	Unit 16 社会经济
+duty	职责；义务；关税	d___	Unit 16 社会经济
+impose	强加；征收（税款）	i_____	Unit 16 社会经济
+consume	消耗；吃，喝	c______	Unit 16 社会经济
+spend	花费n.开支	s____	Unit 16 社会经济
+cost	需付费n.费用；代价；成本	c___	Unit 16 社会经济
+expense	费用，花费	e______	Unit 16 社会经济
+revenue	（公司、组织的）收入；（政府的）税收，财政收入	r______	Unit 16 社会经济
+gross	总的，毛的	g____	Unit 16 社会经济
+recession	经济衰退	r________	Unit 16 社会经济
+depression	沮丧，消沉；萧条期，不景气	d_________	Unit 16 社会经济
+crisis	危机	c_____	Unit 16 社会经济
+security	安全工作；安全；证券	s_______	Unit 16 社会经济
+bond	债券	b___	Unit 16 社会经济
+debt	债务	d___	Unit 16 社会经济
+deficit	赤字，逆差	d______	Unit 16 社会经济
+inflation	通货膨胀	i________	Unit 16 社会经济
+deflation	通货紧缩	d________	Unit 16 社会经济
+dwindle	缩小，减少	d______	Unit 16 社会经济
+downsize	使精简；裁员	d_______	Unit 16 社会经济
+decline	/n.下降	d______	Unit 16 社会经济
+diminish	（使）减少；贬低	d_______	Unit 16 社会经济
+reduce	减少，减小	r_____	Unit 16 社会经济
+increment	增加量；定期的加薪	i________	Unit 16 社会经济
+escalate	（使）逐步升级，（使）不断恶化	e_______	Unit 16 社会经济
+expand	扩充，扩大；扩展	e_____	Unit 16 社会经济
+influx	流入，涌进	i_____	Unit 16 社会经济
+affluent	富裕的，富足的	a_______	Unit 16 社会经济
+enrich	使富有；充实	e_____	Unit 16 社会经济
+sufficient	足够的	s_________	Unit 16 社会经济
+adequate	足够的；合格的	a_______	Unit 16 社会经济
+spare	多余的，空闲的v.剩余	s____	Unit 16 社会经济
+saving	节约，节省	s_____	Unit 16 社会经济
+redundant	多余的；被裁减的	r________	Unit 16 社会经济
+lack	缺乏，不足v.缺少，没有	l___	Unit 16 社会经济
+company	公司；陪伴；剧团	c______	Unit 16 社会经济
+firm	公司adj.坚定的；坚固的	f___	Unit 16 社会经济
+enterprise	企业；事业	e_________	Unit 16 社会经济
+agent	代理人，代理商	a____	Unit 16 社会经济
+entity	实体，独立存在物	e_____	Unit 16 社会经济
+invest	投资；投入	i_____	Unit 16 社会经济
+input	输入信息；投入物	i____	Unit 16 社会经济
+product	产品；产物	p______	Unit 16 社会经济
+acquisition	获得；（对公司的）并购	a__________	Unit 16 社会经济
+cargo	货物	c____	Unit 16 社会经济
+insure	确保；给….上保险	i_____	Unit 16 社会经济
+guarantee	担保；确保n.保证；保修单；担保金，担保物	g________	Unit 16 社会经济
+reliable	可靠的，可信赖的	r_______	Unit 16 社会经济
+negotiation	谈判，协商	n__________	Unit 16 社会经济
+attend	参加，出席	a_____	Unit 16 社会经济
+absent	不在场的，缺席的；心不在焉的	a_____	Unit 16 社会经济
+sale	卖，销售；销售额	s___	Unit 16 社会经济
+wholesale	批发	w________	Unit 16 社会经济
+auction	/n.拍卖	a______	Unit 16 社会经济
+bid	/n.出价；投标	b__	Unit 16 社会经济
+deal	买卖；处理，应付n.协议，交易；大量	d___	Unit 16 社会经济
+transaction	（一笔）交易，业务	t__________	Unit 16 社会经济
+turnover	（人员）流动率；营业额	t_______	Unit 16 社会经济
+dump	丢弃，倾倒；倾销	d___	Unit 16 社会经济
+quota	限额，配额；定额	q____	Unit 16 社会经济
+share	股份，股票；（在若干人之间分得的）一份v.分享；	s____	Unit 16 社会经济
+benefit	益处v.有利于；获益	b______	Unit 16 社会经济
+interest	兴趣；利益；利息v.使感兴趣	i_______	Unit 16 社会经济
+dividend	股息，红利	d_______	Unit 16 社会经济
+stock	股本；股票；库存	s____	Unit 16 社会经济
+account	账户；解释	a______	Unit 16 社会经济
+deposit	存款；押金	d______	Unit 16 社会经济
+cash	现金v.兑现（支票）	c___	Unit 16 社会经济
+coin	硬币v.铸币；创造（新词语）	c___	Unit 16 社会经济
+shilling	先令	s_______	Unit 16 社会经济
+copper	铜；铜币；警察	c_____	Unit 16 社会经济
+treasure	金银财宝；宝物，珍品	t_______	Unit 16 社会经济
+wealth	财富；丰富	w_____	Unit 16 社会经济
+estate	地产；遗产	e_____	Unit 16 社会经济
+possess	占用，拥有；影响，控制	p______	Unit 16 社会经济
+legacy	遗赠，遗产	l_____	Unit 16 社会经济
+descend	下降，下来	d______	Unit 16 社会经济
+worthy	有价值的；值得..的	w_____	Unit 16 社会经济
+valuable	很值钱的，贵重的；很重要的	v_______	Unit 16 社会经济
+cheap	廉价的；质劣价低的	c____	Unit 16 社会经济
+incentive	刺激，激励	i________	Unit 16 社会经济
+accelerate	（使）加速	a_________	Unit 16 社会经济
+prompt	促使adj.迅速的	p_____	Unit 16 社会经济
+salary	工资，（尤指按月领的）薪水	s_____	Unit 16 社会经济
+income	收入	i_____	Unit 16 社会经济
+wage	（通常指按周领的）工钱	w___	Unit 16 社会经济
+payment	支付；支付的款项；付款额	p______	Unit 16 社会经济
+reimburse	赔偿，补偿	r________	Unit 16 社会经济
+payroll	工资名单	p______	Unit 16 社会经济
+remuneration	报酬	r___________	Unit 16 社会经济
+subsidy	津贴，补贴	s______	Unit 16 社会经济
+earn	赚得；赢得；获得	e___	Unit 16 社会经济
+undertaking	任务，事业；许诺，保证	u__________	Unit 16 社会经济
+career	职业，事业；职业生涯	c_____	Unit 16 社会经济
+profession	职业	p_________	Unit 16 社会经济
+occupation	占领，占据；职业	o_________	Unit 16 社会经济
+job	职业，工作；（一份）工作，活儿	j__	Unit 16 社会经济
+vocation	（认为特别适合自己的）职业；使命感	v_______	Unit 16 社会经济
+workforce	劳动力；全体员工	w________	Unit 16 社会经济
+workaholic	工作狂	w_________	Unit 16 社会经济
+personnel	人员，职员；人事部门	p________	Unit 16 社会经济
+clerk	店员；办事员；接待员	c____	Unit 16 社会经济
+interview	面试；采访v.对.…..进行面试；采访	i________	Unit 16 社会经济
+resume	（求职用的）履历，简历；摘要	r_____	Unit 16 社会经济
+recommend	推荐，介绍；劝告，建议	r________	Unit 16 社会经济
+employ	雇用；采用	e_____	Unit 16 社会经济
+hire	雇用；租用n.租赁（业）	h___	Unit 16 社会经济
+fire	解雇n.火	f___	Unit 16 社会经济
+lay-off	（因岗位不足的）解雇，裁员；歇工期	l_____	Unit 16 社会经济
+dismiss	解雇；解散；（法官）驳回	d______	Unit 16 社会经济
+resign	辞去，辞职	r_____	Unit 16 社会经济
+sack	大口袋，麻布袋v.开除	s___	Unit 16 社会经济
+retire	（使）退休	r_____	Unit 16 社会经济
+result	后果，结果v.导致	r_____	Unit 16 社会经济
+failure	失败；失败的人；失败的事	f______	Unit 16 社会经济
+abortion	人工流产；（计划等）中途失败	a_______	Unit 16 社会经济
+loss	遗失；损失；亏损	l___	Unit 16 社会经济
+opportunity	机会，时机	o__________	Unit 16 社会经济
+chance	机会；可能性	c_____	Unit 16 社会经济
+choose	选择	c_____	Unit 16 社会经济
+change	改变	c_____	Unit 16 社会经济
+potwhich	changeable可能变化的，易变的	p_______	Unit 16 社会经济
+solve	解答；解决	s____	Unit 16 社会经济
+develop	发展；开发	d______	Unit 16 社会经济
+sustainable	可持续的	s__________	Unit 16 社会经济
+improve	改善，改进	i______	Unit 16 社会经济
+manage	管理；设法做到	m_____	Unit 16 社会经济
+regulate	管理；调整	r_______	Unit 16 社会经济
+sanction	批准；制裁..批准；对..实施制裁	s_______	Unit 16 社会经济
+coordinate	[例】Oureffortseedtobefurthercoordinatedfor	c_________	Unit 16 社会经济
+cooperate	合作，协作	c________	Unit 16 社会经济
+collaborate	合作	c__________	Unit 16 社会经济
+law	法律；规律；定理	l__	Unit 17 法律法规
+legal	法律的；合法的	l____	Unit 17 法律法规
+rule	规则v.统治	r___	Unit 17 法律法规
+regulation	规则，规定；管理	r_________	Unit 17 法律法规
+item	一项项目，条目	i___	Unit 17 法律法规
+treaty	条约；协议	t_____	Unit 17 法律法规
+agreement	协定；同意	a________	Unit 17 法律法规
+charter	宪章v.租，包（船、车、飞机等）	c______	Unit 17 法律法规
+protocol	议定书，协议；礼仪	p_______	Unit 17 法律法规
+norm	标准；行为准则，规范	n___	Unit 17 法律法规
+benchmark	基准，水准点	b________	Unit 17 法律法规
+criteria	[criterion的复数形式】标准，准则	c_______	Unit 17 法律法规
+standard	标准	s_______	Unit 17 法律法规
+permit	允许，准许	p_____	Unit 17 法律法规
+allow	允许，准许	a____	Unit 17 法律法规
+admission	承认；入场费；准许进入	a________	Unit 17 法律法规
+perform	履行，执行	p______	Unit 17 法律法规
+enforce	强制执行，强行实施：迫使	e______	Unit 17 法律法规
+default	不支付，不履行n.违约；默认值	d______	Unit 17 法律法规
+reject	拒绝接受；摒弃	r_____	Unit 17 法律法规
+constraint	约束，限制；克制	c_________	Unit 17 法律法规
+official	正式的，官方的	o_______	Unit 17 法律法规
+mandatory	法定的，强制的	m________	Unit 17 法律法规
+potent	很有效的，强有力的	p_____	Unit 17 法律法规
+bound	一定会，很可能会，有义务	b____	Unit 17 法律法规
+obligation	义务，责任	o_________	Unit 17 法律法规
+court	法院；庭院	c____	Unit 17 法律法规
+supreme	最高的；最大的	s______	Unit 17 法律法规
+enact	通过（法律)；表演	e____	Unit 17 法律法规
+legislate	立法，制定（或通过）法律	l________	Unit 17 法律法规
+equity	公平	e_____	Unit 17 法律法规
+fair	公平的，公正的	f___	Unit 17 法律法规
+just	公正的；正义的adv.刚刚；仅仅	j___	Unit 17 法律法规
+prejudice	偏见，成见	p________	Unit 17 法律法规
+discrimination	歧视	d_____________	Unit 17 法律法规
+accuse	控告，指责	a_____	Unit 17 法律法规
+sue	控告，提起诉讼；提出请求	s__	Unit 17 法律法规
+prosecute	检举，起诉	p________	Unit 17 法律法规
+condemn	谴责，指责	c______	Unit 17 法律法规
+complain	抱怨；投诉	c_______	Unit 17 法律法规
+boycott	/v.抵制，拒绝购买	b______	Unit 17 法律法规
+session	会议；会期	s______	Unit 17 法律法规
+mediate	斡旋，调解	m______	Unit 17 法律法规
+plea	辩解理由，借口；请求	p___	Unit 17 法律法规
+appeal	/n.呼吁；申诉	a_____	Unit 17 法律法规
+contradict	反驳；与.矛盾	c_________	Unit 17 法律法规
+persuade	说服；使相信	p_______	Unit 17 法律法规
+controversy	争议；辩论	c__________	Unit 17 法律法规
+whisper	低声说；私下谈论	w______	Unit 17 法律法规
+mutter	轻声低语；小声抱怨	m_____	Unit 17 法律法规
+murmur	低声说n.咕嘧，低语	m_____	Unit 17 法律法规
+silent	沉默的；寂静无声的	s_____	Unit 17 法律法规
+mute	编默的；哑的；无声的n.哑巴	m___	Unit 17 法律法规
+investigate	调查	i__________	Unit 17 法律法规
+witness	目击者，见证人v.目击	w______	Unit 17 法律法规
+justify	为...辩护，证明..…正当	j______	Unit 17 法律法规
+reasonable	合理的；理智的	r_________	Unit 17 法律法规
+suitable	合适的，适宜的	s_______	Unit 17 法律法规
+judge	法官；裁判员	j____	Unit 17 法律法规
+jury	陪审团；（比赛的）评判委员会	j___	Unit 17 法律法规
+trial	试验；审判	t____	Unit 17 法律法规
+sentence	判决v.宣判	s_______	Unit 17 法律法规
+arrest	逮捕；吸引（注意）n.逮捕	a_____	Unit 17 法律法规
+jail	监狱v.监禁	j___	Unit 17 法律法规
+prison	监狱；监禁	p_____	Unit 17 法律法规
+confine	边界，范围v.限制；监禁	c______	Unit 17 法律法规
+oversee	监督，监管	o______	Unit 17 法律法规
+supervise	监督，管理，指导	s________	Unit 17 法律法规
+restrict	限制，限定；约束	r_______	Unit 17 法律法规
+restrain	抑制；制止	r_______	Unit 17 法律法规
+commit	犯(罪)，做(坏事)	c_____	Unit 17 法律法规
+sin	罪孽v.犯戒律	s__	Unit 17 法律法规
+crime	罪行；犯罪活动	c____	Unit 17 法律法规
+vice	恶行；缺点	v___	Unit 17 法律法规
+bribe	贿赂v.向.....行贿	b____	Unit 17 法律法规
+rob	抢劫；夺走	r__	Unit 17 法律法规
+pirate	海盗；盗版者v.盗印，窃用	p_____	Unit 17 法律法规
+steal	偷，窃取；剽窃	s____	Unit 17 法律法规
+thief	窃贼，偷窃犯	t____	Unit 17 法律法规
+murder	/v.谋杀	m_____	Unit 17 法律法规
+suicide	自杀	s______	Unit 17 法律法规
+deceive	欺骗；蒙蔽，误导	d______	Unit 17 法律法规
+cheat	欺骗；作弊n.作者	c____	Unit 17 法律法规
+liar	说谎的人	l___	Unit 17 法律法规
+trap	陷阱；诡计v.诱骗	t___	Unit 17 法律法规
+trick	诡计v.哄骗	t____	Unit 17 法律法规
+pretend	假装；假扮	p______	Unit 17 法律法规
+fool	蠢人，傻子v.欺骗	f___	Unit 17 法律法规
+stigma	耻辱，污名	s_____	Unit 17 法律法规
+confess	供认；忏悔	c______	Unit 17 法律法规
+conform	遵守；顺从；相符合	c______	Unit 17 法律法规
+reconcile	使和解；调和	r________	Unit 17 法律法规
+obey	服从，顺从	o___	Unit 17 法律法规
+succumb	屈服，屈从	s______	Unit 17 法律法规
+penalty	惩罚，处罚	p______	Unit 17 法律法规
+fine	罚款adj.美好的	f___	Unit 17 法律法规
+mortgage	抵押（房屋、土地）借款n.房屋抵押贷款	m_______	Unit 17 法律法规
+ownership	所有权，物主身份	o________	Unit 17 法律法规
+copyright	版权	c________	Unit 17 法律法规
+privilege	特权	p________	Unit 17 法律法规
+accredit	把.…归于；委任	a_______	Unit 17 法律法规
+clue	线索；提示	c___	Unit 17 法律法规
+access	通路，入径；查阅（或使用、接近）的机会（或权利）	a_____	Unit 17 法律法规
+anonymous	匿名的	a________	Unit 17 法律法规
+false	不正确的；虚假的；伪造的	f____	Unit 17 法律法规
+genuine	真诚的；真正的	g______	Unit 17 法律法规
+procedure	手续；程序	p________	Unit 17 法律法规
+routine	例行公事；常规adj.惯例的	r______	Unit 17 法律法规
+consequence	后果	c__________	Unit 17 法律法规
+demand	要求；需要n.要求；需求；需求量	d_____	Unit 17 法律法规
+request	/v.要求，请求	r______	Unit 17 法律法规
+require	需要；命令，规定	r______	Unit 17 法律法规
+petition	请求n.请愿书；上诉	p_______	Unit 17 法律法规
+command	命令；指挥，统率n.命令；指挥，控制；运用能力	c______	Unit 17 法律法规
+instruct	指导，讲授；通知；命令	i_______	Unit 17 法律法规
+violence	暴力	v_______	Unit 18 沙场争锋
+raid	/v.突袭；突然搜查	r___	Unit 18 沙场争锋
+enormity	巨大；滔天大罪	e_______	Unit 18 沙场争锋
+campaign	战役；（社会、政治）运动v.参加（或领导）运动	c_______	Unit 18 沙场争锋
+battle	战斗，战役v.与....战斗	b_____	Unit 18 沙场争锋
+struggle	/n.挣扎；奋力；奋斗	s_______	Unit 18 沙场争锋
+explosion	爆发；进发；爆炸；激增	e________	Unit 18 沙场争锋
+bombard	轰击，轰炸；连珠炮般质问（或批评）	b______	Unit 18 沙场争锋
+bomb	炸弹v.轰炸	b___	Unit 18 沙场争锋
+blast	爆炸v.爆炸，炸毁	b____	Unit 18 沙场争锋
+burst	（使）爆裂；（使）胀开n.进发；爆裂	b____	Unit 18 沙场争锋
+spark	火花，火星	s____	Unit 18 沙场争锋
+twinkle	/v.闪烁，闪耀	t______	Unit 18 沙场争锋
+gunpowdergAnpauda	火药	g________________	Unit 18 沙场争锋
+tank	坦克；罐，槽，缸	t___	Unit 18 沙场争锋
+cannon	大炮，加农炮；（飞机上的）自动机关炮	c_____	Unit 18 沙场争锋
+missile	导弹；投掷物	m______	Unit 18 沙场争锋
+weapon	武器，兵器；手段	w_____	Unit 18 沙场争锋
+pistol	手枪	p_____	Unit 18 沙场争锋
+rifle	步枪	r____	Unit 18 沙场争锋
+bullet	子弹，枪弹	b_____	Unit 18 沙场争锋
+target	靶子；目标，对象	t_____	Unit 18 沙场争锋
+deflect	（使）偏斜，（使）偏转；转移	d______	Unit 18 沙场争锋
+mission	使命；重要任务	m______	Unit 18 沙场争锋
+flame	火焰；强烈的感情	f____	Unit 18 沙场争锋
+flare	（闪耀的）火光；闪光信号灯v.（火光）闪耀	f____	Unit 18 沙场争锋
+glitter	闪烁；闪现n.发光小物	g______	Unit 18 沙场争锋
+glow	发出微弱稳定的光n.微弱稳定的光	g___	Unit 18 沙场争锋
+blade	刃，锋；（螺旋桨的）叶片	b____	Unit 18 沙场争锋
+sword	刀，剑	s____	Unit 18 沙场争锋
+ax	斧子	a_	Unit 18 沙场争锋
+hammer	锤，榔头v.用锤击	h_____	Unit 18 沙场争锋
+bow	弓；蝴蝶结	b__	Unit 18 沙场争锋
+arrow	箭；箭头	a____	Unit 18 沙场争锋
+spear	矛；标枪v.用尖物刺穿	s____	Unit 18 沙场争锋
+helmet	头盔，防护帽	h_____	Unit 18 沙场争锋
+shield	盾；防护物v.保护	s_____	Unit 18 沙场争锋
+equip	配备，装备	e____	Unit 18 沙场争锋
+prepare	使预备好；为..做准备	p______	Unit 18 沙场争锋
+provide	供给，提供	p______	Unit 18 沙场争锋
+deploy	部署	d_____	Unit 18 沙场争锋
+hit	击，打；碰撞；打击n.击，打；击中	h__	Unit 18 沙场争锋
+beat	打；打败；（心脏等）跳动n.节拍；击鼓声；（心脏	b___	Unit 18 沙场争锋
+strike	打，击；突击；罢工n.罢工；打击	s_____	Unit 18 沙场争锋
+punch	打孔机；重拳击打v.给...打孔；拳打	p____	Unit 18 沙场争锋
+chop	切碎（食物)；劈（木头）	c___	Unit 18 沙场争锋
+stab	/n.（用刀等）刺，戳	s___	Unit 18 沙场争锋
+dilemma	（进退两难的）困境	d______	Unit 18 沙场争锋
+plight	困境；誓约	p_____	Unit 18 沙场争锋
+pitfall	陷阱；危险，困难	p______	Unit 18 沙场争锋
+conspiracy	阴谋，密谋，合谋	c_________	Unit 18 沙场争锋
+destitute	赤贫的，一无所有的；缺乏的	d________	Unit 18 沙场争锋
+famine	饥荒	f_____	Unit 18 沙场争锋
+starve	（使）挨饿，饿死	s_____	Unit 18 沙场争锋
+deprive	剥夺	d______	Unit 18 沙场争锋
+seize	抓住；夺取	s____	Unit 18 沙场争锋
+pursue	追赶；追查；追求	p_____	Unit 18 沙场争锋
+threat	威胁，恐吓	t_____	Unit 18 沙场争锋
+offend	冒犯；犯罪；违反	o_____	Unit 18 沙场争锋
+aggressive	侵略的；好斗的；积极进取的	a_________	Unit 18 沙场争锋
+invade	入侵，侵略；侵扰	i_____	Unit 18 沙场争锋
+trespass	非法侵入n.罪过；非法侵入	t_______	Unit 18 沙场争锋
+intrude	闯入，侵入；侵扰	i______	Unit 18 沙场争锋
+violate	违反，违背；侵犯；搅扰	v______	Unit 18 沙场争锋
+attack	/n.攻击，进攻	a_____	Unit 18 沙场争锋
+assault	猛攻；（身体）侵犯v.袭击	a______	Unit 18 沙场争锋
+challenge	挑战v.向....挑战	c________	Unit 18 沙场争锋
+siege	包围，围攻	s____	Unit 18 沙场争锋
+surround	包围；环绕	s_______	Unit 18 沙场争锋
+enclose	围住，包围；把.封入信封，随信附上	e______	Unit 18 沙场争锋
+pause	/v.暂停，停顿	p____	Unit 18 沙场争锋
+halt	（使）停止，（使）停住n.停止，停住	h___	Unit 18 沙场争锋
+cease	终止，停止	c____	Unit 18 沙场争锋
+oppose	反对，抵制	o_____	Unit 18 沙场争锋
+oppress	压迫，压制；使压抑	o______	Unit 18 沙场争锋
+counter	抵消；反击，反驳adv.相反地n.柜台；工作台	c______	Unit 18 沙场争锋
+deter	阻止，威住	d____	Unit 18 沙场争锋
+forbid	禁止；阻止	f_____	Unit 18 沙场争锋
+prohibit	禁止，不允许	p_______	Unit 18 沙场争锋
+prevent	预防，防止；阻止，阻碍	p______	Unit 18 沙场争锋
+revolt	/v.叛乱；反抗	r_____	Unit 18 沙场争锋
+betray	背叛，出卖；（无意中）泄露，流露出	b_____	Unit 18 沙场争锋
+treason	叛国罪，通敌罪	t______	Unit 18 沙场争锋
+rebel	rebal/反叛者；叛逆者/r'bel/造反；反抗，反对	r____	Unit 18 沙场争锋
+traitor	叛徒，卖国贼	t______	Unit 18 沙场争锋
+patriot	爱国者	p______	Unit 18 沙场争锋
+blame	责备，指责n.（对坏事应负的）责任	b____	Unit 18 沙场争锋
+reproach	/v.责备，指责	r_______	Unit 18 沙场争锋
+evidence	证据；根据	e_______	Unit 18 沙场争锋
+proof	证明，证据	p____	Unit 18 沙场争锋
+terror	恐惧，恐慌	t_____	Unit 18 沙场争锋
+terrible	可怕的，糟糕的；极严重的	t_______	Unit 18 沙场争锋
+terrific	极好的；很大的，很强的	t_______	Unit 18 沙场争锋
+horrible	可怕的，恐怖的	h_______	Unit 18 沙场争锋
+alarm	惊恐，忧虑；警报；警报器	a____	Unit 18 沙场争锋
+dread	极为害怕，非常担心n.恐惧，忧虑	d____	Unit 18 沙场争锋
+frighten	使害怕，使惊恐	f_______	Unit 18 沙场争锋
+tension	紧张；拉紧状态	t______	Unit 18 沙场争锋
+turbulent	动荡的，混乱的；汹涌的	t________	Unit 18 沙场争锋
+turmoil	混乱，骚乱	t______	Unit 18 沙场争锋
+scenario	可能发生的情况；剧情梗概，脚本	s_______	Unit 18 沙场争锋
+occasion	场合；时机，机会	o_______	Unit 18 沙场争锋
+limit	限度；界限v.限制，限定	l____	Unit 18 沙场争锋
+boundary	分界线，边界；界限	b_______	Unit 18 沙场争锋
+rein	缰绳；控制权v.用缰绳勒马；管束	r___	Unit 18 沙场争锋
+compete	竞争；参加（比赛）	c______	Unit 18 沙场争锋
+contest	iftheelectionisone-sided,itisreallyo	c______	Unit 18 沙场争锋
+contend	竞争；争辩，主张	c______	Unit 18 沙场争锋
+rival	竞争者，对手v.与....匹敌	r____	Unit 18 沙场争锋
+competitor	竞争者，对手	c_________	Unit 18 沙场争锋
+enemy	敌人，仇敌；敌兵，敌军	e____	Unit 18 沙场争锋
+strategy	策略；战略	s_______	Unit 18 沙场争锋
+tactic	策略，战术	t_____	Unit 18 沙场争锋
+blueprint	蓝图；行动计划	b________	Unit 18 沙场争锋
+warn	警告；告诫	w___	Unit 18 沙场争锋
+compel	强迫，迫使	c_____	Unit 18 沙场争锋
+oblige	迫使，强迫；帮忙	o_____	Unit 18 沙场争锋
+refute	反驳，驳斥；否认	r_____	Unit 18 沙场争锋
+might	力量，威力	m____	Unit 18 沙场争锋
+force	力量；武力v.强迫，迫使；用力使..移动	f____	Unit 18 沙场争锋
+reinforce	增援；增强，加强；加固	r________	Unit 18 沙场争锋
+impair	削弱；妨碍	i_____	Unit 18 沙场争锋
+mitigate	减轻，缓和	m_______	Unit 18 沙场争锋
+comfort	安慰；舒适v.安慰，抚慰	c______	Unit 18 沙场争锋
+event	事件，大事；公开活动	e____	Unit 18 沙场争锋
+matter	事情；物质v.要紧	m_____	Unit 18 沙场争锋
+happen	发生，出现；碰巧	h_____	Unit 18 沙场争锋
+occur	发生，出现	o____	Unit 18 沙场争锋
+savage	野蛮的，凶猛的v.凶狠地攻击n.野蛮人	s_____	Unit 18 沙场争锋
+reckless	鲁莽的，不计后果的	r_______	Unit 18 沙场争锋
+fierce	凶猛的；猛烈的；（天气或温度）恶劣的	f_____	Unit 18 沙场争锋
+foul	恶臭的；恶劣的；邪恶的v.弄脏；对..犯规	f___	Unit 18 沙场争锋
+evil	邪恶；祸害adj.邪恶的	e___	Unit 18 沙场争锋
+devil	魔鬼；恶棍	d____	Unit 18 沙场争锋
+punishment	惩罚，处罚	p_________	Unit 18 沙场争锋
+execute	实行，执行；处死	e______	Unit 18 沙场争锋
+hang	悬挂；悬浮（在空中）；（被）绞死	h___	Unit 18 沙场争锋
+sacrifice	牺牲；献祭v.牺牲；以....作蔡品	s________	Unit 18 沙场争锋
+casualty	伤亡人员	c_______	Unit 18 沙场争锋
+bury	埋葬；埋藏	b___	Unit 18 沙场争锋
+funeral	葬礼	f______	Unit 18 沙场争锋
+grave	坟墓；死亡adj.庄重的，严肃的	g____	Unit 18 沙场争锋
+tomb	坟墓，场	t___	Unit 18 沙场争锋
+hell	地狱；苦境	h___	Unit 18 沙场争锋
+maritime	海的，海上的，海事的	m_______	Unit 18 沙场争锋
+naval	海军的	n____	Unit 18 沙场争锋
+fleet	舰队，船队；机群，车队	f____	Unit 18 沙场争锋
+troop	一群，一队；军队v.结队前行	t____	Unit 18 沙场争锋
+landing	着陆；登陆	l______	Unit 18 沙场争锋
+hover	盘旋，悬浮；徘徊；处于不确定状态	h____	Unit 18 沙场争锋
+proceed	接下来做；继续进行；行进	p______	Unit 18 沙场争锋
+military	军事的，军用的	m_______	Unit 18 沙场争锋
+nuclear	原子核的；核能的；核武器的	n______	Unit 18 沙场争锋
+poison	毒物，毒药v.毒害	p_____	Unit 18 沙场争锋
+devastate	毁坏，摧毁	d________	Unit 18 沙场争锋
+risk	危险，风险v.冒着....的危险	r___	Unit 18 沙场争锋
+adventure	冒险，冒险经历v.去（某地）探险	a________	Unit 18 沙场争锋
+peril	重大危险；险情，危险	p____	Unit 18 沙场争锋
+catastrophe	重大灾难，大祸	c__________	Unit 18 沙场争锋
+collapse	/v.倒塌；崩溃	c_______	Unit 18 沙场争锋
+torture	拷问；痛苦，折磨v.拷问；使痛苦	t______	Unit 18 沙场争锋
+humiliate	羞辱，使蒙羞	h________	Unit 18 沙场争锋
+damage	/v.损害；伤害	d_____	Unit 18 沙场争锋
+harmful	i.有害的	h______	Unit 18 沙场争锋
+mislead	误导，欺骗，使误入歧途	m______	Unit 18 沙场争锋
+disturb	打扰；使焦虑；弄乱	d______	Unit 18 沙场争锋
+interfere	干涉；妨碍	i________	Unit 18 沙场争锋
+interrupt	打断；中断	i________	Unit 18 沙场争锋
+retreat	/v.撤退；退避	r______	Unit 18 沙场争锋
+shrink	退缩；收缩，缩水；（使）减少	s_____	Unit 18 沙场争锋
+withdraw	收回；（使）撤退；提（款）	w_______	Unit 18 沙场争锋
+withstand	承受，顶住，经受住	w________	Unit 18 沙场争锋
+compromise	妥协	c_________	Unit 18 沙场争锋
+surrender	/v.投降；（被迫）放弃	s________	Unit 18 沙场争锋
+escape	/v.逃跑；逃脱；逃避	e_____	Unit 18 沙场争锋
+pIcAepoAe	避免；躲开	p________	Unit 18 沙场争锋
+quit	放弃，停止；辞去；离开	q___	Unit 18 沙场争锋
+abandon	放弃；抛弃，丢弃	a______	Unit 18 沙场争锋
+discard	丢弃，抛弃	d______	Unit 18 沙场争锋
+rid	摆脱，丢弃	r__	Unit 18 沙场争锋
+defend	防御，保护；为.辩护	d_____	Unit 18 沙场争锋
+safeguard	保护，保卫n.保护措施	s________	Unit 18 沙场争锋
+defeat	战胜，击败n.失败	d_____	Unit 18 沙场争锋
+resist	抵制，反对；抵御；忍住	r_____	Unit 18 沙场争锋
+capture	战利品v.捕获；夺得	c______	Unit 18 沙场争锋
+victory	胜利，成功	v______	Unit 18 沙场争锋
+triumph	伟大胜利，非凡的成功v.获得胜利	t______	Unit 18 沙场争锋
+conquer	征服；克服，战胜	c______	Unit 18 沙场争锋
+monument	纪念碑；历史遗迹；典范	m_______	Unit 18 沙场争锋
+tablet	碑，匾；药片	t_____	Unit 18 沙场争锋
+statue	雕像，塑像	s_____	Unit 18 沙场争锋
+medal	勋章，奖章	m____	Unit 18 沙场争锋
+glorious	光荣的，荣耀的	g_______	Unit 18 沙场争锋
+contribute	捐献；（为….）作贡献；（为书、报刊等）撰稿	c_________	Unit 18 沙场争锋
+devote	献身；投入	d_____	Unit 18 沙场争锋
+owe	欠；应把.…归功于；欠（情），感激	o__	Unit 18 沙场争锋
+patrol	/v.巡逻，巡查	p_____	Unit 18 沙场争锋
+guard	卫兵，警卫员v.看守；守卫，保卫	g____	Unit 18 沙场争锋
+camouflage	/n.伪装	c_________	Unit 18 沙场争锋
+obstacle	障碍；障碍物	o_______	Unit 18 沙场争锋
+burrow	地洞，地道v.掘地洞	b_____	Unit 18 沙场争锋
+spy	间谍，特务v.搜集情报，从事间谍活动	s__	Unit 18 沙场争锋
+scout	侦察员，侦察机v.侦察，搜寻	s____	Unit 18 沙场争锋
+general	将军adj.总的；一般性的	g______	Unit 18 沙场争锋
+soldier	战士，士兵	s______	Unit 18 沙场争锋
+veteran	老兵；老手	v______	Unit 18 沙场争锋
+pioneer	先驱，开创者	p______	Unit 19 社会角色
+prophet	（基督教、犹太教、伊斯兰教的）先知；预言家	p______	Unit 19 社会角色
+herald	使者，传令官；先驱，预兆v.预告；宣布	h_____	Unit 19 社会角色
+heir	后嗣；继承人	h___	Unit 19 社会角色
+successor	接替者，继任者；后继的事物	s________	Unit 19 社会角色
+generation	一代（约20至30年）；一代人	g_________	Unit 19 社会角色
+surname	姓v.给.....起别名	s______	Unit 19 社会角色
+gender	性别	g_____	Unit 19 社会角色
+sex	性别；性行为	s__	Unit 19 社会角色
+female	女子；雌性生物adj.女的；雌性的	f_____	Unit 19 社会角色
+couple	夫妻，情侣；两个，几个	c_____	Unit 19 社会角色
+spouse	配偶（指夫或妻）	s_____	Unit 19 社会角色
+husband	丈夫	h______	Unit 19 社会角色
+gay	同性恋者（尤指男性）adj.同性恋的；快乐的；艳丽的	g__	Unit 19 社会角色
+grandfather	（外）祖父	g__________	Unit 19 社会角色
+father-in-law	岳父；公公	f__________	Unit 19 社会角色
+sibling	兄；弟；姐；妹	s______	Unit 19 社会角色
+cousin	堂（或表）兄（或弟、姐、妹）	c_____	Unit 19 社会角色
+nephew	侄子；外甥	n_____	Unit 19 社会角色
+niece	侄女；外甥女	n____	Unit 19 社会角色
+twin	成双的n.双胞胎之一	t___	Unit 19 社会角色
+embryo	胚胎adj.胚胎的；初期的	e_____	Unit 19 社会角色
+infant	婴儿adj.供婴儿用的；婴儿的	i_____	Unit 19 社会角色
+orphan	孤儿v.使成为孤儿	o_____	Unit 19 社会角色
+juvenile	少年的n.少年	j_______	Unit 19 社会角色
+youngster	年轻人；少年	y________	Unit 19 社会角色
+youth	青年时期；青春；（统称）青年	y____	Unit 19 社会角色
+gang	一帮，一伙（常聚在一起闹事、打斗的年轻人）	g___	Unit 19 社会角色
+teenager	（13至19岁之间的）青少年	t_______	Unit 19 社会角色
+adolescence	青春期	a__________	Unit 19 社会角色
+kin	（统称）家属，亲戚adj.有血缘关系的；类似的	k__	Unit 19 社会角色
+folk	人们；家属，亲属	f___	Unit 19 社会角色
+relative	亲戚adj.相对的；有关的	r_______	Unit 19 社会角色
+intimate	亲密的；个人隐私的n.密友，至交	i_______	Unit 19 社会角色
+dear	亲爱的int.啊呀	d___	Unit 19 社会角色
+darling	亲爱的；宠儿	d______	Unit 19 社会角色
+lover	爱好者；（婚外的）情人	l____	Unit 19 社会角色
+beloved	爱人adj.深受喜爱的	b______	Unit 19 社会角色
+madam	夫人，女士；【英］自以为是的小姑娘	m____	Unit 19 社会角色
+hostess	女主人	h______	Unit 19 社会角色
+landlady	女房东；女地主	l_______	Unit 19 社会角色
+mistress	女主人；情妇	m_______	Unit 19 社会角色
+housewife	家庭主妇	h________	Unit 19 社会角色
+widow	寡妇，遗	w____	Unit 19 社会角色
+maid	女佣，女仆；少女	m___	Unit 19 社会角色
+maiden	少女，姑娘	m_____	Unit 19 社会角色
+household	家庭，一户；家务	h________	Unit 19 社会角色
+chore	家庭杂务；乏味无聊的工作	c____	Unit 19 社会角色
+host	主人，东道主	h___	Unit 19 社会角色
+landlord	地主；房东；（酒吧）店主	l_______	Unit 19 社会角色
+tenant	房客；租户	t_____	Unit 19 社会角色
+guest	客人，宾客；旅客	g____	Unit 19 社会角色
+customer	顾客，主顾，客户	c_______	Unit 19 社会角色
+client	顾客，客户；委托人	c_____	Unit 19 社会角色
+encounter	/n.遭遇；偶遇，邂逅	e________	Unit 19 社会角色
+chase	/n.追逐；追求	c____	Unit 19 社会角色
+miss	想念；未注意到	m___	Unit 19 社会角色
+appointment	约会；指派	a__________	Unit 19 社会角色
+accompany	陪伴；伴随	a________	Unit 19 社会角色
+dependent	依靠的，依赖的	d________	Unit 19 社会角色
+propose	提议；向..求婚	p______	Unit 19 社会角色
+engagement	婚约；约定	e_________	Unit 19 社会角色
+marry	娶，嫁，结婚	m____	Unit 19 社会角色
+wedding	婚礼	w______	Unit 19 社会角色
+honeymoon	蜜月	h________	Unit 19 社会角色
+kiss	吻，接吻n.吻	k___	Unit 19 社会角色
+divorce	离婚；脱离v.（与..….）离婚；使脱离	d______	Unit 19 社会角色
+single	单一的；单身的	s_____	Unit 19 社会角色
+sole	仅有的，唯一的	s___	Unit 19 社会角色
+respective	各自的，分别的	r_________	Unit 19 社会角色
+each	各个，各自det.各，每	e___	Unit 19 社会角色
+individual	个人；个体adj.个别的，单独的	i_________	Unit 19 社会角色
+commuter	上下班往返者，通勤者	c_______	Unit 19 社会角色
+member	成员；会员	m_____	Unit 19 社会角色
+boss	老板，上司v.对..指手画脚	b___	Unit 19 社会角色
+manager	经理，管理人	m______	Unit 19 社会角色
+supervisor	管理者，监督者	s_________	Unit 19 社会角色
+subordinate	部属，下级adj.次要的；下级的	s__________	Unit 19 社会角色
+partner	伙伴，盟友；合伙人；搭档	p______	Unit 19 社会角色
+mate	伙伴；【构成复合词]同伴	m___	Unit 19 社会角色
+colleague	同事，同僚	c________	Unit 19 社会角色
+comrade	同志；（尤指共患难的）同伴	c______	Unit 19 社会角色
+acquaintance	相识的人，泛泛之交；认识；了解	a___________	Unit 19 社会角色
+friendship	友谊；友情，友好	f_________	Unit 19 社会角色
+affection	喜爱，喜欢；爱情	a________	Unit 19 社会角色
+stranger	陌生人；新来者	s_______	Unit 19 社会角色
+apprentice	学徒，徒弟v.使当....的学徒	a_________	Unit 19 社会角色
+deputy	代理人，副手	d_____	Unit 19 社会角色
+hero	男主角，男主人公；英雄；勇士	h___	Unit 19 社会角色
+heroine	女主角，女主人公；女英雄	h______	Unit 19 社会角色
+actress	女演员	a______	Unit 19 社会角色
+chancellor	（德国或奥地利）总理；（英国）财政大臣	c_________	Unit 19 社会角色
+commander	司令官，指挥官	c________	Unit 19 社会角色
+director	主管；理事；导演	d_______	Unit 19 社会角色
+proponent	拥护者，支持者	p________	Unit 19 社会角色
+committee	委员会	c________	Unit 19 社会角色
+council	委员会；市政委员会	c______	Unit 19 社会角色
+specialist	专家；专科医生	s_________	Unit 19 社会角色
+consultant	顾问；【英】会诊医师	c_________	Unit 19 社会角色
+veterinary	兽医的	v_________	Unit 19 社会角色
+solicitor	（英国的）诉状律师，事务律师；（美国的）法务官	s________	Unit 19 社会角色
+attorney	（美国的）律师	a_______	Unit 19 社会角色
+umpire	裁判员	u_____	Unit 19 社会角色
+cashier	出纳员，收银员	c______	Unit 19 社会角色
+fireman	消防队员；司炉工	f______	Unit 19 社会角色
+nurse	护士；保姆v.护理	n____	Unit 19 社会角色
+gardener	园丁，花匠	g_______	Unit 19 社会角色
+barber	理发师	b_____	Unit 19 社会角色
+haircut	理发	h______	Unit 19 社会角色
+fisherman	渔民，渔夫，垂钓者	f________	Unit 19 社会角色
+butcher	屠夫；杀人狂	b______	Unit 19 社会角色
+groom	马夫；新郎v.（给动物）刷洗；理毛，梳毛	g____	Unit 19 社会角色
+hostage	人质	h______	Unit 19 社会角色
+toil	苦工，苦活；网，圈套v.辛勤劳作，苦干	t___	Unit 19 社会角色
+beggar	乞写	b_____	Unit 19 社会角色
+slave	奴隶	s____	Unit 19 社会角色
+coward	儒夫，胆小鬼	c_____	Unit 19 社会角色
+act	行动n.行为	a__	Unit 20 行为动作
+behave	表现；（机器等）运转	b_____	Unit 20 行为动作
+deed	行为；功绩；契约	d___	Unit 20 行为动作
+accustom	使习惯（于）	a_______	Unit 20 行为动作
+react	作出反应，反应	r____	Unit 20 行为动作
+respond	回答；响应，作出反应	r______	Unit 20 行为动作
+reflect	反映；反射	r______	Unit 20 行为动作
+bear	生（孩子)；容忍；承担（责任）	b___	Unit 20 行为动作
+adopt	收养；采取，采用	a____	Unit 20 行为动作
+nourish	滋养，给…...提供营养	n______	Unit 20 行为动作
+mow	割，修剪n.干草堆	m__	Unit 20 行为动作
+exhale	呼气，呼出	e_____	Unit 20 行为动作
+intake	吸入；摄取量；新招收者	i_____	Unit 20 行为动作
+revive	（使）苏醒；（使）复兴，（使）复活	r_____	Unit 20 行为动作
+survive	幸存；生存	s______	Unit 20 行为动作
+glare	怒目而视；发出强光n.刺眼的光；怒视	g____	Unit 20 行为动作
+glimpse	警见n.一警	g______	Unit 20 行为动作
+glance	警，迅速看一眼n.一警	g_____	Unit 20 行为动作
+peep	窥视，偷看n.偷偷一警	p___	Unit 20 行为动作
+gaze	凝视，注视	g___	Unit 20 行为动作
+peer	凝视，盯着看n.同等地位的人，同辈	p___	Unit 20 行为动作
+stare	凝视，盯着看	s____	Unit 20 行为动作
+contemplate	凝视；沉思；考虑	c__________	Unit 20 行为动作
+vow	誓约v.发誓	v__	Unit 20 行为动作
+oath	誓言；宣誓	o___	Unit 20 行为动作
+pledge	保证n.保证，誓言	p_____	Unit 20 行为动作
+whistle	口哨；哨子；汽笛声v.吹口哨；吹哨子	w______	Unit 20 行为动作
+reply	/n.回答，答复	r____	Unit 20 行为动作
+notify	通知，告知	n_____	Unit 20 行为动作
+assert	断言，坚称；坚持（自己）的主张	a_____	Unit 20 行为动作
+explain	说明，解释	e______	Unit 20 行为动作
+quarrel	/n.吵架，争论	q______	Unit 20 行为动作
+dispute	/n.争论，辩论	d______	Unit 20 行为动作
+argument	辩论，争论；论点，论据	a_______	Unit 20 行为动作
+mention	/n.提及，说起	m______	Unit 20 行为动作
+hurry	赶紧；催促n.匆忙	h____	Unit 20 行为动作
+hasten	赶紧；促进	h_____	Unit 20 行为动作
+urge	催促，敦促n.冲动	u___	Unit 20 行为动作
+scold	责骂，斥责	s____	Unit 20 行为动作
+curse	诅咒；咒骂n.咒语；咒骂话	c____	Unit 20 行为动作
+swear	诅咒，咒骂；发誓，保证	s____	Unit 20 行为动作
+provoke	激怒，挑拨；引起	p______	Unit 20 行为动作
+preach	宣扬	p_____	Unit 20 行为动作
+boast	/n.自夸，吹嘘	b____	Unit 20 行为动作
+tease	取笑，嘲弄	t____	Unit 20 行为动作
+mock	嘲笑，嘲弄adj.模拟的；假装的	m___	Unit 20 行为动作
+touch	触摸；触动n.触觉；接触	t____	Unit 20 行为动作
+hug	/n.拥抱	h__	Unit 20 行为动作
+tap	轻拍，轻叩；开发	t__	Unit 20 行为动作
+clap	拍手；轻拍n.鼓掌	c___	Unit 20 行为动作
+applaud	鼓掌；称赞，赞许	a______	Unit 20 行为动作
+kneel	跪，跪下	k____	Unit 20 行为动作
+catch	捉住；赶上；领会	c____	Unit 20 行为动作
+snatch	一把抓住，迅速夺取	s_____	Unit 20 行为动作
+grab	抓住，撰取；（匆忙地）取	g___	Unit 20 行为动作
+grasp	抓牢，握紧；完全理解，全面领会	g____	Unit 20 行为动作
+overtake	追上，超过；（情感等）压倒	o_______	Unit 20 行为动作
+follow	跟随；是....的必然结果；遵循	f_____	Unit 20 行为动作
+grip	紧握，抓牢n.紧握，抓牢；理解，了解	g___	Unit 20 行为动作
+mess	混乱，脏乱v.弄乱	m___	Unit 20 行为动作
+twist	拧，扭；使缠绕n.拧，扭动	t____	Unit 20 行为动作
+scatter	撒；（使）散开	s______	Unit 20 行为动作
+fold	折叠，对折	f___	Unit 20 行为动作
+fasten	扣牢，系牢，缚紧	f_____	Unit 20 行为动作
+loosen	解开，松开；放宽（限制等）	l_____	Unit 20 行为动作
+smash	打碎；（使）猛烈撞击；（打球时）扣球	s____	Unit 20 行为动作
+scratch	擦破，刮坏；搔n.乱涂；划痕，擦伤	s______	Unit 20 行为动作
+wipe	措，擦	w___	Unit 20 行为动作
+scrape	刮掉；擦坏；勉强获得n.刮；擦伤	s_____	Unit 20 行为动作
+polish	擦光，擦亮；使完美，改进	p_____	Unit 20 行为动作
+peel	剥落；掉漆；脱皮	p___	Unit 20 行为动作
+split	（使）开裂；（使）分裂；（使）分开	s____	Unit 20 行为动作
+sway	（使）摇摆，（使）摆动，（使）摇晃	s___	Unit 20 行为动作
+shake	摇动，（使）颤动n.摇动，颤动	s____	Unit 20 行为动作
+vibrate	（使）振动，（使）摇摆	v______	Unit 20 行为动作
+whirl	（使）回旋n.回旋	w____	Unit 20 行为动作
+rotate	（使）旋转，（使）转动	r_____	Unit 20 行为动作
+reel	眩晕，混乱	r___	Unit 20 行为动作
+shuffle	洗（牌）；拖着脚走；搅乱..的次序n.洗牌	s______	Unit 20 行为动作
+collide	碰撞；抵触	c______	Unit 20 行为动作
+contact	/v.接触，联系	c______	Unit 20 行为动作
+connect	（使）连接；（使）接通（电源等）	c______	Unit 20 行为动作
+combine	（使）联合，（使）结合	c______	Unit 20 行为动作
+bond	与.黏合（或连接）n.黏合；（感情的）纽带	b___	Unit 20 行为动作
+integrate	（使）成为一体，（使）合并	i________	Unit 20 行为动作
+wrap	裹，包；用..缠绕	w___	Unit 20 行为动作
+penetrate	刺入，穿透；渗透；洞察	p________	Unit 20 行为动作
+pierce	刺穿，刺破，穿透；使心如刀割	p_____	Unit 20 行为动作
+insert	[例】Heinsertedthekeyintothelockbutcouldot	i_____	Unit 20 行为动作
+tilt	（使）倾斜，（使）歪斜	t___	Unit 20 行为动作
+tow	拖，拉，牵引n.牵引	t__	Unit 20 行为动作
+trail	（使）拖在后面；跟踪n.踪迹	t____	Unit 20 行为动作
+arrange	安排，整理，使有条理	a______	Unit 20 行为动作
+manipulate	（熟练地）操作；操纵	m_________	Unit 20 行为动作
+steer	为（船）操舵，驾驶（船、车等）；操纵	s____	Unit 20 行为动作
+bet	下注，打赌；敢说n.打赌；赌注	b__	Unit 20 行为动作
+stake	赌注；桩v.以...打赌	s____	Unit 20 行为动作
+gamble	/n.赌博；冒险	g_____	Unit 20 行为动作
+promise	诺言v.承诺	p______	Unit 20 行为动作
+attract	吸引；引起	a______	Unit 20 行为动作
+obsess	（使）痴迷，（使）心神不宁	o_____	Unit 20 行为动作
+nightmare	噩梦，梦魔	n________	Unit 20 行为动作
+amaze	使惊奇，使惊愣	a____	Unit 20 行为动作
+marvel	感到惊讶，大为赞叹n.奇迹	m_____	Unit 20 行为动作
+astonish	使惊讶	a_______	Unit 20 行为动作
+involve	（使）参加；牵涉	i______	Unit 20 行为动作
+annoy	使恼怒；打扰	a____	Unit 20 行为动作
+upset	使心烦意乱，使生气；搅乱；打翻	u____	Unit 20 行为动作
+bewilder	使迷惑，使不知所措	b_______	Unit 20 行为动作
+irony	反话；有讽刺意味的情形	i____	Unit 20 行为动作
+indignity	侮辱，轻蔑	i________	Unit 20 行为动作
+contempt	轻视，藐视	c_______	Unit 20 行为动作
+neglect	/n.忽视，忽略	n______	Unit 20 行为动作
+disregard	不顾，漠视n.忽视，漠视	d________	Unit 20 行为动作
+ignorance	无知，愚昧	i________	Unit 20 行为动作
+bias	使有偏见，使偏心n.偏见，偏心	b___	Unit 20 行为动作
+deviate	偏离，背离	d______	Unit 20 行为动作
+expel	驱逐；开除；排出	e____	Unit 20 行为动作
+flee	逃避，逃离	f___	Unit 20 行为动作
+bully	恐吓，欺凌n.恃强凌弱者	b____	Unit 20 行为动作
+panic	惊恐，惊慌v.（使）惊恐，（使）惊慌	p____	Unit 20 行为动作
+terrify	使恐惧，使非常害怕	t______	Unit 20 行为动作
+revenge	报仇，复仇v.向....报仇	r______	Unit 20 行为动作
+kidnap	绑架，劫持	k_____	Unit 20 行为动作
+hijack	劫持（飞机或其他交通工具）	h_____	Unit 20 行为动作
+smuggle	走私，偷运	s______	Unit 20 行为动作
+strangle	扼杀，压制；勒死，扼死	s_______	Unit 20 行为动作
+massacre	/v.残杀，屠杀	m_______	Unit 20 行为动作
+decimation	大批杀死，大量毁灭；大大削弱	d_________	Unit 20 行为动作
+intervene	插话；干扰；干涉	i________	Unit 20 行为动作
+impede	妨碍，阻止	i_____	Unit 20 行为动作
+allure	吸引，引诱	a_____	Unit 20 行为动作
+bait	使上当发火n.诱饵；诱惑物	b___	Unit 20 行为动作
+induce	引诱，劝说	i_____	Unit 20 行为动作
+tempt	引诱，诱惑；怂意	t____	Unit 20 行为动作
+designate	指明；选派，指派	d________	Unit 20 行为动作
+assign	布置；分配；指定；确定	a_____	Unit 20 行为动作
+distribute	分发，分配	d_________	Unit 20 行为动作
+detach	（使）分开，（使）分离；派遣	d_____	Unit 20 行为动作
+bsip	掩饰；假扮，伪装n.假扮；伪装物	b___	Unit 20 行为动作
+conceal	隐藏，掩盖	c______	Unit 20 行为动作
+refuse	拒绝；回绝	r_____	Unit 20 行为动作
+exclude	把....排除在外；拒绝	e______	Unit 20 行为动作
+reverse	颠倒，彻底改变；撤销n.相反的情况；反面	r______	Unit 20 行为动作
+assure	向..保证；保证；保险	a_____	Unit 20 行为动作
+undertake	承担；许诺，保证	u________	Unit 20 行为动作
+stipulate	规定，明确要求；保证	s________	Unit 20 行为动作
+convince	使确信，使信服；说服	c_______	Unit 20 行为动作
+reassure	使安心，使放心	r_______	Unit 20 行为动作
+wish	想要（某事发生）n.希望	w___	Unit 20 行为动作
+aspire	有志于，渴望	a_____	Unit 20 行为动作
+desire	愿望，欲望v.渴望，期望	d_____	Unit 20 行为动作
+yearn	渴望，向往	y____	Unit 20 行为动作
+invoke	唤起（感情等）；向.-祈求帮助；恳求	i_____	Unit 20 行为动作
+itch	发痒；渴望n.痒；渴望	i___	Unit 20 行为动作
+attempt	尝试，试图n.尝试，企图	a______	Unit 20 行为动作
+strive	努力，奋斗	s_____	Unit 20 行为动作
+effort	努力；努力的成果	e_____	Unit 20 行为动作
+range	（在一定幅度内）变动	r____	Unit 20 行为动作
+sort	种类，类别v.把.....分类	s___	Unit 20 行为动作
+loom	（庞然大物或形状模糊之物）隐现；逼近n.织布机	l___	Unit 20 行为动作
+launch	发射；发布，推出；发起（运动等）	l_____	Unit 20 行为动作
+commence	开始，着手	c_______	Unit 20 行为动作
+exploit	开发，开采，开拓	e______	Unit 20 行为动作
+explore	勘查，考察；探讨	e______	Unit 20 行为动作
+exert	运用，行使；施加	e____	Unit 20 行为动作
+tackle	处理，应对，解决n.用具，器材	t_____	Unit 20 行为动作
+cope	应付，处理	c___	Unit 20 行为动作
+dispose	布置，安排	d______	Unit 20 行为动作
+omit	遗漏；省略；删去	o___	Unit 20 行为动作
+delete	删除，删掉	d_____	Unit 20 行为动作
+cancel	取消；废除	c_____	Unit 20 行为动作
+clear	清晰的；明显的v.清除	c____	Unit 20 行为动作
+erase	清除；抹去	e____	Unit 20 行为动作
+rescue	/n.营救，救援	r_____	Unit 20 行为动作
+resort	求助于，采取，诉诸n.（度假）胜地	r_____	Unit 20 行为动作
+recover	重新拿回；恢复健康；（从不愉快的经历中）复原	r______	Unit 20 行为动作
+restore	恢复；归还；修复	r______	Unit 20 行为动作
+rectify	纠正，矫正，改正	r______	Unit 20 行为动作
+redeem	赎回；挽回，补偿；兑现	r_____	Unit 20 行为动作
+offset	/n.补偿；抵消	o_____	Unit 20 行为动作
+replenish	重新装满，补充	r________	Unit 20 行为动作
+obtain	获得，得到	o_____	Unit 20 行为动作
+gain	获得；增加n.增加；改进	g___	Unit 20 行为动作
+supply	供给，供应，提供n.供应量；补给品	s_____	Unit 20 行为动作
+offer	给予（物）；提议v.提供；出（价）	o____	Unit 20 行为动作
+render	给予，提供；翻译	r_____	Unit 20 行为动作
+enlarge	扩大，扩展；放大（照片或文件）	e______	Unit 20 行为动作
+augment	扩大，增加，加强，提高	a______	Unit 20 行为动作
+magnify	放大；夸大	m______	Unit 20 行为动作
+amplify	增强；扩大（声音）；充实（陈述等）	a______	Unit 20 行为动作
+exaggerate	夸张，夸大	e_________	Unit 20 行为动作
+prolong	延长	p______	Unit 20 行为动作
+uphold	支持，维护；维持	u_____	Unit 20 行为动作
+backup	后援，支持；（文件等的）备份adj.备用的	b_____	Unit 20 行为动作
+propel	推动，驱使；推进	p_____	Unit 20 行为动作
+update	更新；使现代化	u_____	Unit 20 行为动作
+raise	举起；引起；抚养；提高；筹募	r____	Unit 20 行为动作
+leak	泄漏n.漏洞，裂缝	l___	Unit 20 行为动作
+spill	（使）溢出	s____	Unit 20 行为动作
+seep	渗出，渗漏	s___	Unit 20 行为动作
+ooze	渗出；洋溢着	o___	Unit 20 行为动作
+evacuate	疏散，撤离	e_______	Unit 20 行为动作
+trench	掘沟于；砍除n.沟，渠，壕沟	t_____	Unit 20 行为动作
+saturate	使饱和，使充满；浸透	s_______	Unit 20 行为动作
+excuse	[例】Thereisoexcusefortrespassingonprivate	e_____	Unit 20 行为动作
+forgive	原谅，宽恕，饶恕	f______	Unit 20 行为动作
+contain	包含，容纳；抑制（感情）	c______	Unit 20 行为动作
+regard	尊重；问候v.看待	r_____	Unit 20 行为动作
+flatter	奉承，讨好，向.….谄媚	f______	Unit 20 行为动作
+worship	（对上帝或神的）崇拜，礼拜；爱慕v.做礼拜	w______	Unit 20 行为动作
+cause	原因，理由；事业v.引起，导致	c____	Unit 20 行为动作
+sake	理由，目的	s___	Unit 20 行为动作
+purpose	目的	p______	Unit 20 行为动作
+objective	宗旨；目标adj.客观的	o________	Unit 20 行为动作
+arouse	唤起，激起，引起	a_____	Unit 20 行为动作
+trigger	引发，触发n.（枪等的）扳机	t______	Unit 20 行为动作
+seek	寻找；寻求	s___	Unit 20 行为动作
+retrieve	取回；挽回	r_______	Unit 20 行为动作
+testify	作证；证明	t______	Unit 20 行为动作
+verify	证实；核实，查清	v_____	Unit 20 行为动作
+specify	具体指定，详细说明	s______	Unit 20 行为动作
+enlighten	启发，开导，启迪	e________	Unit 20 行为动作
+impart	传授；透露	i_____	Unit 20 行为动作
+deserve	应得；应受	d______	Unit 20 行为动作
+drop	（使）落下；（使）降低；和.……断绝联系n.滴	d___	Unit 20 行为动作
+sink	（使）下沉；下降	s___	Unit 20 行为动作
+plummet	垂直掉下；（价格、水平等）骤然下跌	p______	Unit 20 行为动作
+muffle	使（声音）减弱	m_____	Unit 20 行为动作
+overshadow	遮蔽；使黯然失色	o_________	Unit 20 行为动作
+invite	邀请	i_____	Unit 20 行为动作
+greet	.向...问好，迎接；对.作出反应	g____	Unit 20 行为动作
+salute	（向.….）行礼；致敬n.行礼；致敬	s_____	Unit 20 行为动作
+celebrate	庆祝（节日、事件等）	c________	Unit 20 行为动作
+congratulate	祝贺，向..道贺	c___________	Unit 20 行为动作
+bless	祝福，为.祈求上帝保佑	b____	Unit 20 行为动作
+participate	参加，参与	p__________	Unit 20 行为动作
+assort	把..分类；相配，协调	a_____	Unit 20 行为动作
+correspond	符合，相一致；通信	c_________	Unit 20 行为动作
+accord	（与..）一致；给予n..协议	a_____	Unit 20 行为动作
+recall	回忆，回想起	r_____	Unit 20 行为动作
+recollect	记起，想起	r________	Unit 20 行为动作
+remind	提醒，使想起	r_____	Unit 20 行为动作
+retell	重新讲述，复述	r_____	Unit 20 行为动作
+repeat	重复adj.再次光顾的	r_____	Unit 20 行为动作
+retrospect	回顾	r_________	Unit 20 行为动作
+impress	给...深刻印象；使铭记	i______	Unit 20 行为动作
+surmount	克服；置于..顶端	s_______	Unit 20 行为动作
+mortify	使难堪，使羞愧	m______	Unit 20 行为动作
+pervade	弥漫，渗透，遍及	p______	Unit 20 行为动作
+replace	代替，取代	r______	Unit 20 行为动作
+substitute	替换n.代用品；代替者；替补（运动员）	s_________	Unit 20 行为动作
+distinguish	区别，辨别；使出众，使著名	d__________	Unit 20 行为动作
+differentiate	区分，区别；差别对待	d____________	Unit 20 行为动作
+lean	（使）倚靠；倾斜adj.瘦的；贫乏的	l___	Unit 20 行为动作
+sideways	向（或从、往）一侧	s_______	Unit 20 行为动作
+feel	感觉到，感知；触碰	f___	Unit 21 身心健康
+mood	心情，情绪；气氛	m___	Unit 21 身心健康
+emotion	情绪，情感，感情	e______	Unit 21 身心健康
+temper	坏脾气；情绪，心情v.使缓和	t_____	Unit 21 身心健康
+manner	举止；礼貌；方式；风俗	m_____	Unit 21 身心健康
+attitude	态度，看法	a_______	Unit 21 身心健康
+character	性格；特征；人物，角色	c________	Unit 21 身心健康
+personality	个性，人格	p__________	Unit 21 身心健康
+trait	特性，特点	t____	Unit 21 身心健康
+virtue	美德，德行；优点	v_____	Unit 21 身心健康
+feature	特征；面容的一部分v.以...为特色	f______	Unit 21 身心健康
+stature	身高，身材；（精神、道德等的）高度	s______	Unit 21 身心健康
+flesh	肉；人类	f____	Unit 21 身心健康
+mankind	人类；男人	m______	Unit 21 身心健康
+human	人类的；有人性的n.人类	h____	Unit 21 身心健康
+bone	骨；骨骼	b___	Unit 21 身心健康
+backbone	脊柱；骨干，中坚；骨气	b_______	Unit 21 身心健康
+skeleton	骨骼，骨架；框架，梗概	s_______	Unit 21 身心健康
+skull	头脑；头骨	s____	Unit 21 身心健康
+brain	脑；智慧，智力	b____	Unit 21 身心健康
+mind	头脑；思考能力；思维；意见；记忆力	m___	Unit 21 身心健康
+physical	身体的；物质的；物理的	p_______	Unit 21 身心健康
+mental	精神的，思想上的；智力的	m_____	Unit 21 身心健康
+cheek	面颊，颊	c____	Unit 21 身心健康
+forehead	额	f_______	Unit 21 身心健康
+brow	额；眉，眉毛	b___	Unit 21 身心健康
+eyelash	眼睫毛	e______	Unit 21 身心健康
+lip	嘴唇；（洞口、伤口等的）边缘	l__	Unit 21 身心健康
+mouth	口，嘴；河口	m____	Unit 21 身心健康
+tongue	舌头；语言	t_____	Unit 21 身心健康
+throat	喉咙；窄路；嗓子，噪音	t_____	Unit 21 身心健康
+gorge	咽喉；暴食；山峡，峡谷v.狼吞虎咽	g____	Unit 21 身心健康
+chin	（指人的）须，下巴	c___	Unit 21 身心健康
+jaw	颌；下巴；狭窄入口；崂叨	j__	Unit 21 身心健康
+neck	脖子；衣领；海峡	n___	Unit 21 身心健康
+beard	胡须	b____	Unit 21 身心健康
+shoulder	肩，肩膀	s_______	Unit 21 身心健康
+limb	肢；树枝	l___	Unit 21 身心健康
+elbow	肘部；弯头；扶手v.用肘挤	e____	Unit 21 身心健康
+wrist	腕，腕关节	w____	Unit 21 身心健康
+thumb	拇指	t____	Unit 21 身心健康
+palm	棕榈树；手掌v.把..藏在手中	p___	Unit 21 身心健康
+finger	（尤指大拇指之外的）手指	f_____	Unit 21 身心健康
+fist	拳头，拳	f___	Unit 21 身心健康
+chest	胸，胸部	c____	Unit 21 身心健康
+abdomen	腹，腹部	a______	Unit 21 身心健康
+rib	肋骨；排骨	r__	Unit 21 身心健康
+waist	腰；腰部	w____	Unit 21 身心健康
+organ	器官；风琴；机构	o____	Unit 21 身心健康
+liver	肝脏	l____	Unit 21 身心健康
+stomach	胃口；胃，腹部	s______	Unit 21 身心健康
+womb	子宫；发源地	w___	Unit 21 身心健康
+kidney	肾，肾脏	k_____	Unit 21 身心健康
+lung	肺	l___	Unit 21 身心健康
+gland	腺	g____	Unit 21 身心健康
+chamber	（人体内、动植物体内或机器中的）室，腔；议院	c______	Unit 21 身心健康
+intestine	肠	i________	Unit 21 身心健康
+thigh	大腿，股	t____	Unit 21 身心健康
+joint	接合处；关节adj.共同的，联合的	j____	Unit 21 身心健康
+knee	膝盖，膝	k___	Unit 21 身心健康
+lap	（人坐着时的）大腿部；下摆；环节；一圈	l__	Unit 21 身心健康
+ankle	踝关节，踝	a____	Unit 21 身心健康
+heel	足跟	h___	Unit 21 身心健康
+toe	脚趾，足尖	t__	Unit 21 身心健康
+muscle	肌肉	m_____	Unit 21 身心健康
+pore	毛孔；小孔，气孔v.凝视；沉思	p___	Unit 21 身心健康
+pulse	脉搏；脉冲	p____	Unit 21 身心健康
+artery	动脉；干线	a_____	Unit 21 身心健康
+nerve	神经；紧张，焦虑	n____	Unit 21 身心健康
+hormone	荷尔蒙，激素	h______	Unit 21 身心健康
+immune	免疫的；不受影响的；免除的	i_____	Unit 21 身心健康
+stimulus	刺激（物）；促进因素	s_______	Unit 21 身心健康
+biorhythm	生物节律	b________	Unit 21 身心健康
+lifestyle	生活方式	l________	Unit 21 身心健康
+habit	习惯	h____	Unit 21 身心健康
+sense	感官；感觉	s____	Unit 21 身心健康
+sight	视力；看见；景物	s____	Unit 21 身心健康
+eyesight	视力	e_______	Unit 21 身心健康
+view	视野；见解；风景；察看	v___	Unit 21 身心健康
+visual	视力的，视觉的	v_____	Unit 21 身心健康
+visible	看得见的，可见的	v______	Unit 21 身心健康
+vague	含糊的；不清楚的，模糊的	v____	Unit 21 身心健康
+blind	盲目的；瞎的；未察觉的	b____	Unit 21 身心健康
+dumb	哑的；不肯开口的	d___	Unit 21 身心健康
+aural	耳的；听觉的；气味的；先兆的	a____	Unit 21 身心健康
+dental	牙的，牙科的	d_____	Unit 21 身心健康
+awake	醒着的；警觉的	a____	Unit 21 身心健康
+yawn	打呵欠；裂开n.呵欠	y___	Unit 21 身心健康
+nap	小睡；绒毛	n__	Unit 21 身心健康
+doze	小睡，打盹儿	d___	Unit 21 身心健康
+quiet	安静的；寂静的；平静的	q____	Unit 21 身心健康
+asleep	睡着的；不活跃的；麻木的	a_____	Unit 21 身心健康
+cripple	跛子；残疾人v.使跛	c______	Unit 21 身心健康
+lame	瘤的，跛的；（解释或借口）无说服力的	l___	Unit 21 身心健康
+pregnancy	怀孕，妊娠	p________	Unit 21 身心健康
+born	天生的；与生俱来的v.出生	b___	Unit 21 身心健康
+condom	避孕套	c_____	Unit 21 身心健康
+clone	以无性繁殖技术复制，克隆n.克隆动物（或植物）	c____	Unit 21 身心健康
+symptom	征兆；症状	s______	Unit 21 身心健康
+disease	疾病	d______	Unit 21 身心健康
+illness	病，疾病	i______	Unit 21 身心健康
+moan	/v.呻吟；哀悼	m___	Unit 21 身心健康
+infection	传染；传染病；影响	i________	Unit 21 身心健康
+detriment	损害；损害物	d________	Unit 21 身心健康
+broken	弄坏的；破碎的	b_____	Unit 21 身心健康
+disable	使丧失能力，使伤残	d______	Unit 21 身心健康
+invalid	病弱者，伤残者adji.病弱的，伤残的	i______	Unit 21 身心健康
+patient	病人adj.有耐心的，能忍耐的	p______	Unit 21 身心健康
+dysfunction	（身体）功能障碍	d__________	Unit 21 身心健康
+diabetes	糖尿病	d_______	Unit 21 身心健康
+obesity	（过度）肥胖；肥胖症	o______	Unit 21 身心健康
+overweight	超重的，过胖的n.超重v.使超重；过于重视	o_________	Unit 21 身心健康
+hypertension	高血压	h___________	Unit 21 身心健康
+dizzy	头晕目眩的，眩晕的v.使眩晕	d____	Unit 21 身心健康
+insane	患精神病的；疯狂的	i_____	Unit 21 身心健康
+insomnia	失眠，失眠症	i_______	Unit 21 身心健康
+allergy	敏感症；过敏性	a______	Unit 21 身心健康
+heart	心脏病发作	h____	Unit 21 身心健康
+cancer	癌	c_____	Unit 21 身心健康
+arthritis	关节炎	a________	Unit 21 身心健康
+pimple	粉刺，丘疹	p_____	Unit 21 身心健康
+stroke	中风；击打；一笔（画）	s_____	Unit 21 身心健康
+plague	瘟疫	p_____	Unit 21 身心健康
+fever	狂热；发烧，发热v.（使）发烧；（使）狂热	f____	Unit 21 身心健康
+headache	头痛	h_______	Unit 21 身心健康
+swell	肿胀，膨胀；（使）增加	s____	Unit 21 身心健康
+choke	（使）室息；阻塞；说不出话	c____	Unit 21 身心健康
+injure	伤害，使遵受损伤；损害	i_____	Unit 21 身心健康
+injury	伤害；损害	i_____	Unit 21 身心健康
+hurt	损害；伤害；（使）疼痛	h___	Unit 21 身心健康
+bleed	流血；榨取；给……放血；放掉（水或气体）	b____	Unit 21 身心健康
+bruise	淤伤；伤痕v.擦伤	b_____	Unit 21 身心健康
+scar	疤痕，伤疤	s___	Unit 21 身心健康
+wound	创伤，伤害；伤口	w____	Unit 21 身心健康
+trauma	外伤，身体上的伤；精神创伤；痛苦经历	t_____	Unit 21 身心健康
+lump	块；肿块v.使成块状	l___	Unit 21 身心健康
+pain	痛苦；疼痛v.使痛苦	p___	Unit 21 身心健康
+death	死，死亡；毁灭	d____	Unit 21 身心健康
+mortal	必死的；致命的n.凡人，人类	m_____	Unit 21 身心健康
+demise	死亡；君权的转移或授予，禅让v.遗赠；转让	d_____	Unit 21 身心健康
+doom	厄运；毁灭v.使注定失败（或死亡等）	d___	Unit 21 身心健康
+fatal	致命的；毁灭性的；决定性的	f____	Unit 21 身心健康
+lethal	致命的	l_____	Unit 21 身心健康
+corpus	尸体；文集；本金	c_____	Unit 21 身心健康
+overwork	过度操劳；过度工作v.（使）过度工作	o_______	Unit 21 身心健康
+tire	（使）感到疲劳；厌烦	t___	Unit 21 身心健康
+exhaust	使精疲力竭；用完，耗尽	e______	Unit 21 身心健康
+fatigue	疲劳v.（使）疲劳	f______	Unit 21 身心健康
+faint	模糊的；微弱的；虚弱的v.晕倒	f____	Unit 21 身心健康
+feeble	虚弱的，无力的；微弱的	f_____	Unit 21 身心健康
+weary	疲倦的；厌烦的	w____	Unit 21 身心健康
+weaken	减弱，削弱；变软弱	w_____	Unit 21 身心健康
+systemthey	weak弱的；虚弱的weakly软弱地;	s_________	Unit 21 身心健康
+uncomfortable	不舒服的；不自在的	u____________	Unit 21 身心健康
+unconscious	失去知觉的；无意识的	u__________	Unit 21 身心健康
+chronic	慢性的；长期的	c______	Unit 21 身心健康
+acute	（疾病）急性的；敏锐的，深刻的	a____	Unit 21 身心健康
+sore	疼痛的；恼火的；严重的	s___	Unit 21 身心健康
+sorrow	悲伤，悲痛	s_____	Unit 21 身心健康
+suffering	苦难，折磨	s________	Unit 21 身心健康
+lament	悲伤，哀悼v.哀悼；对.……感到悔恨	l_____	Unit 21 身心健康
+hospital	医院	h_______	Unit 21 身心健康
+therapy	治疗	t______	Unit 21 身心健康
+healthcare	医疗保健	h_________	Unit 21 身心健康
+sanitary	卫生的；清洁的	s_______	Unit 21 身心健康
+medical	医学的，医疗的	m______	Unit 21 身心健康
+curative	治疗的n.药品	c_______	Unit 21 身心健康
+hygiene	卫生（学）；保健（学）	h______	Unit 21 身心健康
+fitness	健康；适合	f______	Unit 21 身心健康
+clinic	诊所；门诊部	c_____	Unit 21 身心健康
+physician	内科医生	p________	Unit 21 身心健康
+surgeon	外科医生	s______	Unit 21 身心健康
+operation	手术；操作；运转，经营	o________	Unit 21 身心健康
+cure	治好，治愈n.疗法；治疗	c___	Unit 21 身心健康
+heal	治愈；愈合	h___	Unit 21 身心健康
+treatment	治疗，疗法；待遇	t________	Unit 21 身心健康
+check	检查，核对n.[美］账单	c____	Unit 21 身心健康
+prescription	处方，药方；秘诀	p___________	Unit 21 身心健康
+transplant	移植	t_________	Unit 21 身心健康
+X-ray	X射线；用X射线进行的临床检查v.用X射线检查	x___	Unit 21 身心健康
+injection	注射；注射物；单射（函数）	i________	Unit 21 身心健康
+precaution	预防，警惕；预防措施	p_________	Unit 21 身心健康
+vaccinate	给….….接种疫苗，预防接种	v________	Unit 21 身心健康
+quarantine	对..进行隔离检疫n.检疫；隔离检疫期	q_________	Unit 21 身心健康
+segregate	隔离	s________	Unit 21 身心健康
+isolate	使隔离，使孤立，使脱离	i______	Unit 21 身心健康
+pharmacy	药店；药剂学	p_______	Unit 21 身心健康
+medicine	药；医学	m_______	Unit 21 身心健康
+remedy	药物，治疗法；解决方法	r_____	Unit 21 身心健康
+pill	药丸，丸剂	p___	Unit 21 身心健康
+antibiotic	抗生素	a_________	Unit 21 身心健康
+acupuncture	针灸，中医针灸疗法	a__________	Unit 21 身心健康
+penicillin	青霉素	p_________	Unit 21 身心健康
+morphine	吗啡	m_______	Unit 21 身心健康
+dose	（药物的）一剂v.给….….服药	d___	Unit 21 身心健康
+recovery	恢复，痊愈	r_______	Unit 21 身心健康
+refresh	使恢复精神	r______	Unit 21 身心健康
+relief	宽慰，轻松；减轻，缓解	r_____	Unit 21 身心健康
+relieve	救济；减轻，解除（痛苦、不快等）	r______	Unit 21 身心健康
+alleviate	减轻（痛苦等），缓解	a________	Unit 21 身心健康
+resume	重新开始，（中断后）继续	r_____	Unit 21 身心健康
+ease	减轻，放松，缓和n.容易；悠闲	e___	Unit 21 身心健康
+relax	放松	r____	Unit 21 身心健康
+normal	正常的；正规的，规范的	n_____	Unit 21 身心健康
+common	共同的；普通的，平常的	c_____	Unit 21 身心健康
+usual	通常的，惯常的	u____	Unit 21 身心健康
+optimistic	乐观的，乐观主义的	o_________	Unit 21 身心健康
+pessimistic	悲观的，悲观主义的	p__________	Unit 21 身心健康
+positive	肯定的；积极的；绝对的	p_______	Unit 21 身心健康
+negative	怀疑的；消极的	n_______	Unit 21 身心健康
+passive	被动的，消极的	p______	Unit 21 身心健康
+enthusiastic	热心的，热情的	e___________	Unit 21 身心健康
+indifferent	漠不关心的；无关紧要的；平庸的；中立的	i__________	Unit 21 身心健康
+apathetic	无动于衷的，漠不关心的	a________	Unit 21 身心健康
+negligible	可以忽略的，微不足道的	n_________	Unit 21 身心健康
+happiness	幸福，快乐；适当	h________	Unit 21 身心健康
+delight	（使）高兴；爱好n.乐趣	d______	Unit 21 身心健康
+merry	愉快的，欢乐的；微醉的	m____	Unit 21 身心健康
+funfAn	乐趣；玩笑adji.有趣的	f_____	Unit 21 身心健康
+joke	笑话；玩笑v.说笑话；开玩笑	j___	Unit 21 身心健康
+laughter	笑，笑声	l_______	Unit 21 身心健康
+joy	欢乐，喜悦；乐趣	j__	Unit 21 身心健康
+please	使高兴，取悦adv.请	p_____	Unit 21 身心健康
+rejoice	（使）高兴，（使）欢喜	r______	Unit 21 身心健康
+thrill	激动v.（使）激动；感到紧张	t_____	Unit 21 身心健康
+cheer	使振作；（向….）欢呼	c____	Unit 21 身心健康
+pleasure	愉快，高兴；荣幸（用于回答对方的感谢）	p_______	Unit 21 身心健康
+agreeable	使人愉快的；（欣然）同意的	a________	Unit 21 身心健康
+exhilarate	使高兴，使兴奋	e_________	Unit 21 身心健康
+satisfactory	令人满意的	s___________	Unit 21 身心健康
+desirable	可取的，值得拥有的，合意的	d________	Unit 21 身心健康
+exciting	令人兴奋的，使人激动的	e_______	Unit 21 身心健康
+keen	强烈的；敏锐的；渴望的；[尤英】有强烈兴趣的	k___	Unit 21 身心健康
+zeal	热心，热情，热忱	z___	Unit 21 身心健康
+lovely	可爱的；令人愉快的	l_____	Unit 21 身心健康
+fond	喜爱的；溺爱的	f___	Unit 21 身心健康
+surprising	令人惊讶的，出人意料的	s_________	Unit 21 身心健康
+startle	使大吃一惊n.吃惊	s______	Unit 21 身心健康
+amazing	令人惊叹的，惊人的	a______	Unit 21 身心健康
+astound	使大吃一惊，使惊骇	a______	Unit 21 身心健康
+hectic	兴奋活跃的，忙乱的，繁忙的	h_____	Unit 21 身心健康
+generous	慷概的；宽厚的	g_______	Unit 21 身心健康
+gentle	温和的；柔和的；文雅的；出身名门的	g_____	Unit 21 身心健康
+humble	谦虚的；卑微的	h_____	Unit 21 身心健康
+modest	谦虚的，谦逊的	m_____	Unit 21 身心健康
+humorous	富于幽默感的，该谐的	h_______	Unit 21 身心健康
+polite	有礼貌的；客气的	p_____	Unit 21 身心健康
+frank	坦白的，直率的	f____	Unit 21 身心健康
+mysterious	神秘的；不可思议的	m_________	Unit 21 身心健康
+curious	好奇的，好求知的	c______	Unit 21 身心健康
+daring	勇敢的，大胆的	d_____	Unit 21 身心健康
+manly	有男子气概的；果断的	m____	Unit 21 身心健康
+direct	直接的；直率的	d_____	Unit 21 身心健康
+earnest	认真的，诚恳的	e______	Unit 21 身心健康
+honesty	诚实，正直	h______	Unit 21 身心健康
+proud	骄傲的，自豪的；令人自豪的	p____	Unit 21 身心健康
+rational	理性的；合理的	r_______	Unit 21 身心健康
+seriously	严肃地；认真地；严重地	s________	Unit 21 身心健康
+stern	严厉的；坚定的	s____	Unit 21 身心健康
+friendly	友好的，友善的	f_______	Unit 21 身心健康
+hospitable	好客的；热情友好的	h_________	Unit 21 身心健康
+romantic	浪漫的；充满传奇色彩的	r_______	Unit 21 身心健康
+freedom	自由，独立自主	f______	Unit 21 身心健康
+careful	仔细的，细致的；小心的，谨慎的	c______	Unit 21 身心健康
+concern	关心；忧虑v.涉及；使担忧；关心	c______	Unit 21 身心健康
+confidence	自信；信任	c_________	Unit 21 身心健康
+considerate	考虑周到的，体谅的	c__________	Unit 21 身心健康
+sympathetic	同情的；和谐的	s__________	Unit 21 身心健康
+ready	准备好的；愿意的	r____	Unit 21 身心健康
+apologise	Hewillapologisetoherforotgoingtoher	a________	Unit 21 身心健康
+apology	道歉；辩解	a______	Unit 21 身心健康
+mercy	仁慈，宽容，怜悯	m____	Unit 21 身心健康
+admire	赞美，钦佩，仰慕	a_____	Unit 21 身心健康
+remarkable	值得注意的；非凡的，卓越的	r_________	Unit 21 身心健康
+grateful	感激的；表示感激的	g_______	Unit 21 身心健康
+gratitude	感激，感谢，感恩	g________	Unit 21 身心健康
+eager	渴望的，热切的	e____	Unit 21 身心健康
+sound	健全的；（睡眠）酣畅的；合理的n.声音v.发出	s____	Unit 21 身心健康
+picturesque	如画的；独特的	p__________	Unit 21 身心健康
+promising	大有希望的，有前途的	p________	Unit 21 身心健康
+prominent	突出的，显著的；重要的，杰出的	p________	Unit 21 身心健康
+awesome	卓越的，引起敬畏的	a______	Unit 21 身心健康
+arduous	辛勤的；费力的；陡峭的	a______	Unit 21 身心健康
+tough	艰难的；坚强的，坚韧不拔的；强硬的	t____	Unit 21 身心健康
+robust	强壮的，强健的	r_____	Unit 21 身心健康
+sturdy	强健的；坚定的	s_____	Unit 21 身心健康
+steadfast	坚定的	s________	Unit 21 身心健康
+tender	脆弱的；温柔的；软弱的；疼痛的v.（正式）提出；	t_____	Unit 21 身心健康
+temperate	（气候）温和的；温带的；有节制的；心平气和的	t________	Unit 21 身心健康
+delicate	精致的；微妙的；脆弱的	d_______	Unit 21 身心健康
+mundane	平凡的，世俗的；世界的	m______	Unit 21 身心健康
+naive	天真的；幼稚的	n____	Unit 21 身心健康
+childish	孩子般的；幼稚的	c_______	Unit 21 身心健康
+sincere	真诚的，诚挚的	s______	Unit 21 身心健康
+liable	有责任的；有...倾向的，可能的	l_____	Unit 21 身心健康
+trustworthy	值得信赖的，可靠的	t__________	Unit 21 身心健康
+enterprising	有事业心的，有进取心的；有魄力的	e___________	Unit 21 身心健康
+sane	心智健全的；理智的	s___	Unit 21 身心健康
+strenuous	发奋的；繁重的，艰苦的	s________	Unit 21 身心健康
+rigorous	严格的，严厉的；一丝不苟的	r_______	Unit 21 身心健康
+strict	严格的；严厉的	s_____	Unit 21 身心健康
+severe	严厉的；十分严重的；艰巨的	s_____	Unit 21 身心健康
+mutual	相互的，彼此的；共同的	m_____	Unit 21 身心健康
+resemble	与..相像，类似	r_______	Unit 21 身心健康
+similar	相似的，类似的	s______	Unit 21 身心健康
+familiar	熟悉的	f_______	Unit 21 身心健康
+naked	裸体的，赤条条的	n____	Unit 21 身心健康
+bare	赤裸的；无遮蔽的	b___	Unit 21 身心健康
+private	私人的，个人的；私下的	p______	Unit 21 身心健康
+intuition	直觉	i________	Unit 21 身心健康
+spontaneous	i.自发的，自然的，本能的；自然产生的	s__________	Unit 21 身心健康
+implicit	暗示的，含蓄的；不怀疑的，无保留的	i_______	Unit 21 身心健康
+illusion	错觉；幻想	i_______	Unit 21 身心健康
+imaginary	想象的，虚构的	i________	Unit 21 身心健康
+fancy	想象（力）；爱好v.认为，想象	f____	Unit 21 身心健康
+fate	命运，宿命	f___	Unit 21 身心健康
+fortune	命运；运气；财产	f______	Unit 21 身心健康
+agony	极度的痛苦；挣扎	a____	Unit 21 身心健康
+grief	极度悲伤	g____	Unit 21 身心健康
+grieve	（使）悲痛	g_____	Unit 21 身心健康
+miserable	极不愉快的，痛苦的	m________	Unit 21 身心健康
+distress	悲痛；穷困，不幸v.使伤心，使忧虑	d_______	Unit 21 身心健康
+sadness	悲痛，悲哀	s______	Unit 21 身心健康
+gloomy	幽暗的；令人泪丧的	g_____	Unit 21 身心健康
+disappoint	使失望；使受挫折	d_________	Unit 21 身心健康
+discourage	使灰心，使气馁；劝阻	d_________	Unit 21 身心健康
+wretched	不幸的，可怜的，悲惨的；恶劣的	w_______	Unit 21 身心健康
+frustrating	令人灰心的，使人沮丧的	f__________	Unit 21 身心健康
+mourn	（因失去.而）哀痛，哀悼	m____	Unit 21 身心健康
+anger	怒，怒气v.使发怒	a____	Unit 21 身心健康
+furious	狂怒的，暴怒的	f______	Unit 21 身心健康
+frown	皱眉，不悦v.皱眉，表示不悦	f____	Unit 21 身心健康
+rage	盛怒，狂怒	r___	Unit 21 身心健康
+irritate	激怒，使急躁；刺激	i_______	Unit 21 身心健康
+hate	恨，憎恨；不喜欢	h___	Unit 21 身心健康
+hatred	憎恶，憎恨，仇恨	h_____	Unit 21 身心健康
+nuisance	讨厌或麻烦的人（或事物）	n_______	Unit 21 身心健康
+vex	使烦恼，使恼火	v__	Unit 21 身心健康
+harass	烦扰	h_____	Unit 21 身心健康
+bore	烦扰；钻孔n.讨厌的人；令人生厌的事	b___	Unit 21 身心健康
+bother	花费时间精力（做某事）；（使）苦恼n.麻烦，困难	b_____	Unit 21 身心健康
+troublesome	令人烦恼的；麻烦的	t__________	Unit 21 身心健康
+awful	令人不愉快的，极讨厌的	a____	Unit 21 身心健康
+unpleasant	令人不愉快的，讨厌的	u_________	Unit 21 身心健康
+adverse	敌对的，不友好的；不利的	a______	Unit 21 身心健康
+hostile	怀有敌意的，不友善的；敌对的	h______	Unit 21 身心健康
+indignant	愤概的，义愤的	i________	Unit 21 身心健康
+radical	激进的；根本的	r______	Unit 21 身心健康
+mad	发疯的；恼火的	m__	Unit 21 身心健康
+wicked	邪恶的，缺德的	w_____	Unit 21 身心健康
+vicious	邪恶的，不道德的	v______	Unit 21 身心健康
+vulgar	粗俗的，庸俗的	v_____	Unit 21 身心健康
+mean	卑鄙的；吝啬的v.意思是	m___	Unit 21 身心健康
+ego	自我，自尊；自负	e__	Unit 21 身心健康
+selfish	自私的，利己主义的	s______	Unit 21 身心健康
+nasty	下流的；肮脏的；险恶的	n____	Unit 21 身心健康
+rash	草率的，鲁莽的	r___	Unit 21 身心健康
+volatile	易变的，反复无常的；易挥发的	v_______	Unit 21 身心健康
+weird	怪诞的，古怪的	w____	Unit 21 身心健康
+excessive	过分的，过多的	e________	Unit 21 身心健康
+anxiety	焦虑，担心；渴望	a______	Unit 21 身心健康
+restless	不安定的，焦躁不安的，不耐烦的	r_______	Unit 21 身心健康
+uneasy	心神不安的，忧虑的	u_____	Unit 21 身心健康
+timid	胆小的，羞怯的	t____	Unit 21 身心健康
+fuss	大惊小怪，无谓的纷扰	f___	Unit 21 身心健康
+unkind	不仁慈的，不和善的，刻薄的	u_____	Unit 21 身心健康
+envy	/n.羡慕；嫉妒	e___	Unit 21 身心健康
+jealous	嫉妒的，妒忌的	j______	Unit 21 身心健康
+doubt	怀疑，疑问v.怀疑，不信	d____	Unit 21 身心健康
+suspicion	怀疑，嫌疑	s________	Unit 21 身心健康
+unsatisfactory	不能令人满意的，不符合要求的，不足的	u_____________	Unit 21 身心健康
+unstable	不稳定的；易变的；不牢固的	u_______	Unit 21 身心健康
+unsuitable	不合适的，不适宜的	u_________	Unit 21 身心健康
+unwilling	不愿意的，不情愿的；勉强的	u________	Unit 21 身心健康
+reluctant	不情愿的；勉强的	r________	Unit 21 身心健康
+hesitate	犹豫不决，曙；顾虑	h_______	Unit 21 身心健康
+confuse	使困惑，把（某人）弄糊涂；混淆	c______	Unit 21 身心健康
+guilty'gilti	有罪的；内疚的	g__________	Unit 21 身心健康
+embarrass	使尴尬，使窘迫，使局促不安	e________	Unit 21 身心健康
+regret	遗憾；抱歉；悲叹v.后悔；痛惜，惋惜	r_____	Unit 21 身心健康
+repent	忏悔；后悔	r_____	Unit 21 身心健康
+ashamed	惭愧的，感到难为情的；耻于....的	a______	Unit 21 身心健康
+sigh	/v.叹息，叹气	s___	Unit 21 身心健康
+weep	哭泣，流泪；哀悼n.哭泣	w___	Unit 21 身心健康
+tolerance	忍受，容忍，宽容	t________	Unit 21 身心健康
+ignorant	无知的，没有学识的，愚昧的	i_______	Unit 21 身心健康
+endure	忍耐，忍受；持久	e_____	Unit 21 身心健康
+sly	狡猾的，狡诈的	s__	Unit 21 身心健康
+cunning	狡猾的；巧妙的	c______	Unit 21 身心健康
+arbitrary	武断的，专断的；任意的	a________	Unit 21 身心健康
+ridiculous	荒谬的，可笑的	r_________	Unit 21 身心健康
+stupid	愚蠢的；麻木的；乏味的n.傻瓜，笨蛋	s_____	Unit 21 身心健康
+awkward	笨拙的；尴尬的；棘手的；不合适的	a______	Unit 21 身心健康
+clumsy	笨拙的	c_____	Unit 21 身心健康
+careless	粗心的；无忧无虑的；淡漠的	c_______	Unit 21 身心健康
+oblivious	不知道的，未注意的	o________	Unit 21 身心健康
+naughty	淘气的，顽皮的	n______	Unit 21 身心健康
+greedy	贪吃的；贪婪的	g_____	Unit 21 身心健康
+obtrusive	过分炫耀的，过分突出的，扎眼的	o________	Unit 21 身心健康
+slothful	偷懒的，懒散的	s_______	Unit 21 身心健康
+sluggish	行动迟缓的	s_______	Unit 21 身心健康
+impulse	冲动，心血来潮	i______	Unit 21 身心健康
+rigid	固执的；严格的；刚硬的	r____	Unit 21 身心健康
+stubborn	顽固的，固执的	s_______	Unit 21 身心健康
+stereotype	老一套，模式化观念，刻板印象	s_________	Unit 21 身心健康
+daily	每日的n.日报	d____	Unit 22 时间日期
+monthly	每月的adv.每月一次n.月刊	m______	Unit 22 时间日期
+quarterly	季度的adv.按季度地n.季刊	q________	Unit 22 时间日期
+annual	每年的；一年的n.年报	a_____	Unit 22 时间日期
+yearly	每年的；一年的adv.每年地	y_____	Unit 22 时间日期
+anniversary	周年纪念日	a__________	Unit 22 时间日期
+era	时代，年代，纪元	e__	Unit 22 时间日期
+present	现在的n.目前；礼物，赠送物	p______	Unit 22 时间日期
+contemporary	当代的；同时代的	c___________	Unit 22 时间日期
+medieval	中世纪的；守旧的	m_______	Unit 22 时间日期
+century	世纪；百年	c______	Unit 22 时间日期
+millennium	千年，千年期；千禧年	m_________	Unit 22 时间日期
+million	um.百万；大量	m______	Unit 22 时间日期
+billion	um.十亿；大量	b______	Unit 22 时间日期
+dozen	一打，十二个；十来个	d____	Unit 22 时间日期
+dawn	黎明；开端v.破晓	d___	Unit 22 时间日期
+midday	正午，中午	m_____	Unit 22 时间日期
+midnight	午夜，子夜，半夜	m_______	Unit 22 时间日期
+overnight	在晚上；突然，一夜之间	o________	Unit 22 时间日期
+night	夜，夜间；晚上；夜场	n____	Unit 22 时间日期
+modern	现代的；近代的	m_____	Unit 22 时间日期
+recent	新近的，最近的	r_____	Unit 22 时间日期
+up-to-date	直到目前的；现代的	u_______	Unit 22 时间日期
+secondly	第二，其次	s_______	Unit 22 时间日期
+finally	最后；终于；决定性地	f______	Unit 22 时间日期
+finish	完成；结束n.结尾，最后部分	f_____	Unit 22 时间日期
+immediately	立即；直接地	i__________	Unit 22 时间日期
+instant	瞬间adj.立即的	i______	Unit 22 时间日期
+moment	片刻；时刻	m_____	Unit 22 时间日期
+prior	在先的，在前的	p____	Unit 22 时间日期
+former	以前的；前者的pron.前者	f_____	Unit 22 时间日期
+preceding	在前的，在先的	p________	Unit 22 时间日期
+precedent	先例；常规	p________	Unit 22 时间日期
+foremost	最前的；最重要的	f_______	Unit 22 时间日期
+opening	开始的n.开始，开端	o______	Unit 22 时间日期
+initially	最初	i________	Unit 22 时间日期
+intermediate	中间的	i___________	Unit 22 时间日期
+midst	中部，中间	m____	Unit 22 时间日期
+meantime	眼下，暂时	m_______	Unit 22 时间日期
+meanwhile	同时，其间	m________	Unit 22 时间日期
+simultaneous	同时发生（或进行）的	s___________	Unit 22 时间日期
+ongoing	进行中的；继续存在的	o______	Unit 22 时间日期
+everlasting	永恒的	e__________	Unit 22 时间日期
+permanent	永久的	p________	Unit 22 时间日期
+punctual	准时的，守时的	p_______	Unit 22 时间日期
+duration	持续时间；期间	d_______	Unit 22 时间日期
+consecutive	连续不断的	c__________	Unit 22 时间日期
+periodically	周期性地，定期地	p___________	Unit 22 时间日期
+imminent	（尤指不愉快的事）即将发生的，逼近的	i_______	Unit 22 时间日期
+incidentally	偶然地；顺便提一句	i___________	Unit 22 时间日期`;
 
     const savedDeckText = localStorage.getItem(STORAGE_DECK);
     let deckText = savedDeckText || defaultDeck;
@@ -3937,6 +4073,14 @@ ${additions.join("\n")}` : savedText;
       return clean[0] + "_".repeat(Math.max(1, clean.length - 1));
     }
 
+    function normalizeUnitName(unit) {
+      const text = String(unit || "???").trim();
+      const match = text.match(/^Unit\s+(\d+)(?:\s+.*)?$/i);
+      if (!match) return text;
+      const number = Number.parseInt(match[1], 10);
+      return UNIT_TITLES[number] ? `Unit ${number} ${UNIT_TITLES[number]}` : `Unit ${number}`;
+    }
+
     function todayStart() {
       const d = new Date();
       d.setHours(0, 0, 0, 0);
@@ -3993,7 +4137,14 @@ ${additions.join("\n")}` : savedText;
 
     function renderUnits() {
       const currentValue = unitFilter.value || "全部分组";
-      const units = ["全部分组", ...Array.from(new Set(deck.map(item => item.unit))).sort()];
+      const units = ["全部分组", ...Array.from(new Set(deck.map(item => item.unit)))];
+      units.sort((a, b) => {
+        if (a === "全部分组") return -1;
+        if (b === "全部分组") return 1;
+        const numA = parseInt(a.match(/\d+/)?.[0] || "0");
+        const numB = parseInt(b.match(/\d+/)?.[0] || "0");
+        return numA - numB;
+      });
       unitFilter.innerHTML = units.map(unit => `<option>${escapeHtml(unit)}</option>`).join("");
       unitFilter.value = units.includes(currentValue) ? currentValue : "全部分组";
     }
