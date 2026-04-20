@@ -461,7 +461,7 @@
     const STORAGE_PROGRESS = "dictation.progress.v1";
     const STORAGE_LAST_INDEX = "dictation.last.index.v1";
     const STORAGE_BUILTIN_VERSION = "dictation.builtin.version";
-    const BUILTIN_DECK_VERSION = "units-1-22-20260420-v2";
+    const BUILTIN_DECK_VERSION = "units-1-22-20260420-v3";
 
     const UNIT_TITLES = {
       13: "\u5efa\u7b51\u573a\u6240",
@@ -4033,13 +4033,16 @@ incidentally	偶然地；顺便提一句	i___________	Unit 22 时间日期`;
 
 
     function mergeDeckText(savedText, builtInText) {
-      if (!savedText) return builtInText;
-      const seen = new Set(parseDeck(savedText).map(item => `${item.id}	${item.unit}`));
-      const additions = parseDeck(builtInText)
-        .filter(item => !seen.has(`${item.id}	${item.unit}`))
-        .map(item => `${item.word}	${item.meaning}	${item.hint}	${item.unit}`);
-      return additions.length ? `${savedText.trim()}
-${additions.join("\n")}` : savedText;
+      const merged = [...parseDeck(savedText || ""), ...parseDeck(builtInText)];
+      const seen = new Set();
+      const unique = [];
+      for (const item of merged) {
+        const key = `${item.id}	${item.unit}`;
+        if (seen.has(key)) continue;
+        seen.add(key);
+        unique.push(`${item.word}	${item.meaning}	${item.hint}	${item.unit}`);
+      }
+      return unique.join("\n");
     }
 
     function parseDeck(text) {
@@ -4052,7 +4055,7 @@ ${additions.join("\n")}` : savedText;
           const word = (parts[0] || "").trim();
           const meaning = (parts[1] || "").trim();
           const hint = (parts[2] || makeHint(word)).trim();
-          const unit = (parts[3] || "未分组").trim();
+          const unit = normalizeUnitName((parts[3] || "\u672a\u5206\u7ec4").trim());
           const answers = word.split(/[\/|;]/).map(x => normalize(x)).filter(Boolean);
           return { id: normalize(word) || String(index), word, meaning, hint, unit, answers };
         })
@@ -4074,7 +4077,7 @@ ${additions.join("\n")}` : savedText;
     }
 
     function normalizeUnitName(unit) {
-      const text = String(unit || "???").trim();
+      const text = String(unit || "\u672a\u5206\u7ec4").trim();
       const match = text.match(/^Unit\s+(\d+)(?:\s+.*)?$/i);
       if (!match) return text;
       const number = Number.parseInt(match[1], 10);
