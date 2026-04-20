@@ -461,9 +461,21 @@
     const STORAGE_PROGRESS = "dictation.progress.v1";
     const STORAGE_LAST_INDEX = "dictation.last.index.v1";
     const STORAGE_BUILTIN_VERSION = "dictation.builtin.version";
-    const BUILTIN_DECK_VERSION = "units-1-22-20260420-v3";
+    const BUILTIN_DECK_VERSION = "units-1-22-20260420-v5";
 
     const UNIT_TITLES = {
+      1: "\u81ea\u7136\u5730\u7406",
+      2: "\u690d\u7269\u679c\u5b9e",
+      3: "\u52a8\u7269\u4fdd\u62a4",
+      4: "\u592a\u7a7a\u63a2\u7d22",
+      5: "\u5b66\u6821\u6559\u80b2",
+      6: "\u79d1\u6280\u53d1\u660e",
+      7: "\u6587\u5316\u5386\u53f2",
+      8: "\u8bed\u8a00\u6f14\u5316",
+      9: "\u5a31\u4e50\u8fd0\u52a8",
+      10: "\u7269\u54c1\u6750\u6599",
+      11: "\u65f6\u5c1a\u6f6e\u6d41",
+      12: "\u996e\u98df\u5065\u5eb7",
       13: "\u5efa\u7b51\u573a\u6240",
       14: "\u4ea4\u901a\u65c5\u884c",
       15: "\u56fd\u5bb6\u653f\u5e9c",
@@ -3996,9 +4008,8 @@ imminent	（尤指不愉快的事）即将发生的，逼近的	i_______	Unit 22
 incidentally	偶然地；顺便提一句	i___________	Unit 22 时间日期`;
 
     const savedDeckText = localStorage.getItem(STORAGE_DECK);
-    let deckText = savedDeckText || defaultDeck;
-    if (localStorage.getItem(STORAGE_BUILTIN_VERSION) !== BUILTIN_DECK_VERSION) {
-      deckText = mergeDeckText(savedDeckText, defaultDeck);
+    let deckText = mergeDeckText(savedDeckText, defaultDeck);
+    if (deckText !== savedDeckText || localStorage.getItem(STORAGE_BUILTIN_VERSION) !== BUILTIN_DECK_VERSION) {
       localStorage.setItem(STORAGE_DECK, deckText);
       localStorage.setItem(STORAGE_BUILTIN_VERSION, BUILTIN_DECK_VERSION);
     }
@@ -4138,15 +4149,21 @@ incidentally	偶然地；顺便提一句	i___________	Unit 22 时间日期`;
       todayText.textContent = `${due} 个到期`;
     }
 
+    function getUnitNumber(unit) {
+      const match = String(unit || "").match(/^Unit\s+(\d+)/i);
+      return match ? Number.parseInt(match[1], 10) : Number.MAX_SAFE_INTEGER;
+    }
+
     function renderUnits() {
       const currentValue = unitFilter.value || "全部分组";
-      const units = ["全部分组", ...Array.from(new Set(deck.map(item => item.unit)))];
+      const units = ["全部分组", ...Array.from(new Set(deck.map(item => normalizeUnitName(item.unit))))];
       units.sort((a, b) => {
         if (a === "全部分组") return -1;
         if (b === "全部分组") return 1;
-        const numA = parseInt(a.match(/\d+/)?.[0] || "0");
-        const numB = parseInt(b.match(/\d+/)?.[0] || "0");
-        return numA - numB;
+        const numA = getUnitNumber(a);
+        const numB = getUnitNumber(b);
+        if (numA !== numB) return numA - numB;
+        return a.localeCompare(b, "zh-CN", { numeric: true });
       });
       unitFilter.innerHTML = units.map(unit => `<option>${escapeHtml(unit)}</option>`).join("");
       unitFilter.value = units.includes(currentValue) ? currentValue : "全部分组";
